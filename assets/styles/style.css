@@ -1,0 +1,32 @@
+.slider-adjustment{
+    position: fixed;
+    top: 56px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background-color:cyan ;
+
+}
+
+.carousel-one {
+    background-image: url("assets/image/PlayersBasketball.jpg");
+}
+
+.logo-hero {
+    mix-blend-mode:multiply;
+
+}
+
+.logo-hero {
+    width: 100%;
+
+}
+
+.nav-logo {
+    height: 50px;
+}
+
+nav ul a {
+    font-family: 'Oswald', sans-serif;
+}
