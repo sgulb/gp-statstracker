@@ -8,10 +8,12 @@ const playerGameStatsSchema = new Schema({
   blocks: { type: Number default: 0 },
   steals: { type: Number default: 0 },
   turnovers: { type: Number default: 0 },
+  fieldGoalsMade: { type: Number default: 0},
+  fieldGoalsAttempted: { type: Number default: 0}
   threePointersMade: { type: Number default: 0 },
-  threePointersShot: { type: Number default: 0 },
+  threePointersAttempted: { type: Number default: 0 },
   freeThrowsMade: { type: Number default: 0 },
-  freeThrowsShot: { type: Number default: 0 },
+  freeThrowsAttempted: { type: Number default: 0 },
   minutesPlayed: { type: Number default: 0 }
 });
 
