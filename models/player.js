@@ -6,7 +6,7 @@ const playerSchema = new Schema({
   lName: { type: String, required: "Please provide the players Last name", trim: true  },
   fullName: { type: String, required: true },
   position: { type: String, required: "Please provide the players postion", trim: true  },
-  hight: { type: String, default: `Unknown`, trim: true },
+  height: { type: String, default: `Unknown`, trim: true },
   weight: { type: String, default: `Unknown`, trim: true },
   timestamp: { type: Date, default: Date.now },
   playerGameStats: { type: Schema.Types.ObjectId, ref: "PlayerGameStats"}
