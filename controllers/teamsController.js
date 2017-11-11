@@ -65,13 +65,13 @@ module.exports = {
   create: function(req, res) {
     db.Team
       .create(req.body)
-      .then( (err, res) => {
+      .then( (err, result) => {
         if (err) {
           console.log(err);
         } else {
-          db.School.findOneAndUpdate({
-            { "_id": req.body.school._id }, { "Team": res.id } 
-          })
+          db.School.findOneAndUpdate(
+            { "_id": req.body.school._id }, { "Team": result.id } 
+          )
         }
         dbModel => res.json(dbModel)
       }

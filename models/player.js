@@ -12,8 +12,8 @@ const playerSchema = new Schema({
   playerGameStats: { type: Schema.Types.ObjectId, ref: "PlayerGameStats"}
 });
 
-ArticleSchema.pre('save', function(next){
-	this.fullName: this.fName + " " this.lName;
+playerSchema.pre('save', function(next){
+	this.fullName= this.fName + " " + this.lName;
 	next();
 });
 
