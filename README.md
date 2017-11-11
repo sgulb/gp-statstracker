@@ -1,6 +1,6 @@
 # gp-statstracker
 
-## An app to help Coaches train their team better.
+## An App to Help Coaches Train Their Teams Better.
 
 ## Team Members:
 * Brooklee Wilson
