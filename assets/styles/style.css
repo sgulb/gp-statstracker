@@ -50,15 +50,16 @@ a {
     background-image: url("../images/basketball-hoop.jpg");
     background-size: cover;
 }
-/*Player Card*/
+/*Player Card--------------------------------*/
 .player-name {
     font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
 .player-card:hover {
     color: red;
     background-blend-mode: multiply;
-    transition: background-color .25s;
+    /*transition: background-color .25s;*/
  }
 
 .img-con > img {
@@ -73,17 +74,17 @@ a {
 .img-con:hover {
     opacity: .9;
     background: red;
-    transition: .25s;
+    transition: .1s;
     color: red;
 }
 .img-con:hover > img {
     z-index: -1;
     mix-blend-mode: multiply;
-    transition: .25s;
+    transition: .1s;
 }
-/*End Player Card*/
+/*End Player Card--------------------------*/
 
-/*Form*/
+/*Form------------------------------*/
 /* label color */
 .input-field label {
     color: #000;
@@ -121,8 +122,14 @@ a {
     border-bottom: 1px solid red !important;
     box-shadow: 0 1px 0 0 red !important
 }
-
-.btn, .btn-large{
-    background-color: red !important;
-}
 /*End Form Style*/
+
+/*Button Styles*/
+.btn-txt {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+li .indicator-item .active {
+    color: red;
+}
