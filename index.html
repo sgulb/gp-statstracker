@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stat Track</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--Custom StyleSheet import-->
+    <link rel = "stylesheet" type = "text/css" href = "assets/styles/style.css" />
+    <!--Oswald font import-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+
+</head>
+<body>
+<!--Navigation-->
+<nav>
+    <div class="nav-wrapper white">
+        <a href="#!" class="brand-logo red-text text-accent-4"><img class="nav-logo" src="assets/images/logo.svg"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#modal1" class="red-text text-accent-4">LOGIN/SIGNUP</a></li>
+            <li><a href="#" class="red-text text-accent-4">ABOUT</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="#modal1" class="red-text text-accent-4">LOGIN/SIGNUP</a></li>
+            <li><a href="#" class="red-text text-accent-4">ABOUT</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+</div>
+
+<!--Hero Slider-->
+<div class="slider-adjustment">
+    <div class="slider fullscreen">
+        <ul class="slides">
+            <li>
+                <img src="assets/images/PlayersBasketball.jpg"> <!-- random image -->
+                <div class="caption center-align logo-hero">
+                    <img class="logo-hero-size" src="assets/images/logo.svg">
+                </div>
+            </li>
+            <li>
+                <img src="assets/images/basketballplayer.jpg"> <!-- random image -->
+                <div class="caption center-align logo-hero">
+                    <img class="logo-hero-size" src="assets/images/logo.svg">
+                </div>
+            </li>
+        </ul>
+        <ul>
+
+        </ul>
+    </div>
+</div>
+
+<!--Jquery Import-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.modal').modal();
+        $('.slider').slider();
+        $('.carousel.carousel-slider').carousel({fullWidth: true});
+        $(".button-collapse").sideNav();
+
+    });
+</script>
+</body>
+</html>
