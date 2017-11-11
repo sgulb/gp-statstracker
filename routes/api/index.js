@@ -1,5 +1,4 @@
 const router = require("express").Router(),
-      articleRoutes = require("./articles"),
       playerRoutes = require("./players.js"),
       playerGameRoutes = require("./playerGames.js"),
       teamRoutes = require("./teams.js"),

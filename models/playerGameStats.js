@@ -14,7 +14,8 @@ const playerGameStatsSchema = new Schema({
   threePointersAttempted: { type: Number default: 0 },
   freeThrowsMade: { type: Number default: 0 },
   freeThrowsAttempted: { type: Number default: 0 },
-  minutesPlayed: { type: Number default: 0 }
+  minutesPlayed: { type: Number default: 0 },
+  teamGameStats: { type: Schema.Types.ObjectId, ref: "TeamGameStats"}
 });
 
 const PlayerGameStats = mongoose.model("PlayerGameStats", playerGameStatsSchema);

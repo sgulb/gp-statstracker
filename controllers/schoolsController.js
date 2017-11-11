@@ -9,9 +9,24 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+  findAllPop: function(req, res) {
+    db.School
+      .find(req.query)
+      .populate('Team')
+      .sort({ date: -1 })
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
   findById: function(req, res) {
     db.School
       .findById(req.params.id)
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
+  findByIdPop : function(req, res) {
+    db.School
+      .findById(req.params.id)
+      .populate('Team')
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
