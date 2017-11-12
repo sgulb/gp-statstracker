@@ -70,9 +70,8 @@ module.exports = {
           console.log(err);
         } else {
           db.School.findOneAndUpdate(
-            { "_id": req.body.school._id }, { "Team": result.id } 
-          )
-          
+            { "_id": req.body._id }, { $push: { "team": result.id }}
+          );
           dbModel => res.json(dbModel)
         }
       })

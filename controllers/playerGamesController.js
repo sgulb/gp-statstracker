@@ -18,7 +18,22 @@ module.exports = {
   create: function(req, res) {
     db.PlayerGameStats
       .create(req.body)
-      .then(dbModel => res.json(dbModel))
+      .then( (err, result) => {
+        if (err) {
+          console.log(err);
+        } else {
+
+          db.Player.findOneAndUpdate(
+            { "_id": req.body._id }, { $push: { "playerGameStats": result.id }}
+          );
+
+          db.PlayerGameStats.findOneAndUpdate(
+            { "_id": req.body._id }, { $push: { "playerGameStats": result.id }}
+          );
+          
+          dbModel => res.json(dbModel)
+        }
+      })
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {

@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-      Schema   = mongoose.Schema;
+      Schema   = mongoose.Schema,
+      db       = require("../models");
 
 const playerGameStatsSchema = new Schema({
   points: { type: Number },
@@ -16,6 +17,12 @@ const playerGameStatsSchema = new Schema({
   freeThrowsAttempted: { type: Number },
   minutesPlayed: { type: Number },
   teamGameStats: { type: Schema.Types.ObjectId, ref: "TeamGameStats"}
+});
+
+playerGameStatsSchema.pre('remove', function(next) {
+    Player.update({playerGameStats: this._id}, { $pull: {playerGameStats: this._id } }).exec();
+    TeamGameStats.update({playerGameStats: this._id}, { $pull: {playerGameStats: this._id } }).exec();
+    next();
 });
 
 const PlayerGameStats = mongoose.model("PlayerGameStats", playerGameStatsSchema);

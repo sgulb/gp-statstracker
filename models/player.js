@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-      Schema   = mongoose.Schema;
+      Schema   = mongoose.Schema,
+      db       = require("../models");
 
 const playerSchema = new Schema({
   fName: { type: String, required: "Please provide the players First name", trim: true  },
@@ -15,6 +16,11 @@ const playerSchema = new Schema({
 playerSchema.pre('save', function(next){
 	this.fullName= this.fName + " " + this.lName;
 	next();
+});
+
+playerSchema.pre('remove', function(next) {
+    Team.update({player: this._id}, { $pull: {player: this._id } }).exec();
+    next();
 });
 
 const Player = mongoose.model("Player", playerSchema);
