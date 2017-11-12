@@ -72,10 +72,10 @@ module.exports = {
           db.School.findOneAndUpdate(
             { "_id": req.body.school._id }, { "Team": result.id } 
           )
+          
+          dbModel => res.json(dbModel)
         }
-        dbModel => res.json(dbModel)
-      }
-      )
+      })
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
