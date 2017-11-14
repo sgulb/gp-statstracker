@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const playerSchema = new Schema({
   fName: { type: String, required: "Please provide the players First name", trim: true  },
   lName: { type: String, required: "Please provide the players Last name", trim: true  },
-  fullName: { type: String, required: true },
+  fullName: String,
   position: { type: String, required: "Please provide the players postion", trim: true  },
   height: { type: String, default: `Unknown`, trim: true },
   weight: { type: String, default: `Unknown`, trim: true },
@@ -14,7 +14,7 @@ const playerSchema = new Schema({
 });
 
 playerSchema.pre('save', function(next){
-	this.fullName= this.fName + " " + this.lName;
+	this.fullName = this.fName + " " + this.lName;
 	next();
 });
 
