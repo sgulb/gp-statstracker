@@ -1,2 +1,3 @@
-export * from "./addTeam";
+export * from "./AddTeam";
 export * from "./TeamCard";
+export * from "./AddTeamModal"
