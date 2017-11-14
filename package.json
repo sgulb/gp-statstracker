@@ -1,7 +1,7 @@
 {
-  "name": "nytreact",
+  "name": "gp-statstracker",
   "version": "1.0.0",
-  "description": "New York Times: Look up articles and save them",
+  "description": "Player stats tracking software for coaches and teams. ",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,20 +9,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nidant/nytreact.git"
+    "url": "git+https://github.com/sgulb/gp-statstracker.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Stats",
+    "Basket",
+    "ball",
+    "Team",
+    "Coach"
+  ],
+  "author": "Khristopher Watters, Phil Dunn, Brooklee Wilson, Mya Nguyen, Scott Gulbrandsen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Nidant/nytreact/issues"
+    "url": "https://github.com/sgulb/gp-statstracker/issues"
   },
-  "homepage": "https://github.com/Nidant/nytreact#readme",
+  "homepage": "https://github.com/sgulb/gp-statstracker#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "i": "^0.3.6",
-    "mongoose": "^4.13.0",
+    "mongoose": "^4.13.2",
     "path": "^0.12.7"
   }
 }
