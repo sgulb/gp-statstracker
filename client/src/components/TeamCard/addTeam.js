@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const AddTeam = props =>(
+export const AddTeam = props =>(
 
     <div className="col s4">
       <div data-target="add_team_modal" id="addTeamCard" className="card modal-trigger">
@@ -23,4 +23,4 @@ const AddTeam = props =>(
 
 	)
 
-export default AddTeam;
+// export default AddTeam;
