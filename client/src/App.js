@@ -1,30 +1,24 @@
-import React, { Component } from "react";
-import players from "./players.json";
-import PlayerCard from "./components/PlayerCard";
+import React from "react";
+// import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-dom";
+import Players from "./pages/Players";
+import Main from "./pages/Main";
+import Teams from "./pages/Teams"
 
 
-class App extends Component {
-    // Setting this.state.players to the players json array
-    state = {
-        players
-    };
+const App = () =>
+    <Router>
+        <div>
+            <Switch>
+                <Route exact path="/" component={Main} />
+                <Route exact path="/players" component={Players} />
 
-    // Map over this.state.players and render a FriendCard component for each player object
-    render() {
-        return (
-            <div>
-                {this.state.players.map(players => (
-                    <PlayerCard
-                        id={players.id}
-                        key={players.id}
-                        image={players.image}
-                        name={players.name}
-                        position={players.position}
-                    />
-                ))}
-            </div>
-        );
-    }
-}
+
+                <Route exact path="/teams" component={Teams} />
+
+
+            </Switch>
+        </div>
+    </Router>;
 
 export default App;
