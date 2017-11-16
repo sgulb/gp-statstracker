@@ -1,9 +1,9 @@
 import React from "react";
-// import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Players from "./pages/Players";
 import Main from "./pages/Main";
-import Teams from "./pages/Teams"
+// import Teams from "./pages/Teams"
 
 
 const App = () =>
@@ -14,7 +14,7 @@ const App = () =>
                 <Route exact path="/players" component={Players} />
 
 
-                <Route exact path="/teams" component={Teams} />
+                {/*<Route exact path="/teams" component={Teams} />*/}
 
 
             </Switch>

@@ -10,7 +10,7 @@ const Team = () =>
 	<div className="row">
 		<AddTeam />
 		<TeamCard>
-			<h2/>
+			anything
 			
 		</TeamCard>
 	</div>
