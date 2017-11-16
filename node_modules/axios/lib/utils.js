@@ -207,7 +207,7 @@ function forEach(obj, fn) {
   }
 
   // Force an array if not already something iterable
-  if (typeof obj !== 'object') {
+  if (typeof obj !== 'object' && !isArray(obj)) {
     /*eslint no-param-reassign:0*/
     obj = [obj];
   }

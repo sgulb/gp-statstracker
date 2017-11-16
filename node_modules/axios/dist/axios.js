@@ -1,4 +1,4 @@
-/* axios v0.17.1 | (c) 2017 by Matt Zabriskie */
+/* axios v0.16.2 | (c) 2017 by Matt Zabriskie */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -53,13 +53,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(1);
 
-/***/ }),
+/***/ },
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -115,9 +115,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports.default = axios;
 
 
-/***/ }),
+/***/ },
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -328,7 +328,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	
 	  // Force an array if not already something iterable
-	  if (typeof obj !== 'object') {
+	  if (typeof obj !== 'object' && !isArray(obj)) {
 	    /*eslint no-param-reassign:0*/
 	    obj = [obj];
 	  }
@@ -424,9 +424,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ }),
+/***/ },
 /* 3 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 	
@@ -441,9 +441,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ }),
+/***/ },
 /* 4 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	/*!
 	 * Determine if an object is a Buffer
@@ -468,9 +468,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 
-/***/ }),
+/***/ },
 /* 5 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -478,6 +478,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	var utils = __webpack_require__(2);
 	var InterceptorManager = __webpack_require__(17);
 	var dispatchRequest = __webpack_require__(18);
+	var isAbsoluteURL = __webpack_require__(21);
+	var combineURLs = __webpack_require__(22);
 	
 	/**
 	 * Create a new instance of Axios
@@ -508,6 +510,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	  config = utils.merge(defaults, this.defaults, { method: 'get' }, config);
 	  config.method = config.method.toLowerCase();
+	
+	  // Support baseURL config
+	  if (config.baseURL && !isAbsoluteURL(config.url)) {
+	    config.url = combineURLs(config.baseURL, config.url);
+	  }
 	
 	  // Hook up interceptors middleware
 	  var chain = [dispatchRequest, undefined];
@@ -553,9 +560,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = Axios;
 
 
-/***/ }),
+/***/ },
 /* 6 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -651,9 +658,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = defaults;
 
 
-/***/ }),
+/***/ },
 /* 7 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -669,9 +676,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ }),
+/***/ },
 /* 8 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -741,7 +748,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var responseData = !config.responseType || config.responseType === 'text' ? request.responseText : request.response;
 	      var response = {
 	        data: responseData,
-	        // IE sends 1223 instead of 204 (https://github.com/axios/axios/issues/201)
+	        // IE sends 1223 instead of 204 (https://github.com/mzabriskie/axios/issues/201)
 	        status: request.status === 1223 ? 204 : request.status,
 	        statusText: request.status === 1223 ? 'No Content' : request.statusText,
 	        headers: responseHeaders,
@@ -855,9 +862,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ }),
+/***/ },
 /* 9 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -887,9 +894,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ }),
+/***/ },
 /* 10 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -911,9 +918,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ }),
+/***/ },
 /* 11 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 	
@@ -938,9 +945,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ }),
+/***/ },
 /* 12 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -1012,22 +1019,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ }),
+/***/ },
 /* 13 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	var utils = __webpack_require__(2);
-	
-	// Headers whose duplicates are ignored by node
-	// c.f. https://nodejs.org/api/http.html#http_message_headers
-	var ignoreDuplicateOf = [
-	  'age', 'authorization', 'content-length', 'content-type', 'etag',
-	  'expires', 'from', 'host', 'if-modified-since', 'if-unmodified-since',
-	  'last-modified', 'location', 'max-forwards', 'proxy-authorization',
-	  'referer', 'retry-after', 'user-agent'
-	];
 	
 	/**
 	 * Parse headers into an object
@@ -1056,14 +1054,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    val = utils.trim(line.substr(i + 1));
 	
 	    if (key) {
-	      if (parsed[key] && ignoreDuplicateOf.indexOf(key) >= 0) {
-	        return;
-	      }
-	      if (key === 'set-cookie') {
-	        parsed[key] = (parsed[key] ? parsed[key] : []).concat([val]);
-	      } else {
-	        parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
-	      }
+	      parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
 	    }
 	  });
 	
@@ -1071,9 +1062,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ }),
+/***/ },
 /* 14 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -1145,9 +1136,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	);
 
 
-/***/ }),
+/***/ },
 /* 15 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 	
@@ -1187,9 +1178,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = btoa;
 
 
-/***/ }),
+/***/ },
 /* 16 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -1246,9 +1237,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	);
 
 
-/***/ }),
+/***/ },
 /* 17 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -1304,9 +1295,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = InterceptorManager;
 
 
-/***/ }),
+/***/ },
 /* 18 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -1314,8 +1305,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	var transformData = __webpack_require__(19);
 	var isCancel = __webpack_require__(20);
 	var defaults = __webpack_require__(6);
-	var isAbsoluteURL = __webpack_require__(21);
-	var combineURLs = __webpack_require__(22);
 	
 	/**
 	 * Throws a `Cancel` if cancellation has been requested.
@@ -1334,11 +1323,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	 */
 	module.exports = function dispatchRequest(config) {
 	  throwIfCancellationRequested(config);
-	
-	  // Support baseURL config
-	  if (config.baseURL && !isAbsoluteURL(config.url)) {
-	    config.url = combineURLs(config.baseURL, config.url);
-	  }
 	
 	  // Ensure headers exist
 	  config.headers = config.headers || {};
@@ -1396,9 +1380,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ }),
+/***/ },
 /* 19 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -1422,9 +1406,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ }),
+/***/ },
 /* 20 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 	
@@ -1433,9 +1417,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ }),
+/***/ },
 /* 21 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 	
@@ -1453,9 +1437,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ }),
+/***/ },
 /* 22 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 	
@@ -1473,9 +1457,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ }),
+/***/ },
 /* 23 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 	
@@ -1498,9 +1482,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = Cancel;
 
 
-/***/ }),
+/***/ },
 /* 24 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -1561,9 +1545,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = CancelToken;
 
 
-/***/ }),
+/***/ },
 /* 25 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 	
@@ -1594,7 +1578,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 
-/***/ })
+/***/ }
 /******/ ])
 });
 ;
