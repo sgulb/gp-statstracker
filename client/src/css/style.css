@@ -35,6 +35,15 @@ a {
     color: black;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.oswald-caps {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
 /*header*/
 .header-text {
     font-size: 600%;

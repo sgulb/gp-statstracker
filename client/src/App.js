@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Players from "./pages/Players";
 import Main from "./pages/Main";
+import IndivPlayers from "./pages/IndivPlayers"
 // import Teams from "./pages/Teams"
 
 
@@ -12,6 +13,7 @@ const App = () =>
             <Switch>
                 <Route exact path="/" component={Main} />
                 <Route exact path="/players" component={Players} />
+                <Route exact path="/players/:id" component={IndivPlayers} />
 
 
                 {/*<Route exact path="/teams" component={Teams} />*/}

@@ -1,15 +1,19 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
+import "../../css/style.css";
+import {Card, CardTitle, Col, Row} from 'react-materialize';
 
-
+import NavBar from "../../components/NavBar/navBar";
 import {PlayersInfo} from "../../components/PlayerCard/PlayersInfo";
 import {Input, FormBtn} from "../../components/AddPlayers";
 import AddPlayers from "../../components/AddPlayers";
 import PlayerCard from "../../components/PlayerCard";
 import {PlayersList} from "../../components/PlayerCard/PlayersList";
+import {PlayerImg} from "../../components/PlayerCard/PlayerImg";
 
 
- class Players extends Component {
+
+class Players extends Component {
 
      state = {
          players: []
@@ -29,29 +33,45 @@ import {PlayersList} from "../../components/PlayerCard/PlayersList";
     render() {
         return (
 <div>
-    <div className="row">
-    {this.state.players.length ? (
-        <PlayersList>
-            {this.state.players.map(player => (
-                <PlayersInfo key={player._id}>
-                    <a href={"/players/" + player._id}>
-                        <h4>
-                            {player.lName}
-                        </h4>
-                    </a>
-                </PlayersInfo>
-            ))}
-        </PlayersList>
-    ) : (
-        <h3>No Results to Display</h3>
-    )}
-    </div>
+    <NavBar/>
+    <Row>
+        <Col s={3}>
+            <div className="card-content">
+                {this.state.players.length ? (
+                    <PlayersList>
+                        {this.state.players.map(player => (
+                            <PlayersInfo key={player._id}>
+                                <a href={"/players/" + player._id}>
+                                    <Card className="card player-card">
+                                        <div className="card-content">
+                                            <h4>
+                                                {player.lName +" "}
+                                                {player.fName}
+                                            </h4>
+                                            <p>
+                                                {player.jersey}
+                                            </p>
+                                            <p>
+                                                {player.position}
+                                            </p>
+                                        </div>
+                                    </Card>
+                                </a>
+                            </PlayersInfo>
+                        ))}
+                    </PlayersList>
+                ) : (
+                    <h3>No Results to Display</h3>
+                )}
+            </div>
+        </Col>
+    </Row>
 
             <AddPlayers>
                 <div className="container">
                     <div className="row">
                         <div className="input-field col s6">
-                            <input name="fName" id="fName" type="text" className="validate" />
+                            <Input name="fName" id="fName" type="text" className="validate" />
                             <label for="fName">First Name </label>
                         </div>
                         <div className="input-field col s6">

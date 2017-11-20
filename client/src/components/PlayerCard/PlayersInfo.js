@@ -1,6 +1,6 @@
 import React from "react";
 
 export const PlayersInfo = props =>
-    <p>
+    <div class="card-content">
         {props.children}
-    </p>
+    </div>
