@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 export const TeamCard = props =>(
 
@@ -12,4 +13,3 @@ export const TeamCard = props =>(
 
 	)
 
-// export default TeamCard;

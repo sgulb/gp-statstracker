@@ -73,16 +73,3 @@ export default {
 
 
 
-//routes I'll need
-/* 
--get teams
--delete team
--get one team
-
--get one player
--get all players
--delete player
--edit player
-
--delete game(delete)
--edit game (put)

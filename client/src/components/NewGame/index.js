@@ -1,1 +1,1 @@
-export {default} from "./NewGame";
+export { default } from "./newGameForm";

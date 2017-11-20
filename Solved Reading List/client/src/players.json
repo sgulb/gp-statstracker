@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Player1",
+    "image": "http://images.performgroup.com/di/library/sportal_com_au/56/9e/markelle-fultz_1ha9frlcz95v11ij3k89xx3irc.jpg?t=-739356395&h=600",
+    "position": "Point Gaurd"
+  },
+  {
+    "id": 2,
+    "name": "Player2",
+    "image": "http://images.performgroup.com/di/library/sportal_com_au/56/9e/markelle-fultz_1ha9frlcz95v11ij3k89xx3irc.jpg?t=-739356395&h=600",
+    "position": "Shooting Gaurd"
+  }
+]
