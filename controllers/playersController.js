@@ -37,10 +37,10 @@ module.exports = {
         if (err) {
           console.log(err);
         } else {
+          (dbModel) => res.json(dbModel);
           db.Team.findOneAndUpdate(
             { "_id": req.body._id }, { $push: { "player": result.id }}
           );
-          dbModel => res.json(dbModel)
         }
       })
       .catch(err => res.status(422).json(err));
