@@ -7,7 +7,7 @@ const playerSchema = new Schema({
   lName: { type: String, required: "Please provide the players Last name", trim: true  },
     jersey: {type: String, required: "Please provide the players postion", trim: true},
   fullName: String,
-  position: { type: String, required: "Please provide the players postion", trim: true  },
+  // position: { type: String, required: "Please provide the players postion", trim: true  },
   height: { type: String, default: `Unknown`, trim: true },
   weight: { type: String, default: `Unknown`, trim: true },
   timestamp: { type: Date, default: Date.now },
