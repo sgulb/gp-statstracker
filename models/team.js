@@ -1,10 +1,6 @@
 const mongoose = require("mongoose");
       Schema   = mongoose.Schema,
       db       = require("../models");
-<<<<<<< HEAD
-=======
-
->>>>>>> 94b5f079e05f1e82bb6a0d29e6811352cf90f8c1
 
 const teamSchema = new Schema({
   teamName: { type: String, required: "Please provide the Teams name", trim: true },

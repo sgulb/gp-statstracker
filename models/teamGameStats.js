@@ -1,13 +1,6 @@
 const mongoose = require("mongoose");
-<<<<<<< HEAD
       Schema   = mongoose.Schema,
       db       = require("../models");
-=======
-
-      Schema   = mongoose.Schema,
-      db       = require("../models");
-
->>>>>>> 94b5f079e05f1e82bb6a0d29e6811352cf90f8c1
 
 const teamGameStatsSchema = new Schema({
   location: { type: String, default: `Home`, trim: true  },
@@ -25,10 +18,6 @@ teamGameStatsSchema.pre('remove', function(next) {
     PlayerGameStats.update({teamGameStats: this._id}, { $pull: {teamGameStats: this._id } }).exec();
     Team.update({teamGameStats: this._id}, { $pull: {teamGameStats: this._id } }).exec();
     next();
-<<<<<<< HEAD
-=======
-
->>>>>>> 94b5f079e05f1e82bb6a0d29e6811352cf90f8c1
 });
 
 const TeamGameStats = mongoose.model("TeamGameStats", teamGameStatsSchema);

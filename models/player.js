@@ -23,10 +23,6 @@ playerSchema.pre('remove', function(next) {
     next();
 });
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 94b5f079e05f1e82bb6a0d29e6811352cf90f8c1
 const Player = mongoose.model("Player", playerSchema);
 
 module.exports = Player;
