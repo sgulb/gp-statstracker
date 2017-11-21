@@ -18,6 +18,7 @@ module.exports = {
   create: function(req, res) {
     db.PlayerGameStats
       .create(req.body)
+
       .then( (err, result) => {
         if (err) {
           console.log(err);
@@ -34,6 +35,7 @@ module.exports = {
           dbModel => res.json(dbModel)
         }
       })
+
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Player Page</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Custom StyleSheet import-->
+    <link rel = "stylesheet" type = "text/css" href = "assets/styles/style.css" />
+    <!--Oswald font import-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+</head>
+<body>
+
+<!-- Nav component -->
+	<nav>
+    <div class="nav-wrapper white">
+        <a href="#!" class="brand-logo red-text text-accent-4"><img class="nav-logo" src="assets/images/logo.svg"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#modal1" class="red-text text-accent-4">LOGOUT</a></li>
+            <li><a href="#" class="red-text text-accent-4">ABOUT</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="#modal1" class="red-text text-accent-4">LOGOUT</a></li>
+            <li><a href="#" class="red-text text-accent-4">ABOUT</a></li>
+        </ul>
+    </div>
+	</nav>
+<!-- End nav component -->
+
+<!-- Start Player Card/Header Component -->
+	<div class="row">
+		<div class="col s6 push-s3">
+			<div class="card">
+
+				<div class="row">
+					<div class="col s4 push-s4">
+						<img style="border:solid; margin-top: 15px" class="circle" height="175" src="https://cdn-s3.si.com/s3fs-public/teams/basketball/nba/players/399612-300x300.png">
+					</div>
+				</div>
+
+				<div style="margin-bottom: 0px" class="row">
+					<div class="col s1 offset-s4">
+						<h5>#0</h5>
+					</div>
+					<div class="col s4">
+						<h5>Player Name</h5>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s2 offset-s5">
+						<h5>Position</h5>
+					</div>
+				</div>
+
+				<div class="row">
+					<div style="text-align: center;" class="skill-status-heading col s2 offset-s2">
+						<p>
+							Points
+						</p>
+						<div class="row">
+							<div id="points-color" class="skill-color col s12">
+						
+							</div>
+						</div>
+					</div>
+
+					<div class="col s1">
+					</div>
+
+					<div style="text-align: center;" class="skill-status-heading col s2">
+						<p>
+							Assists
+						</p>
+						<div class="row">
+							<div id="assists-color" class="skill-color col s12">
+						 
+							</div>
+						</div>
+					</div>
+
+					<div class="col s1">
+					</div>
+
+					<div style="text-align: center;" class="skill-status-heading col s2">
+						<p>
+							Rebounds
+						</p>
+						<div class="row">
+							<div id="rebounds-color" class="skill-color col s12">
+						
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div style="text-align: center;" class="skill-status-heading col s2 offset-s3">
+						<p>
+							Steals
+						</p>
+						<div class="row">
+							<div id="steals-color" class="skill-color col s12">
+						
+							</div>
+						</div>
+					</div>
+					
+					<div class="col s2">
+					</div>
+
+					<div style="text-align: center;" class="skill-status-heading col s2">
+						<p>
+							Turnovers
+						</p>
+						<div class="row">
+							<div id="turnovers-color" class="skill-color col s12">
+							
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col s4 offset-s4">
+					<a class="waves-effect waves-light btn">Edit Player</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+<!--End Player Component-->
+	
+	<br>
+
+	<blockquote>
+		<h4>Games</h4>
+	</blockquote>
+	<hr>
+
+<!-- Compressed Game Component -->
+	<ul class="collapsible" data-collapsible="accordion">
+	    <li>
+
+	      <div class="collapsible-header">
+	      	<ul class="collection">
+						<li class="collection-item avatar">
+				      <img src="assets/images/logo.svg" alt="" class="circle">
+				      	<span class="title">Opposing Team Name</span>
+				      	<p><br>
+				         	Final Score
+				      	</p>
+				    </li>
+					</ul>
+	      </div>
+
+	      <div class="collapsible-body">
+	      	<span>
+	      		
+					  <div class="row">
+							<div class="col s10 push-s1">
+
+							    <form class="col s12">
+
+										<blockquote>
+											<h4>Game Results</h4>
+										</blockquote>
+
+							    	<div class="row"> 
+							    		<div class="col s3 push-s2">
+							    			<h5 style="padding-top:20px">OPPOSING TEAM</h5>
+							    		</div>
+							    		<div class="col s3 push-s4">
+							    			<h5 style="padding-top:20px" class="right">FINAL SCORE</h5>
+							    		</div>
+							    	</div>
+
+							      <div class="row">
+							        <div class="input-field col s5 push-s1">
+							          <input id="opp_name" type="text" class="validate">
+							          <label for="opp_name">Opposing Team Name</label>
+							        </div>
+											
+							        <div class="input-field col s2 push-s2">
+							          <input id="your_fin_score" type="text" class="validate">
+							          <label for="your_fin_score">Your Score</label>
+											</div>
+											
+											<div class="input-field col s2 push-s2">
+							          <input id="opp_fin_score" type="text" class="validate">
+							          <label for="opp_fin_score">Their Score</label>
+							        </div>
+							      </div>
+										
+										<br>
+										<br>
+										
+										<div class="row">
+
+											<div class="input-field col s2 push-s1">
+												<input id="act_points" type="text" class="validate">
+												<label for="act_points">Points</label>
+											</div>
+											
+											<div class="col s2">
+											</div>
+
+											<div class="input-field col s2 push-s1">
+												<input id="act_assists" type="text" class="validate">
+												<label for="act_assists">Assists</label>
+											</div>
+
+											<div class="col s2">
+											</div>
+
+											<div class="input-field col s2 push-s1">
+												<input id="act_rebounds" type="text" class="validate">
+												<label for="act_rebounds">Rebounds</label>
+											</div>
+
+										</div>
+										
+										<div class="row">
+											<div class="col s12">
+
+												<div class="input-field col s2 offset-s3">
+													<input id="act_steals" type="text" class="validate">
+													<label for="act_steals">Steals</label>
+												</div>
+
+												<div class="input-field col s2 push-s2">
+													<input id="act_turnovers" type="text" class="validate">
+													<label for="act_turnovers">Turnovers</label>
+												</div>
+
+											</div>
+										</div>
+										
+										<hr>
+										<br>
+										<br>
+
+										<blockquote>
+											<h4>Expected Results</h4>
+										</blockquote>
+										<div class="row">
+
+											<div class="input-field col s2 push-s1">
+												<input id="act_points" type="text" class="validate">
+												<label for="act_points">Points</label>
+											</div>
+											
+											<div class="col s2">
+											</div>
+
+											<div class="input-field col s2 push-s1">
+												<input id="act_assists" type="text" class="validate">
+												<label for="act_assists">Assists</label>
+											</div>
+
+											<div class="col s2">
+											</div>
+
+											<div class="input-field col s2 push-s1">
+												<input id="act_rebounds" type="text" class="validate">
+												<label for="act_rebounds">Rebounds</label>
+											</div>
+
+											</div>
+
+											<div class="row">
+												<div class="col s12">
+
+													<div class="input-field col s2 offset-s3">
+														<input id="act_steals" type="text" class="validate">
+														<label for="act_steals">Steals</label>
+													</div>
+
+													<div class="input-field col s2 push-s2">
+														<input id="act_turnovers" type="text" class="validate">
+														<label for="act_turnovers">Turnovers</label>
+													</div>
+
+												</div>
+											</div>
+											
+											<div class="row">
+												<div class="col s8">
+													<div class="col s4">
+														<a class="waves-effect waves-light btn">Edit Player</a>
+													</div>
+
+													<div class="col s4">
+														<a class="waves-effect waves-light btn">Cancel</a>
+													</div>
+
+													<div class="col s4">
+														<a class="waves-effect waves-light btn">Save Changes</a>
+													</div>
+												</div>
+											</div>
+							    </form>
+
+							  
+					  	</div>
+					  </div>
+
+	      	</span>
+	      </div>
+
+	    </li>
+	</ul>
+	
+<!-- End Compressed Game Component -->
+
+	
+
+</div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
+<script type="text/javascript">
+	$(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+
+</script>
+</body>
+</html>

@@ -6,6 +6,7 @@ router.route("/")
   .get(teamsController.findAll)
   .post(teamsController.create);
 
+
 // Matches with "/api/team/:id"
 router
   .route("/:id")

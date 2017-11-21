@@ -7,8 +7,7 @@ router.route("/")
   .post(schoolsController.create);
 
 // Matches with "/api/school/:id"
-router
-  .route("/:id")
+router.route("/:id")
   .get(schoolsController.findById)
   .put(schoolsController.update)
   .delete(schoolsController.remove);
