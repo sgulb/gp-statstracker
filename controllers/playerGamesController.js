@@ -18,11 +18,7 @@ module.exports = {
   create: function(req, res) {
     db.PlayerGameStats
       .create(req.body)
-      .then( (err, result) => {
-        if (err) {
-          console.log(err);
-        } else {
-
+      .then( (result) => {
           res.json(result);
           
           db.Player.findOneAndUpdate(
