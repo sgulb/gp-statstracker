@@ -19,10 +19,10 @@ playerSchema.pre('save', function(next){
 	next();
 });
 
-playerSchema.pre('remove', function(next) {
-    Team.update({player: this._id}, { $pull: {player: this._id } }).exec();
-    next();
-});
+// playerSchema.pre('remove', function(next) {
+//     Team.update({player: this._id}, { $pull: {player: this._id } }).exec();
+//     next();
+// });           4 x                                                                                 
 
 const Player = mongoose.model("Player", playerSchema);
 
