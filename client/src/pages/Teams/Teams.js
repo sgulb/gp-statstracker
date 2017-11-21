@@ -1,8 +1,10 @@
 import React, {Component} from "react";
-import {addTeam, addTeamModal, TeamCard} from "../../components/TeamCard"
+import {AddTeam, AddTeamModal, TeamCard} from "../../components/TeamCard"
 import NavBar from "../../components/NavBar";
 import {Row, Col, Card} from 'react-materialize';
+import PageHeader from "../../components/PageHead";
 import API from "../../utils/API";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 
@@ -30,28 +32,19 @@ class Teams extends Component {
 		return(
 				<div>
 					<NavBar />
-					<Row>
-						<Col size="s12">
-							<div className="header-top">
-								<h2 className="center-align header-text">
-									MY TEAMS
-								</h2>
-							</div>
-						</Col>
-					</Row>
+					<PageHeader />
+					
 
 					<Row>	
-						<addTeam />
-						{this.state.teams.length ?(
+						<AddTeam />
+						{this.state.teams.length ? (
+							<div>
 								{this.state.teams.map(team => (
-									<Link to={`/players/${team.id}`}>
-										<TeamCard 
-										className=""
-										onClick={()=> "/players"}
-										>team.name</TeamCard>
+									<Link to={`/players/${team._id}`}>
+										<TeamCard>team.name</TeamCard>
 									</Link>
 								))};
-						)};
+						</div>) : (<div/>)}
 					</Row>
 				</div>
 			)
@@ -60,6 +53,3 @@ class Teams extends Component {
 
 
 export default Teams;
-
-
-

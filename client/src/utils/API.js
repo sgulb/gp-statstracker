@@ -14,10 +14,10 @@ export default {
     return axios.get("/api/team/")
   },
 
-  getOneTeam: function(){
+  getOneTeam: function(id){
     return axios.get("/api/team/" + id)
   },
-  deleteTeam: function(){
+  deleteTeam: function(id){
     return axios.delete("/api/team/" + id);
   },
 
@@ -30,25 +30,29 @@ export default {
     return axios.get("/api/player/")
   },
 
-  getOnePlayer: function(){
+  getOnePlayer: function(id){
     return axios.get("/api/player/" + id)
   },
 
-  deletePlayer: function(){
+  deletePlayer: function(id){
     return axios.delete("/api/player/" + id)
   },
 
-  editPlayer: function(playerData){
+  editPlayer: function(data){
+    let id = data.id;
+    let playerData = data;
     return axios.put("/api/player/" + id, playerData)
   },
 
 //routes for games
   
-  deletePlayerGame: function(){
+  deletePlayerGame: function(id){
     return axios.delete("/api/playerGames/" + id)
   },
 
-  editPlayerGame: function(playerGameData){
+  editPlayerGame: function(data){
+    let id = data.id;
+    let playerGameData = data;
     return axios.put("/api/playerGames/" + id, playerGameData)
   },
 
@@ -56,7 +60,7 @@ export default {
     return axios.get("/api/playerGames/")
   },
 
-  getOnePlayerGame: function(){
+  getOnePlayerGame: function(id){
     return axios.get("/api/playerGames/" + id)
   },
 
