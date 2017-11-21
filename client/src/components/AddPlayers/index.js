@@ -1,3 +1,3 @@
 export { default } from "./AddPlayerForm";
-export * from "./Input";
+export * from "./InputForm";
 export * from "./FormBtn";

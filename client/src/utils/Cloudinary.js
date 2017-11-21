@@ -2,8 +2,8 @@ import React from 'react';
 import request from 'superagent';
 import './App.css';
 
-const CLOUDINARY_UPLOAD_PRESET = 'bmzjbxoq';
-const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/Brooklee/upload';
+const CLOUDINARY_UPLOAD_PRESET = 'ww4awdmu';
+const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/brooklee/upload';
 
 export default class App extends React.Component {
     constructor(props) {

@@ -19,6 +19,12 @@ class Detail extends Component {
             .catch(err => console.log(err));
     }
 
+   editPlayer = id => {
+        API.editPlayer((this.props.match.params.id))
+            .then(res => this.loadPlayers())
+            .catch(err => console.log(err));
+    };
+
     render() {
         return (
             <div>
@@ -27,13 +33,14 @@ class Detail extends Component {
                     <div className="col s3">
                     </div>
                     <div className="col s6">
-                        <Card>
+                        <Card
+                            header={<CardTitle image={this.state.player.playerImage}></CardTitle>}>
                             <div>
                                 <h3 className="center red-text text-accent-4">
-                                    22 {this.state.player.jersey}
+                                     {this.state.player.jersey}
                                 </h3>
                                 <h3 className="center red-text text-accent-4">
-                                    Name {this.state.player.lName}  {this.state.player.fName}
+                                    {this.state.player.lName}  {this.state.player.fName}
                                 </h3>
                                 <Collapsible>
                                     <CollapsibleItem header='DETAILS' className="center red-text text-accent-4 oswald-caps">
@@ -92,7 +99,7 @@ class Detail extends Component {
                                                 <div className="input-field col m6 s12">
                                                     <div className="file-field input-field">
                                                         <div className="btn red accent-4">
-                                                            <span>File</span>
+                                                            <span>image</span>
                                                             <input name="playersImage" type="file" />
                                                         </div>
                                                         <div className="file-path-wrapper">

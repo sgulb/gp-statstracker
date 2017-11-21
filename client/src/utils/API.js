@@ -12,13 +12,11 @@ export default {
     return axios.get("/api/team/")
   },
 
-  getOneTeam: function(){
-      // + id
-    return axios.get("/api/team/")
+  getOneTeam: function(id){
+    return axios.get("/api/team/" + id)
   },
-  deleteTeam: function(){
-      // + id
-    return axios.delete("/api/team/");
+  deleteTeam: function(id){
+    return axios.delete("/api/team/" + id);
   },
 
 //routes for players
@@ -30,40 +28,34 @@ export default {
     return axios.get("/api/player/")
   },
 
-  getOnePlayer: function(){
-      // + id
-    return axios.get("/api/player/")
+  getOnePlayer: function(id){
+    return axios.get("/api/player/" + id)
   },
 
-  deletePlayer: function(){
-      // + id
-    return axios.delete("/api/player/")
+  deletePlayer: function(id){
+    return axios.delete("/api/player/" + id)
   },
 
-  editPlayer: function(playerData){
-      // + id ,
-    return axios.put("/api/player/", playerData)
+  editPlayer: function(id ,playerData){
+    return axios.put("/api/player/", + id, playerData)
   },
 
 //routes for games
   
-  deletePlayerGame: function(){
-      // + id
-    return axios.delete("/api/playerGames/")
+  deletePlayerGame: function(id){
+    return axios.delete("/api/playerGames/"+ id)
   },
 
-  editPlayerGame: function(playerGameData){
-      // + ,id
-    return axios.put("/api/playerGames/" , playerGameData)
+  editPlayerGame: function(id, playerGameData){
+    return axios.put("/api/playerGames/" + id , playerGameData)
   },
 
   getPlayerGames: function(){
     return axios.get("/api/playerGames/")
   },
 
-  getOnePlayerGame: function(){
-      // + id
-    return axios.get("/api/playerGames/")
+  getOnePlayerGame: function(id){
+    return axios.get("/api/playerGames/" + id)
   },
 
   addPlayerGame: function(playerGameData){
@@ -77,19 +69,3 @@ export default {
 
 };
 
-
-
-//routes I'll need
-/*
--get teams
--delete team
--get one team
-
--get one player
--get all players
--delete player
--edit player
-
--delete game(delete)
--edit game (put)
-*/

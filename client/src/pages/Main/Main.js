@@ -1,6 +1,8 @@
 import React from "react";
 import NavBar from "../../components/NavBar/navBar";
 import "../../css/style.css";
+import {Modal, Button} from "react-materialize"
+
 
 const Main = () =>
     <div>
