@@ -69,10 +69,12 @@ module.exports = {
         if (err) {
           console.log(err);
         } else {
+
+          res.json(result);
+
           db.School.findOneAndUpdate(
             { "_id": req.body._id }, { $push: { "team": result.id }}
           );
-          dbModel => res.json(dbModel)
         }
       })
       .catch(err => res.status(422).json(err));

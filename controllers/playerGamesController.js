@@ -23,6 +23,8 @@ module.exports = {
           console.log(err);
         } else {
 
+          res.json(result);
+          
           db.Player.findOneAndUpdate(
             { "_id": req.body._id }, { $push: { "playerGameStats": result.id }}
           );
@@ -30,8 +32,6 @@ module.exports = {
           db.PlayerGameStats.findOneAndUpdate(
             { "_id": req.body._id }, { $push: { "playerGameStats": result.id }}
           );
-          
-          dbModel => res.json(dbModel)
         }
       })
       .catch(err => res.status(422).json(err));
