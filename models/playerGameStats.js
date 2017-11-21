@@ -1,20 +1,28 @@
 const mongoose = require("mongoose");
-      Schema   = mongoose.Schema;
-
+      Schema   = mongoose.Schema,
+      db       = require("../models");
 const playerGameStatsSchema = new Schema({
-  points: { type: Number default: 0 },
-  rebounds: { type: Number default: 0 },
-  assists: { type: Number default: 0 },
-  blocks: { type: Number default: 0 },
-  steals: { type: Number default: 0 },
-  turnovers: { type: Number default: 0 },
-  fieldGoalsMade: { type: Number default: 0},
-  fieldGoalsAttempted: { type: Number default: 0}
-  threePointersMade: { type: Number default: 0 },
-  threePointersAttempted: { type: Number default: 0 },
-  freeThrowsMade: { type: Number default: 0 },
-  freeThrowsAttempted: { type: Number default: 0 },
-  minutesPlayed: { type: Number default: 0 }
+  points: { type: Number },
+  rebounds: { type: Number },
+  assists: { type: Number },
+  blocks: { type: Number },
+  steals: { type: Number },
+  turnovers: { type: Number },
+  fieldGoalsMade: { type: Number },
+  fieldGoalsAttempted: { type: Number },
+  threePointersMade: { type: Number },
+  threePointersAttempted: { type: Number },
+  freeThrowsMade: { type: Number },
+  freeThrowsAttempted: { type: Number },
+  minutesPlayed: { type: Number },
+  teamGameStats: { type: Schema.Types.ObjectId, ref: "TeamGameStats"}
+});
+
+playerGameStatsSchema.pre('remove', function(next) {
+    Player.update({playerGameStats: this._id}, { $pull: {playerGameStats: this._id } }).exec();
+    TeamGameStats.update({playerGameStats: this._id}, { $pull: {playerGameStats: this._id } }).exec();
+    next();
+>>>>>>> af57913243d987767ac893f91580a5797fd13d6a
 });
 
 const PlayerGameStats = mongoose.model("PlayerGameStats", playerGameStatsSchema);
