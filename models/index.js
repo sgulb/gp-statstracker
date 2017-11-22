@@ -3,5 +3,6 @@ module.exports = {
 	Team: require('./team'),
 	Player: require('./player'),
 	TeamGameStats: require('./teamGameStats'),
-	PlayerGameStats: require('./playerGameStats')
+	PlayerGameStats: require('./playerGameStats'),
+	Users: require('./users')
 }
