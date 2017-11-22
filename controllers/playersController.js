@@ -33,15 +33,11 @@ module.exports = {
   create: function(req, res) {
     db.Player
       .create(req.body)
-      .then( (err, result) => {
-        if (err) {
-          console.log(err);
-        } else {
-          res.json(result);
+      .then( (dbModel) => {
+          res.json(dbModel);
           db.Team.findOneAndUpdate(
             { "_id": req.body._id }, { $push: { "player": result.id }}
           );
-        }
       })
       .catch(err => res.status(422).json(err));
   },
