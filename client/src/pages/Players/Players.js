@@ -7,8 +7,6 @@ import request from 'superagent';
 import NavBar from "../../components/NavBar/navBar";
 import {PlayersInfo} from "../../components/PlayerCard/PlayersInfo";
 import {InputForm, FormBtn} from "../../components/AddPlayers";
-import AddPlayers from "../../components/AddPlayers";
-import PlayerCard from "../../components/PlayerCard";
 import {PlayersList} from "../../components/PlayerCard/PlayersList";
 import DeleteBtn from "../../components/DeleteBtn/DeleteBtn"
 
@@ -69,7 +67,6 @@ class Players extends Component {
         }
     };
 
-    // Map over this.state.players and render a PlayerCard component for each player object
     render() {
         return (
 <div>
@@ -86,7 +83,7 @@ class Players extends Component {
                             <PlayersInfo key={player._id}>
                                 <a href={"/players/" + player._id}>
                                     <Card className="card player-card small'"
-                                          header={<CardTitle image={player.playerImage}></CardTitle>}>
+                                          header={<CardTitle ></CardTitle>}>
                                         <div className="card-content">
                                             <h4>
                                                 {player.lName +" "}
@@ -121,13 +118,14 @@ class Players extends Component {
                             <InputForm name="fName" id="fName" type="text" className="validate"
                                    value={this.state.fName}
                                    onChange={this.handleInputChange}/>
-                            <label for="fName">First Name </label>
+                            <label className="active" for="fName">First Name </label>
                         </div>
+
                         <div className="input-field col s6">
                             <InputForm name="lName" id="type" type="text" className="validate"
                                        value={this.state.lName}
                                        onChange={this.handleInputChange}/>
-                            <label for="type"> Last Name </label>
+                            <label className="active" for="type"> Last Name </label>
                         </div>
 
                     </div>
@@ -141,24 +139,38 @@ class Players extends Component {
                                        className="validate"
                                        placeholder=" "
                             />
-                            <label for="type">Jersey</label>
+                            <label className="active" for="type">Jersey</label>
                         </div>
 
                         <div className="input-field col s6">
-                            <div className="file-field input-field">
-                                <div className="btn red accent-4">
-                                    <span>Image</span>
-                                    <InputForm name="playersImage" type="file" />
-                                </div>
-                                <div className="file-path-wrapper">
-                                    <InputForm className="file-path validate" type="text" />
-                                </div>
-                            </div>
+                            <InputForm name="Position"
+                                       value={this.state.position}
+                                       onChange={this.handleInputChange}
+                                       id="type"
+                                       className="validate"
+                                       placeholder=" "
+                            />
+                            <label className="active" for="type">Position</label>
                         </div>
+
+
+                        {/*<div className="input-field col s6">*/}
+                            {/*<div className="file-field input-field">*/}
+                                {/*<div className="btn red accent-4">*/}
+                                    {/*<span>Image</span>*/}
+                                    {/*<InputForm name="playersImage" type="file" />*/}
+                                {/*</div>*/}
+                                {/*<div className="file-path-wrapper">*/}
+                                    {/*<InputForm className="file-path validate" type="text" />*/}
+                                {/*</div>*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
+
+                    </div>
                         <FormBtn disabled={!(this.state.fName && this.state.lName)}
                                  onClick={this.handleFormSubmit}
                         >Submit Player</FormBtn>
-                    </div>
+
 
                 </div>
             </div>

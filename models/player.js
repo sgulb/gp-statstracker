@@ -14,10 +14,10 @@ const playerSchema = new Schema({
   playerGameStats: { type: Schema.Types.ObjectId, ref: "PlayerGameStats"}
 });
 
-playerSchema.pre('save', function(next){
-	this.fullName = this.fName + " " + this.lName;
-	next();
-});
+// playerSchema.pre('save', function(next){
+// 	this.fullName = this.fName + " " + this.lName;
+// 	next();
+// });
 
 // playerSchema.pre('remove', function(next) {
 //     Team.update({player: this._id}, { $pull: {player: this._id } }).exec();
