@@ -1,7 +1,7 @@
 import React from "react";
-import {Modal} from "react-materialize";
+import {Modal, Input} from "react-materialize";
 
-const AddTeamModal = props =>(
+export const AddTeamModal = props =>(
 		<div id="add_team_modal" className="modal">
 
       <div className="modal-header">
@@ -10,6 +10,13 @@ const AddTeamModal = props =>(
 
       <div className="modal-content">
 
+        <Input 
+          value={this.state.teamName}
+          onChange={this.handleInputChange}
+          name="teamName"
+          placeholder="Team Name"/>
+
+       
         <div className="input-field">
           <input id="team-name" type="text" className="validate"></input>
           <label for="team-name">Team Name</label>
@@ -18,11 +25,10 @@ const AddTeamModal = props =>(
       </div>
 
       <div className="modal-footer">
-        <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Add Team</a>
-        <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+        <a onClick={() => this.handleFormSubmit} id="add-team-button" href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Add Team</a>
+        <a id="cancel-team-button" href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
       </div>
     
   </div>
-	) 
+) 
 
-export default AddTeamModal;

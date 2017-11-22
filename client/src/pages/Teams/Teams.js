@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {AddTeam, AddTeamModal, TeamCard} from "../../components/TeamCard"
 import NavBar from "../../components/NavBar";
-import {Row, Col, Card} from 'react-materialize';
+import {Row, Col, Card, Input} from 'react-materialize';
 import PageHeader from "../../components/PageHead";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
@@ -26,6 +26,29 @@ class Teams extends Component {
 			)
 	};
 
+	deleteTeam = id => {
+		API.deleteTeam(id)
+			.then(res => this.loadTeams())
+			.catch(err => console.log(err));
+	};
+
+	handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
+
+  handleFormSubmit = event => {
+    event.preventDefault();
+    if (this.state.teamName) {
+      API.addTeam({
+        teamName: this.state.teamName,
+      })
+        .then(res => this.loadTeams())
+        .catch(err => console.log(err));
+    }
+  };
 
 
 	render(){
@@ -46,6 +69,31 @@ class Teams extends Component {
 								))};
 						</div>) : (<div/>)}
 					</Row>
+					<div id="add_team_modal" className="modal">
+
+      <div className="modal-header">
+        <h4>Add New Team</h4>
+      </div>
+
+      <div className="modal-content">
+
+        <Input 
+          value={this.state.teamName}
+          onChange={this.handleInputChange}
+          name="teamName"
+          label="Team Name"/>
+
+       
+        
+            
+      </div>
+
+      <div className="modal-footer">
+        <a onClick={this.handleFormSubmit} id="add-team-button" href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Add Team</a>
+        <a id="cancel-team-button" href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+      </div>
+    
+  </div>
 				</div>
 			)
 	}

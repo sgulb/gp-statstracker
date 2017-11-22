@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 import {Row, Icon} from "react-materialize";
-import AddTeamModal from "./addTeamModal";
+
 
 
 export const AddTeam = props =>(
-      <Row>
       
+      <div>
         <div className="col s4">
           <div data-target="add_team_modal" id="addTeamCard" className="card modal-trigger">
             <div className="card-content">
@@ -25,12 +25,7 @@ export const AddTeam = props =>(
           </div>
         </div>
 
-        <AddTeamModal />
-
-      </Row>
-
-
-
+      </div>
+      
 
 	)
-export default AddTeam;
