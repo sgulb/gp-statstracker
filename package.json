@@ -18,7 +18,7 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.17.1",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
     "connect-flash": "^0.1.1",
@@ -26,7 +26,6 @@
     "express": "^4.16.2",
     "express-session": "^1.15.6",
     "i": "^0.3.6",
-    "material-design-icons": "^3.0.1",
     "method-override": "^2.3.10",
     "mongoose": "^4.13.2",
     "morgan": "^1.9.0",
@@ -37,9 +36,8 @@
     "passport-local": "^1.0.0",
     "passport-twitter": "^1.0.4",
     "path": "^0.12.7",
-    "react-dom": "^16.1.1",
-    "react-material-select": "^1.3.0",
     "react-materialize": "^1.1.0",
-    "react-router-dom": "^4.1.2"
+    "react-router-dom": "^4.1.2",
+    "superagent": "^3.8.1"
   }
 }

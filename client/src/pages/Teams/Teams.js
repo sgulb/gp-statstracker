@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {AddTeam, AddTeamModal, TeamCard} from "../../components/TeamCard"
 import NavBar from "../../components/NavBar";
-import {Row, Col, Card, Input} from 'react-materialize';
+import {Row, Col, Card, Input, Button} from 'react-materialize';
 import PageHeader from "../../components/PageHead";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
@@ -64,36 +64,38 @@ class Teams extends Component {
 							<div>
 								{this.state.teams.map(team => (
 									<Link to={`/players/${team._id}`}>
-										<TeamCard>team.name</TeamCard>
+										<TeamCard>{team.teamName}
+											<Row>
+												<Button>Delete</Button>
+											</Row>
+										</TeamCard>
 									</Link>
-								))};
+								))}
 						</div>) : (<div/>)}
 					</Row>
+
+
 					<div id="add_team_modal" className="modal">
 
-      <div className="modal-header">
-        <h4>Add New Team</h4>
-      </div>
+				      <div className="modal-header">
+				        <h4>Add New Team</h4>
+				      </div>
 
-      <div className="modal-content">
+				      <div className="modal-content">
+				        <Input 
+				          value={this.state.teamName}
+				          onChange={this.handleInputChange}
+				          name="teamName"
+				          label="Team Name"/>
+				      </div>
 
-        <Input 
-          value={this.state.teamName}
-          onChange={this.handleInputChange}
-          name="teamName"
-          label="Team Name"/>
+				      <div className="modal-footer">
+				        <a onClick={this.handleFormSubmit} id="add-team-button" href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Add Team</a>
+				        <a id="cancel-team-button" href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+				      </div>
+			    
+			 		 </div>
 
-       
-        
-            
-      </div>
-
-      <div className="modal-footer">
-        <a onClick={this.handleFormSubmit} id="add-team-button" href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Add Team</a>
-        <a id="cancel-team-button" href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
-      </div>
-    
-  </div>
 				</div>
 			)
 	}

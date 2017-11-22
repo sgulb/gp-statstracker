@@ -7,14 +7,7 @@ export const TeamCard = props =>(
 		<div className="col s4">
       <div className="card">
         <div className="card-content center-align">
-          <h2>Team</h2>
-         	<div className="row">
-         		<div className="center-align">
-	    				<Button>
-	    					Delete
-	    				</Button>
-    				</div>
-    			</div>
+          <h2>{props.children}</h2>
 				</div>
       </div>
     </div>
