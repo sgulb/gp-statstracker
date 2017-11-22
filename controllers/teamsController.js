@@ -72,8 +72,7 @@ module.exports = {
           db.School.findOneAndUpdate(
             { "_id": req.body._id }, { $push: { "team": result.id }}
           );
-        }
-      })
+        })
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
