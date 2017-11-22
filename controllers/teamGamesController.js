@@ -28,8 +28,7 @@ module.exports = {
           db.PlayerGameStats.findOneAndUpdate(
             { "_id": req.body._id }, { $push: { "teamGameStats": result.id }}
           );
-        }
-      })
+        })
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
