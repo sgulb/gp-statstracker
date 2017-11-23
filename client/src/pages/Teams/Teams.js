@@ -63,13 +63,13 @@ class Teams extends Component {
 						{this.state.teams.length ? (
 							<div>
 								{this.state.teams.map(team => (
-									<Link to={`/players/${team._id}`}>
-										<TeamCard>{team.teamName}
+									
+										<TeamCard><Link to={`/players/${team._id}`}>{team.teamName}</Link>
 											<Row>
-												<Button>Delete</Button>
+												<Button onClick={() => this.deleteTeam(team._id)}>Delete</Button>
 											</Row>
 										</TeamCard>
-									</Link>
+									
 								))}
 						</div>) : (<div/>)}
 					</Row>

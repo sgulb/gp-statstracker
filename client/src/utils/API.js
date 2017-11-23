@@ -22,6 +22,11 @@ export default {
   },
 
 //routes for players
+
+  getTeamPlayers: function(team){
+    return axios.get("/api/team/playerPop/" + team)
+  },
+
   addPlayer: function(playerData){
     return axios.post("/api/player/", playerData)
   },

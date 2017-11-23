@@ -47,9 +47,9 @@ const NewGameForm = props =>(
 			      <div className="row">
 						  <div className="input-field col s4 push-s4">
 								<Input multiple s={12} type='select' label="Materialize Select" defaultValue=''>
-									<option value="" disabled selected>Select all particpating players</option>
-									<option value='2'>Option 2</option>
-									<option value='3'>Option 3</option>
+									{/* <option value="" disabled selected>Select all particpating players</option>*/}
+									{/* <option value='2'>Option 2</option>*/}
+									{this.state.play}
 								</Input>	  	
 						  </div>
 			      </div>
