@@ -40,6 +40,7 @@
     "passport-local-mongoose": "^4.4.0",
     "passport-twitter": "^1.0.4",
     "path": "^0.12.7",
+    "react-materialize": "^1.1.0",
     "react-router-dom": "^4.1.2",
     "superagent": "^3.8.1",
     "validator": "^9.1.1"
