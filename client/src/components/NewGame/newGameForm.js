@@ -1,4 +1,5 @@
 import React from "react";
+import {Row, Input, Button} from "react-materialize";
 import "./newGameForm.css";
 
 const NewGameForm = props =>(
@@ -45,16 +46,26 @@ const NewGameForm = props =>(
 						</div>
 			      <div className="row">
 						  <div className="input-field col s4 push-s4">
-						    <select multiple>
-						      <option value="" disabled selected>Select all particpating players</option>
-						      <option value="1">{...props}</option>
-						    </select>
+								<Input multiple s={12} type='select' label="Materialize Select" defaultValue=''>
+									{/* <option value="" disabled selected>Select all particpating players</option>*/}
+									{/* <option value='2'>Option 2</option>*/}
+									{this.state.play}
+								</Input>	  	
 						  </div>
 			      </div>
 
 			    </form>
 			  </div>
-
+			  <Row>
+			  	<div class="col s12 offset-s8">
+			  		<Button>
+			  			Add Game
+			  		</Button>
+			  		<Button>
+			  			Cancel
+			  		</Button>
+			  	</div>
+			  </Row>
 	  	</div>
 	  </div>
 	)
