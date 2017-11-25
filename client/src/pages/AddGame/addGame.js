@@ -13,10 +13,12 @@ class NewGame extends Component {
 		fullName: ""
 	}
 
+
 // getPlayers = (event) => {
 // 	event.preventDefault();
 // 	API.
 // }
+
 
 	render(){
 		return(
@@ -94,5 +96,6 @@ class NewGame extends Component {
 		)
 	}
 }
+
 
 export default NewGame;

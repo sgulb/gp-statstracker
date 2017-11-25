@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stat Track</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--Custom StyleSheet import-->
+    <link rel = "stylesheet" type = "text/css" href = "assets/styles/style.css" />
+    <!--Oswald font import-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+
+</head>
+<body>
+<!--Navigation-->
+<nav>
+    <div class="nav-wrapper white">
+        <a href="#!" class="brand-logo red-text text-accent-4"><img class="nav-logo" src="assets/images/logo.svg"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#modal1" class="red-text text-accent-4">LOGOUT</a></li>
+            <li><a href="#" class="red-text text-accent-4">ABOUT</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="#modal1" class="red-text text-accent-4">LOGOUT</a></li>
+            <li><a href="#" class="red-text text-accent-4">ABOUT</a></li>
+        </ul>
+    </div>
+</nav>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <div id="root">
+
+    </div>
+
+
+
+<script>
+    $(document).ready(function(){
+        $('.modal').modal();
+        $('.slider').slider();
+        $('.carousel.carousel-slider').carousel({fullWidth: true});
+        $(".button-collapse").sideNav();
+
+    });
+</script>
+</body>
+</html>

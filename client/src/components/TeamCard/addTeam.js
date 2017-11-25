@@ -27,5 +27,4 @@ export const AddTeam = props =>(
 
       </div>
       
-
-  )
+	)

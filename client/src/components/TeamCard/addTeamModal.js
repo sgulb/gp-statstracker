@@ -2,7 +2,7 @@ import React from "react";
 import {Modal, Input} from "react-materialize";
 
 export const AddTeamModal = props =>(
-    <div id="add_team_modal" className="modal">
+		<div id="add_team_modal" className="modal">
 
       <div className="modal-header">
         <h4>Add New Team</h4>

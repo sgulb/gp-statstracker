@@ -1,6 +1,7 @@
 import React from "react";
 
 const NavBar = props =>(
+
     <div>
         <nav>
             <div className="nav-wrapper white">
@@ -19,7 +20,6 @@ const NavBar = props =>(
 
     </div>
 
-	)
-
+)
 
 export default NavBar;

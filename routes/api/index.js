@@ -6,6 +6,7 @@ const router = require("express").Router(),
       schoolRoutes = require("./schools.js"),
       loginRoutes = require("./logIn.js");
 
+
 // Article Routes
 router.use("/player", playerRoutes);
 router.use("/playerGames", playerGameRoutes);

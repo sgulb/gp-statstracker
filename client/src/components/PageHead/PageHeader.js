@@ -5,7 +5,7 @@ const PageHeader = props=> (
 						<div className="col s12">
 							<div className="header-top">
 								<h2 className="center-align header-text">
-									{props.children}
+									My Teams
 								</h2>
 							</div>
 						</div>
