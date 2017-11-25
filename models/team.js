@@ -11,12 +11,6 @@ const teamSchema = new Schema({
   //teamGameStats: { type: Schema.Types.ObjectId, ref: "TeamGameStats"}
 });
 
-/*teamSchema.pre('remove', function(next) {
-    School.update({team: this._id}, { $pull: {team: this._id } }).exec();
-    next();
-});*/
-
-
 const Team = mongoose.model("Team", teamSchema);
 
 module.exports = Team;

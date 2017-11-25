@@ -14,12 +14,6 @@ const teamGameStatsSchema = new Schema({
   playerGameStats: { type: Schema.Types.ObjectId, ref: "PlayerGameStats"}
 });
 
-teamGameStatsSchema.pre('remove', function(next) {
-    PlayerGameStats.update({teamGameStats: this._id}, { $pull: {teamGameStats: this._id } }).exec();
-    Team.update({teamGameStats: this._id}, { $pull: {teamGameStats: this._id } }).exec();
-    next();
-});
-
 const TeamGameStats = mongoose.model("TeamGameStats", teamGameStatsSchema);
 
 module.exports = TeamGameStats;
