@@ -1,14 +1,7 @@
  const router = require("express").Router();
- const signIn = require("../../controllers/logInController");
-//Im not sure if these are needed???
- // router.route("/")
- //   .post(user.create);
+ const logInController = require("../../controllers/logInController");
+ const authController = require("../../controllers/authController");
 
- // router.route("/:id")
- //   .get(user.findById)
-
- router.route('/login')
- 	.get(userController.loginForm);
  router.route('/login')
  	.post(authController.login)
 
