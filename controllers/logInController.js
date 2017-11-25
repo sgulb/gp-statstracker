@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const promisify = require('es6-promisify');
-const User = require("../models/user");
+const User = mongoose.model("user");
 
 
 exports.validateRegister = (req, res, next) => {

@@ -3,6 +3,7 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "@types/body-parser@*":
   version "1.16.8"
   resolved "https://registry.yarnpkg.com/@types/body-parser/-/body-parser-1.16.8.tgz#687ec34140624a3bec2b1a8ea9268478ae8f3be3"
@@ -41,6 +42,8 @@
 
 =======
 >>>>>>> myaPages
+=======
+>>>>>>> parent of 8788498c... Working backend with out errors
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -531,6 +534,7 @@ es6-promise@^3.3.1:
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-3.3.1.tgz#a08cdde84ccdbf34d027a1451bc91d4bcd28a613"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 es6-promise@^4.0.3:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.1.1.tgz#8811e90915d9a0dba36274f0b242dbda78f9c92a"
@@ -543,6 +547,8 @@ es6-promisify@^5.0.0:
 
 =======
 >>>>>>> myaPages
+=======
+>>>>>>> parent of 8788498c... Working backend with out errors
 escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
@@ -606,6 +612,7 @@ express-session@^1.15.6:
     utils-merge "1.0.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 express-validator@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/express-validator/-/express-validator-4.3.0.tgz#60218a5778c59d5e778b89ae4e00b76f8510ef78"
@@ -616,6 +623,8 @@ express-validator@^4.3.0:
 
 =======
 >>>>>>> myaPages
+=======
+>>>>>>> parent of 8788498c... Working backend with out errors
 express@^4.16.2:
   version "4.16.2"
   resolved "https://registry.yarnpkg.com/express/-/express-4.16.2.tgz#e35c6dfe2d64b7dca0a5cd4f21781be3299e076c"
@@ -797,12 +806,15 @@ gauge@~2.7.3:
     wide-align "^1.1.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 generaterr@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/generaterr/-/generaterr-1.5.0.tgz#b0ceb6cc5164df2a061338cc340a8615395c52fc"
 
 =======
 >>>>>>> myaPages
+=======
+>>>>>>> parent of 8788498c... Working backend with out errors
 get-stream@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-3.0.0.tgz#8e943d1358dc37555054ecbe2edb05aa174ede14"
@@ -1247,10 +1259,14 @@ lodash.restparam@^3.0.0:
   resolved "https://registry.yarnpkg.com/lodash.restparam/-/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 lodash@^4.14.0, lodash@^4.16.0, lodash@^4.5.1:
 =======
 lodash@^4.14.0, lodash@^4.5.1:
 >>>>>>> myaPages
+=======
+lodash@^4.14.0, lodash@^4.5.1:
+>>>>>>> parent of 8788498c... Working backend with out errors
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -1370,12 +1386,15 @@ mongodb@2.2.33:
     readable-stream "2.2.7"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 mongoose-mongodb-errors@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/mongoose-mongodb-errors/-/mongoose-mongodb-errors-0.0.2.tgz#7feacb8c901b5f899c616652337b2f499717291c"
 
 =======
 >>>>>>> myaPages
+=======
+>>>>>>> parent of 8788498c... Working backend with out errors
 mongoose@^4.13.2:
   version "4.13.2"
   resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-4.13.2.tgz#9639241ce9cd1dfedcd164aef941c09c9eb12b1a"
@@ -1619,6 +1638,7 @@ passport-google-oauth@^1.0.0:
     passport-google-oauth20 "1.x.x"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 passport-local-mongoose@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/passport-local-mongoose/-/passport-local-mongoose-4.4.0.tgz#2a19c885d1ea5e01c56905fb8eaa7a79e015f8fe"
@@ -1631,6 +1651,8 @@ passport-local-mongoose@^4.4.0:
 
 =======
 >>>>>>> myaPages
+=======
+>>>>>>> parent of 8788498c... Working backend with out errors
 passport-local@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/passport-local/-/passport-local-1.0.0.tgz#1fe63268c92e75606626437e3b906662c15ba6ee"
@@ -1959,12 +1981,15 @@ safe-buffer@5.1.1, safe-buffer@^5.0.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 scmp@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/scmp/-/scmp-2.0.0.tgz#247110ef22ccf897b13a3f0abddb52782393cd6a"
 
 =======
 >>>>>>> myaPages
+=======
+>>>>>>> parent of 8788498c... Working backend with out errors
 semver-diff@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/semver-diff/-/semver-diff-2.1.0.tgz#4bbb8437c8d37e4b0cf1a68fd726ec6d645d6d36"
@@ -1972,10 +1997,14 @@ semver-diff@^2.0.0:
     semver "^5.0.3"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 semver@^5.0.3, semver@^5.1.0, semver@^5.3.0, semver@^5.4.1:
 =======
 semver@^5.0.3, semver@^5.1.0, semver@^5.3.0:
 >>>>>>> myaPages
+=======
+semver@^5.0.3, semver@^5.1.0, semver@^5.3.0:
+>>>>>>> parent of 8788498c... Working backend with out errors
   version "5.4.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.4.1.tgz#e059c09d8571f0540823733433505d3a2f00b18e"
 
@@ -2317,6 +2346,7 @@ uuid@^3.0.0:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.1.0.tgz#3dd3d3e790abc24d7b0d3a034ffababe28ebbc04"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 validator@^9.1.1:
   version "9.1.1"
   resolved "https://registry.yarnpkg.com/validator/-/validator-9.1.1.tgz#3bdd1065cbd28f9d96ac806dee01030d32fd97ef"
@@ -2327,6 +2357,8 @@ validator@~8.2.0:
 
 =======
 >>>>>>> myaPages
+=======
+>>>>>>> parent of 8788498c... Working backend with out errors
 value-equal@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/value-equal/-/value-equal-0.4.0.tgz#c5bdd2f54ee093c04839d71ce2e4758a6890abc7"

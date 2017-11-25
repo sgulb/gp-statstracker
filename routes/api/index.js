@@ -4,7 +4,7 @@ const router = require("express").Router(),
       teamRoutes = require("./teams.js"),
       teamGameRoutes = require("./teamGames.js"),
       schoolRoutes = require("./schools.js"),
-      loginRoutes = require("./logIn.js");
+      loginRoutes = require("./login.js");
 
 
 // Article Routes
@@ -13,6 +13,6 @@ router.use("/playerGames", playerGameRoutes);
 router.use("/team", teamRoutes);
 router.use("/teamGames", teamGameRoutes);
 router.use("/school", schoolRoutes);
-router.use("/logIn", loginRoutes)
+router.use("/login", loginRoutes)
 
 module.exports = router;
