@@ -13,4 +13,9 @@ router
   .put(playerController.update)
   .delete(playerController.remove);
 
+//Find by id and Populate teams "/api/playerGames/schoolPop/:id"
+router
+  .route("/playerPop/:id")
+  .get(playerController.findByIdPop)
+
 module.exports = router;
