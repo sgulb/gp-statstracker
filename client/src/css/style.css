@@ -91,6 +91,7 @@ h1, h2, h3, h4, h5 {
     mix-blend-mode: multiply;
     transition: .1s;
 }
+
 /*End Player Card--------------------------*/
 
 /*Form------------------------------*/
@@ -154,3 +155,4 @@ li .indicator-item .active {
     display: flex;
     flex-direction: row;
 }
+

@@ -6,18 +6,21 @@ const playerSchema = new Schema({
   fName: { type: String, required: "Please provide the players First name", trim: true  },
   lName: { type: String, required: "Please provide the players Last name", trim: true  },
     jersey: {type: String, required: "Please provide the players postion", trim: true},
-  fullName: String,
+  // fullName: String,
   // position: { type: String, required: "Please provide the players postion", trim: true  },
-  height: { type: String, default: `Unknown`, trim: true },
-  weight: { type: String, default: `Unknown`, trim: true },
-  timestamp: { type: Date, default: Date.now },
+  // points: { type: String, default: `Unknown`, trim: true },
+  //   assists: { type: String, default: `Unknown`, trim: true },
+  //   rebounds: { type: String, default: `Unknown`, trim: true },
+  //   steals: { type: String, default: `Unknown`, trim: true },
+  //   turnovers: { type: String, default: `Unknown`, trim: true },
+  // timestamp: { type: Date, default: Date.now },
   playerGameStats: { type: Schema.Types.ObjectId, ref: "PlayerGameStats"}
 });
 
 playerSchema.pre('save', function(next){
 	this.fullName = this.fName + " " + this.lName;
 	next();
-});                                                                       
+});
 
 const Player = mongoose.model("Player", playerSchema);
 

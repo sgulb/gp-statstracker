@@ -75,13 +75,11 @@ class Players extends Component {
 
                     <Row>
                     {this.state.players.length ? (
-                            <Col s={3}>
                                 <div className="card-content">
-
-                                    <PlayersList className='left'>
+                                    <PlayersList>
                                         {this.state.players.map(player => (
                                             <PlayersInfo key={player._id}>
-
+                                                <Col s={4}>
                                                 <Card
                                                     header={<CardTitle ></CardTitle>} actions={[ <DeleteBtn onClick={() => this.deletePlayer(player._id)} />]}>
                                                     <a className="player-card" href={"/players/" + player._id}>
@@ -100,14 +98,13 @@ class Players extends Component {
                                                     </a>
                                                 </Card>
 
-
+                                            </Col>
 
                                             </PlayersInfo>
                                         ))}
                                     </PlayersList>
-
                                 </div>
-                            </Col>
+
 
                     ) : (
 
@@ -119,7 +116,7 @@ class Players extends Component {
 
                 <hr/>
 
-                <div className="container">
+                <div className="container oswald-caps">
 
                     <div className="row">
                         <div className="input-field col s6">
@@ -143,9 +140,9 @@ class Players extends Component {
                             <InputForm name="jersey"
                                        value={this.state.jersey}
                                        onChange={this.handleInputChange}
-                                       id="type"
+                                       id="jersey"
+                                       type="text"
                                        className="validate"
-                                       placeholder=" "
                             />
                             <label className="active" for="type">Jersey</label>
                         </div>
