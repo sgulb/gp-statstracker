@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import "../../css/style.css";
-import {Card, CardTitle, Col, Row, Input} from 'react-materialize';
+import {Card, CardTitle, Col, Row, Input, CardPanel} from 'react-materialize';
 // import request from 'superagent';
 
 import NavBar from "../../components/NavBar/navBar";
@@ -18,24 +18,24 @@ const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/brooklee/upload';
 
 class Players extends Component {
 
-     state = {
-         players: [],
-         lName: "",
-         fName: "",
-         jersey: ""
-     };
+    state = {
+        players: [],
+        lName: "",
+        fName: "",
+        jersey: ""
+    };
 
-     componentDidMount() {
-         this.loadPlayers();
-     }
+    componentDidMount() {
+        this.loadPlayers();
+    }
 
-     loadPlayers = () => {
-         API.getPlayers()
-             .then(res =>
-                 this.setState({ players: res.data, lName: "", fName: "", jersey: "" })
-             )
-             .catch(err => console.log(err));
-     };
+    loadPlayers = () => {
+        API.getPlayers()
+            .then(res =>
+                this.setState({ players: res.data, lName: "", fName: "", jersey: "" })
+            )
+            .catch(err => console.log(err));
+    };
 
     // Deletes a player from the database with a given id, then reloads players from the db
     deletePlayer = id => {
@@ -69,55 +69,63 @@ class Players extends Component {
 
     render() {
         return (
-<div>
-    <NavBar/>
+            <div>
+                <div className="basketball-BG">
+                    <NavBar/>
+
+                    <Row>
+                    {this.state.players.length ? (
+                            <Col s={3}>
+                                <div className="card-content">
+
+                                    <PlayersList className='left'>
+                                        {this.state.players.map(player => (
+                                            <PlayersInfo key={player._id}>
+
+                                                <Card
+                                                    header={<CardTitle ></CardTitle>} actions={[ <DeleteBtn onClick={() => this.deletePlayer(player._id)} />]}>
+                                                    <a className="player-card" href={"/players/" + player._id}>
+                                                        <div className="center-align">
+                                                            <h4>
+                                                                {player.lName +" "}
+                                                                {player.fName}
+                                                            </h4>
+                                                            <h5>
+                                                                {player.jersey}
+                                                            </h5>
+                                                            <h5>
+                                                                {player.position}
+                                                            </h5>
+                                                        </div>
+                                                    </a>
+                                                </Card>
 
 
-        {this.state.players.length ? (
-            <Row>
-        <Col s={3}>
-            <div className="card-content">
 
-                    <PlayersList>
-                        {this.state.players.map(player => (
-                            <PlayersInfo key={player._id}>
-                                <a href={"/players/" + player._id}>
-                                    <Card className="card player-card small'"
-                                          header={<CardTitle ></CardTitle>}>
-                                        <div className="card-content">
-                                            <h4>
-                                                {player.lName +" "}
-                                                {player.fName}
-                                            </h4>
-                                            <p>
-                                                {player.jersey}
-                                            </p>
-                                            <p>
-                                                {player.position}
-                                            </p>
-                                        </div>
-                                    </Card>
-                                </a>
-                                <DeleteBtn onClick={() => this.deletePlayer(player._id)} />
-                            </PlayersInfo>
-                        ))}
-                    </PlayersList>
+                                            </PlayersInfo>
+                                        ))}
+                                    </PlayersList>
 
-            </div>
-        </Col>
-            </Row>
-        ) : (
-            <h3 className="center">You Dont Have any Players yet Add them to the roster</h3>
-        )}
+                                </div>
+                            </Col>
 
+                    ) : (
+
+                        <h3 className="center">You Dont Have any Players yet Add them to the roster</h3>
+                    )}
+                    </Row>
+                </div>
+
+
+                <hr/>
 
                 <div className="container">
 
                     <div className="row">
                         <div className="input-field col s6">
                             <InputForm name="fName" id="fName" type="text" className="validate"
-                                   value={this.state.fName}
-                                   onChange={this.handleInputChange}/>
+                                       value={this.state.fName}
+                                       onChange={this.handleInputChange}/>
                             <label className="active" for="fName">First Name </label>
                         </div>
 
@@ -133,8 +141,8 @@ class Players extends Component {
                     <div className="row">
                         <div className="input-field col s6">
                             <InputForm name="jersey"
-                                   value={this.state.jersey}
-                                   onChange={this.handleInputChange}
+                                       value={this.state.jersey}
+                                       onChange={this.handleInputChange}
                                        id="type"
                                        className="validate"
                                        placeholder=" "
@@ -167,9 +175,53 @@ class Players extends Component {
                         {/*</div>*/}
 
                     </div>
-                        <FormBtn disabled={!(this.state.fName && this.state.lName)}
-                                 onClick={this.handleFormSubmit}
-                        >Submit Player</FormBtn>
+
+                    <div className="row">
+                        <div className="input-field col s6">
+                            <InputForm name="points" id="points" type="text" className="validate"
+                                       value={this.state.points}
+                                       onChange={this.handleInputChange}/>
+                            <label className="active" for="fName">Points</label>
+                        </div>
+
+                        <div className="input-field col s6">
+                            <InputForm name="assists" id="type" type="text" className="validate"
+                                       value={this.state.assists}
+                                       onChange={this.handleInputChange}/>
+                            <label className="active" for="type">Assists</label>
+                        </div>
+
+                    </div>
+
+                    <div className="row">
+                        <div className="input-field col s6">
+                            <InputForm name="rebounds" id="fName" type="text" className="validate"
+                                       value={this.state.rebounds}
+                                       onChange={this.handleInputChange}/>
+                            <label className="active" for="fName">Rebounds</label>
+                        </div>
+
+                        <div className="input-field col s6">
+                            <InputForm name="steals" id="type" type="text" className="validate"
+                                       value={this.state.steals}
+                                       onChange={this.handleInputChange}/>
+                            <label className="active" for="type">Steals</label>
+                        </div>
+
+                    </div>
+
+                    <div className="row">
+                        <div className="input-field col s6">
+                            <InputForm name="turnovers" id="turnovers" type="text" className="validate"
+                                       value={this.state.turnovers}
+                                       onChange={this.handleInputChange}/>
+                            <label className="active" for="fName">Turnovers</label>
+                        </div>
+                    </div>
+
+                    <FormBtn disabled={!(this.state.fName && this.state.lName)}
+                             onClick={this.handleFormSubmit}
+                    >Submit Player</FormBtn>
 
 
                 </div>

@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import {Card, CardTitle, Col, Collapsible, CollapsibleItem} from 'react-materialize';
+import {Card, CardTitle, Col, Collapsible, CollapsibleItem, CardPanel} from 'react-materialize';
 import "../../css/style.css";
 
 import API from "../../utils/API";
 
 import NavBar from "../../components/NavBar/navBar";
+import EditPlayerBtn from "../../components/Btn/editPlayerBtn";
+import {InputForm, FormBtn} from "../../components/AddPlayers";
 
 class Detail extends Component {
     state = {
@@ -19,25 +21,47 @@ class Detail extends Component {
             .catch(err => console.log(err));
     }
 
-   editPlayer = id => {
+    // Handles updating component state when the user types into the input field
+    handleInputChange = event => {
+        const { name, value } = event.target;
+        this.setState({
+            [name]: value
+        });
+    };
+
+    handleUpdate = event => {
+        event.preventDefault();
+        if (this.state.fName && this.state.lName) {
+            API.editPlayer({
+                fName: this.state.fName,
+                lName: this.state.lName,
+                jersey: this.state.jersey
+            })
+                .then(res => this.loadPlayers())
+                .catch(err => console.log(err));
+        }
+    };
+
+    editPlayer = id => {
         API.editPlayer((this.props.match.params.id))
             .then(res => this.loadPlayers())
             .catch(err => console.log(err));
     };
 
+
+
     render() {
         return (
             <div>
                 <NavBar/>
-                <div className="row">
-                    <div className="col s3">
-                    </div>
-                    <div className="col s6">
-                        <Card
+                <div className="row center">
+                    <Col s={3}/>
+                    <Col s={6}>
+                        <div
                             header={<CardTitle image={this.state.player.playerImage}></CardTitle>}>
-                            <div>
+                            <CardPanel>
                                 <h3 className="center red-text text-accent-4">
-                                     {this.state.player.jersey}
+                                    {this.state.player.jersey}
                                 </h3>
                                 <h3 className="center red-text text-accent-4">
                                     {this.state.player.lName}  {this.state.player.fName}
@@ -77,86 +101,17 @@ class Detail extends Component {
                                     </CollapsibleItem>
                                 </Collapsible>
 
-                                <Collapsible>
-                                    <CollapsibleItem header='Edit This Player' className="center red-text text-accent-4 oswald-caps">
 
-                                            <div className="row">
-                                                <div className="input-field col m6 s12">
-                                                    <input name="fName" id="fName" type="text" className="validate" />
-                                                    <label for="fName">First Name </label>
-                                                </div>
-                                                <div className="input-field col m6 s12">
-                                                    <input name="lName" id="lName" type="text" className="validate" />
-                                                    <label for="lName"> Last Name </label>
-                                                </div>
-                                            </div>
+                            </CardPanel>
+                        </div>
+                    </Col>
+                    <Col s={3}/>
+                </div>
 
-                                            <div className="row">
-                                                <div className="input-field col m6 s12">
-                                                    <input name="jersey" id="jersey" type="text" className="validate" />
-                                                    <label for="jersey">Jersey Number</label>
-                                                </div>
-                                                <div className="input-field col m6 s12">
-                                                    <div className="file-field input-field">
-                                                        <div className="btn red accent-4">
-                                                            <span>image</span>
-                                                            <input name="playersImage" type="file" />
-                                                        </div>
-                                                        <div className="file-path-wrapper">
-                                                            <input className="file-path validate" type="text" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="input-field col m6 s12">
-                                                        <input name="position" id="position" type="text" className="validate" />
-                                                        <label for="position">Position </label>
-                                                    </div>
-                                                    <div className="input-field col m6 s12">
-                                                        <input name="points" id="points" type="text" className="validate" />
-                                                        <label for="points"> Points </label>
-                                                    </div>
-                                                </div>
-
-                                                <div className="row">
-                                                <div className="input-field col m6 s12">
-                                                    <input name="assists" id="assists" type="text" className="validate" />
-                                                    <label for="assists">assists </label>
-                                                </div>
-                                                <div className="input-field col m6 s12">
-                                                    <input name="rebounds" id="rebounds" type="text" className="validate" />
-                                                    <label for="rebounds"> rebounds </label>
-                                                </div>
-                                            </div>
-
-                                                <div className="row">
-                                                    <div className="input-field col m6 s12">
-                                                        <input name="steals" id="steals" type="text" className="validate" />
-                                                        <label for="steals">steals</label>
-                                                    </div>
-                                                    <div className="input-field col m6 s12">
-                                                        <input name="turnovers" id="turnovers" type="text" className="validate" />
-                                                        <label for="turnovers">turnovers</label>
-                                                    </div>
-                                                </div>
-
-                                                <button>Submit Edit</button>
-                                        </div>
-                                    </CollapsibleItem>
-                                </Collapsible>
-
-                            </div>
-                        </Card>
-                    </div>
-                    <div className="col s3"></div>
-                    </div>
-
-
-                <div>
                     <div className="center">
                         <Link to="/Players" className="oswald-caps">← Back to Players</Link>
                     </div>
-                </div>
+
             </div>
         );
     }

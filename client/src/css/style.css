@@ -134,6 +134,7 @@ h1, h2, h3, h4, h5 {
 /*End Form Style*/
 
 /*Button Styles*/
+/*Button Styles*/
 .btn-txt {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -141,4 +142,15 @@ h1, h2, h3, h4, h5 {
 
 li .indicator-item .active {
     color: red;
+}
+
+.basketball-BG {
+    background-image: url("http://res.cloudinary.com/brooklee/image/upload/v1511407954/BasketballBG_wif31d.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.row-wise-spread {
+    display: flex;
+    flex-direction: row;
 }
