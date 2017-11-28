@@ -1,1 +1,1 @@
-export { default } from "./Btn";
+export { default } from "./editPlayerBtn";

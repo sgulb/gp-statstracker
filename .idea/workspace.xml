@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca4865c7-b001-4e4b-b71f-78c566c9481d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/.DS_Store~HEAD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/.DS_Store~myaPages" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/components/IndividualPlayer/.DS_Store~HEAD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/components/IndividualPlayer/.DS_Store~myaPages" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/components/PageHead/PageHeader.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.gitignore" afterPath="$PROJECT_DIR$/client/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/acorn" afterPath="$PROJECT_DIR$/client/node_modules/.bin/acorn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/ansi-html" afterPath="$PROJECT_DIR$/client/node_modules/.bin/ansi-html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/babylon" afterPath="$PROJECT_DIR$/client/node_modules/.bin/babylon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/browserslist" afterPath="$PROJECT_DIR$/client/node_modules/.bin/browserslist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/cssesc" afterPath="$PROJECT_DIR$/client/node_modules/.bin/cssesc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/csso" afterPath="$PROJECT_DIR$/client/node_modules/.bin/csso" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/detect" afterPath="$PROJECT_DIR$/client/node_modules/.bin/detect" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/detect-port" afterPath="$PROJECT_DIR$/client/node_modules/.bin/detect-port" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/errno" afterPath="$PROJECT_DIR$/client/node_modules/.bin/errno" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/escodegen" afterPath="$PROJECT_DIR$/client/node_modules/.bin/escodegen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/esgenerate" afterPath="$PROJECT_DIR$/client/node_modules/.bin/esgenerate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/eslint" afterPath="$PROJECT_DIR$/client/node_modules/.bin/eslint" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/esparse" afterPath="$PROJECT_DIR$/client/node_modules/.bin/esparse" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/esvalidate" afterPath="$PROJECT_DIR$/client/node_modules/.bin/esvalidate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/handlebars" afterPath="$PROJECT_DIR$/client/node_modules/.bin/handlebars" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/he" afterPath="$PROJECT_DIR$/client/node_modules/.bin/he" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/html-minifier" afterPath="$PROJECT_DIR$/client/node_modules/.bin/html-minifier" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/internal-ip" afterPath="$PROJECT_DIR$/client/node_modules/.bin/internal-ip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/jest" afterPath="$PROJECT_DIR$/client/node_modules/.bin/jest" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/jest-runtime" afterPath="$PROJECT_DIR$/client/node_modules/.bin/jest-runtime" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/js-yaml" afterPath="$PROJECT_DIR$/client/node_modules/.bin/js-yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/jsesc" afterPath="$PROJECT_DIR$/client/node_modules/.bin/jsesc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/json5" afterPath="$PROJECT_DIR$/client/node_modules/.bin/json5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/loose-envify" afterPath="$PROJECT_DIR$/client/node_modules/.bin/loose-envify" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/miller-rabin" afterPath="$PROJECT_DIR$/client/node_modules/.bin/miller-rabin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/mime" afterPath="$PROJECT_DIR$/client/node_modules/.bin/mime" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/multicast-dns" afterPath="$PROJECT_DIR$/client/node_modules/.bin/multicast-dns" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/rc" afterPath="$PROJECT_DIR$/client/node_modules/.bin/rc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/react-scripts" afterPath="$PROJECT_DIR$/client/node_modules/.bin/react-scripts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/regjsparser" afterPath="$PROJECT_DIR$/client/node_modules/.bin/regjsparser" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/rimraf" afterPath="$PROJECT_DIR$/client/node_modules/.bin/rimraf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/sane" afterPath="$PROJECT_DIR$/client/node_modules/.bin/sane" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/client/node_modules/.bin/semver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/sha.js" afterPath="$PROJECT_DIR$/client/node_modules/.bin/sha.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/sshpk-conv" afterPath="$PROJECT_DIR$/client/node_modules/.bin/sshpk-conv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/sshpk-sign" afterPath="$PROJECT_DIR$/client/node_modules/.bin/sshpk-sign" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/sshpk-verify" afterPath="$PROJECT_DIR$/client/node_modules/.bin/sshpk-verify" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/strip-indent" afterPath="$PROJECT_DIR$/client/node_modules/.bin/strip-indent" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/svgo" afterPath="$PROJECT_DIR$/client/node_modules/.bin/svgo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/sw-precache" afterPath="$PROJECT_DIR$/client/node_modules/.bin/sw-precache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/uglifyjs" afterPath="$PROJECT_DIR$/client/node_modules/.bin/uglifyjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/uuid" afterPath="$PROJECT_DIR$/client/node_modules/.bin/uuid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/webpack" afterPath="$PROJECT_DIR$/client/node_modules/.bin/webpack" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/webpack-dev-server" afterPath="$PROJECT_DIR$/client/node_modules/.bin/webpack-dev-server" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/.bin/which" afterPath="$PROJECT_DIR$/client/node_modules/.bin/which" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/acorn-dynamic-import/node_modules/.bin/acorn" afterPath="$PROJECT_DIR$/client/node_modules/acorn-dynamic-import/node_modules/.bin/acorn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/acorn-globals/node_modules/.bin/acorn" afterPath="$PROJECT_DIR$/client/node_modules/acorn-globals/node_modules/.bin/acorn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/acorn-jsx/node_modules/.bin/acorn" afterPath="$PROJECT_DIR$/client/node_modules/acorn-jsx/node_modules/.bin/acorn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/autoprefixer/node_modules/.bin/browserslist" afterPath="$PROJECT_DIR$/client/node_modules/autoprefixer/node_modules/.bin/browserslist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/babel-core/node_modules/.bin/babylon" afterPath="$PROJECT_DIR$/client/node_modules/babel-core/node_modules/.bin/babylon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/babel-core/node_modules/.bin/json5" afterPath="$PROJECT_DIR$/client/node_modules/babel-core/node_modules/.bin/json5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/babel-eslint/node_modules/.bin/babylon" afterPath="$PROJECT_DIR$/client/node_modules/babel-eslint/node_modules/.bin/babylon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/babel-generator/node_modules/.bin/jsesc" afterPath="$PROJECT_DIR$/client/node_modules/babel-generator/node_modules/.bin/jsesc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/babel-plugin-transform-es2015-unicode-regex/node_modules/regexpu-core/node_modules/.bin/regjsparser" afterPath="$PROJECT_DIR$/client/node_modules/babel-plugin-transform-es2015-unicode-regex/node_modules/regexpu-core/node_modules/.bin/regjsparser" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/babel-preset-env/node_modules/.bin/browserslist" afterPath="$PROJECT_DIR$/client/node_modules/babel-preset-env/node_modules/.bin/browserslist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/babel-preset-env/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/client/node_modules/babel-preset-env/node_modules/.bin/semver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/babel-register/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/babel-register/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/babel-template/node_modules/.bin/babylon" afterPath="$PROJECT_DIR$/client/node_modules/babel-template/node_modules/.bin/babylon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/babel-traverse/node_modules/.bin/babylon" afterPath="$PROJECT_DIR$/client/node_modules/babel-traverse/node_modules/.bin/babylon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/bonjour/node_modules/.bin/multicast-dns" afterPath="$PROJECT_DIR$/client/node_modules/bonjour/node_modules/.bin/multicast-dns" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/caniuse-api/node_modules/.bin/browserslist" afterPath="$PROJECT_DIR$/client/node_modules/caniuse-api/node_modules/.bin/browserslist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/configstore/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/configstore/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/cosmiconfig/node_modules/.bin/js-yaml" afterPath="$PROJECT_DIR$/client/node_modules/cosmiconfig/node_modules/.bin/js-yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/create-hash/node_modules/.bin/sha.js" afterPath="$PROJECT_DIR$/client/node_modules/create-hash/node_modules/.bin/sha.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/create-hmac/node_modules/.bin/sha.js" afterPath="$PROJECT_DIR$/client/node_modules/create-hmac/node_modules/.bin/sha.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/create-react-class/node_modules/.bin/loose-envify" afterPath="$PROJECT_DIR$/client/node_modules/create-react-class/node_modules/.bin/loose-envify" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/cross-spawn/node_modules/.bin/which" afterPath="$PROJECT_DIR$/client/node_modules/cross-spawn/node_modules/.bin/which" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/css-selector-tokenizer/node_modules/.bin/cssesc" afterPath="$PROJECT_DIR$/client/node_modules/css-selector-tokenizer/node_modules/.bin/cssesc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/cssnano/node_modules/autoprefixer/node_modules/.bin/browserslist" afterPath="$PROJECT_DIR$/client/node_modules/cssnano/node_modules/autoprefixer/node_modules/.bin/browserslist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/del/node_modules/.bin/rimraf" afterPath="$PROJECT_DIR$/client/node_modules/del/node_modules/.bin/rimraf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/diffie-hellman/node_modules/.bin/miller-rabin" afterPath="$PROJECT_DIR$/client/node_modules/diffie-hellman/node_modules/.bin/miller-rabin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/escodegen/node_modules/.bin/esparse" afterPath="$PROJECT_DIR$/client/node_modules/escodegen/node_modules/.bin/esparse" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/escodegen/node_modules/.bin/esvalidate" afterPath="$PROJECT_DIR$/client/node_modules/escodegen/node_modules/.bin/esvalidate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/eslint-config-react-app/node_modules/.bin/eslint" afterPath="$PROJECT_DIR$/client/node_modules/eslint-config-react-app/node_modules/.bin/eslint" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/eslint-loader/node_modules/.bin/eslint" afterPath="$PROJECT_DIR$/client/node_modules/eslint-loader/node_modules/.bin/eslint" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/eslint-loader/node_modules/.bin/rimraf" afterPath="$PROJECT_DIR$/client/node_modules/eslint-loader/node_modules/.bin/rimraf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/eslint-plugin-flowtype/node_modules/.bin/eslint" afterPath="$PROJECT_DIR$/client/node_modules/eslint-plugin-flowtype/node_modules/.bin/eslint" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/eslint-plugin-import/node_modules/.bin/eslint" afterPath="$PROJECT_DIR$/client/node_modules/eslint-plugin-import/node_modules/.bin/eslint" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/eslint-plugin-jsx-a11y/node_modules/.bin/eslint" afterPath="$PROJECT_DIR$/client/node_modules/eslint-plugin-jsx-a11y/node_modules/.bin/eslint" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/eslint-plugin-react/node_modules/.bin/eslint" afterPath="$PROJECT_DIR$/client/node_modules/eslint-plugin-react/node_modules/.bin/eslint" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/eslint/node_modules/.bin/js-yaml" afterPath="$PROJECT_DIR$/client/node_modules/eslint/node_modules/.bin/js-yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/eslint/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/eslint/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/eslint/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/client/node_modules/eslint/node_modules/.bin/semver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/espree/node_modules/.bin/acorn" afterPath="$PROJECT_DIR$/client/node_modules/espree/node_modules/.bin/acorn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/extract-text-webpack-plugin/node_modules/.bin/webpack" afterPath="$PROJECT_DIR$/client/node_modules/extract-text-webpack-plugin/node_modules/.bin/webpack" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/fbjs/node_modules/.bin/loose-envify" afterPath="$PROJECT_DIR$/client/node_modules/fbjs/node_modules/.bin/loose-envify" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/global-prefix/node_modules/.bin/which" afterPath="$PROJECT_DIR$/client/node_modules/global-prefix/node_modules/.bin/which" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/handlebars/node_modules/.bin/uglifyjs" afterPath="$PROJECT_DIR$/client/node_modules/handlebars/node_modules/.bin/uglifyjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/html-minifier/node_modules/.bin/he" afterPath="$PROJECT_DIR$/client/node_modules/html-minifier/node_modules/.bin/he" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/html-minifier/node_modules/.bin/uglifyjs" afterPath="$PROJECT_DIR$/client/node_modules/html-minifier/node_modules/.bin/uglifyjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/html-webpack-plugin/node_modules/.bin/html-minifier" afterPath="$PROJECT_DIR$/client/node_modules/html-webpack-plugin/node_modules/.bin/html-minifier" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/html-webpack-plugin/node_modules/.bin/webpack" afterPath="$PROJECT_DIR$/client/node_modules/html-webpack-plugin/node_modules/.bin/webpack" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/html-webpack-plugin/node_modules/loader-utils/node_modules/.bin/json5" afterPath="$PROJECT_DIR$/client/node_modules/html-webpack-plugin/node_modules/loader-utils/node_modules/.bin/json5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/invariant/node_modules/.bin/loose-envify" afterPath="$PROJECT_DIR$/client/node_modules/invariant/node_modules/.bin/loose-envify" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/istanbul-api/node_modules/.bin/js-yaml" afterPath="$PROJECT_DIR$/client/node_modules/istanbul-api/node_modules/.bin/js-yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/istanbul-api/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/istanbul-api/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/istanbul-lib-instrument/node_modules/.bin/babylon" afterPath="$PROJECT_DIR$/client/node_modules/istanbul-lib-instrument/node_modules/.bin/babylon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/istanbul-lib-instrument/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/client/node_modules/istanbul-lib-instrument/node_modules/.bin/semver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/istanbul-lib-report/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/istanbul-lib-report/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/istanbul-lib-source-maps/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/istanbul-lib-source-maps/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/istanbul-lib-source-maps/node_modules/.bin/rimraf" afterPath="$PROJECT_DIR$/client/node_modules/istanbul-lib-source-maps/node_modules/.bin/rimraf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/istanbul-reports/node_modules/.bin/handlebars" afterPath="$PROJECT_DIR$/client/node_modules/istanbul-reports/node_modules/.bin/handlebars" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/jest-cli/node_modules/.bin/jest-runtime" afterPath="$PROJECT_DIR$/client/node_modules/jest-cli/node_modules/.bin/jest-runtime" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/jest-cli/node_modules/.bin/which" afterPath="$PROJECT_DIR$/client/node_modules/jest-cli/node_modules/.bin/which" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/jest-haste-map/node_modules/.bin/sane" afterPath="$PROJECT_DIR$/client/node_modules/jest-haste-map/node_modules/.bin/sane" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/jest-util/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/jest-util/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/jest/node_modules/.bin/jest" afterPath="$PROJECT_DIR$/client/node_modules/jest/node_modules/.bin/jest" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/js-yaml/node_modules/.bin/esparse" afterPath="$PROJECT_DIR$/client/node_modules/js-yaml/node_modules/.bin/esparse" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/js-yaml/node_modules/.bin/esvalidate" afterPath="$PROJECT_DIR$/client/node_modules/js-yaml/node_modules/.bin/esvalidate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/jsdom/node_modules/.bin/acorn" afterPath="$PROJECT_DIR$/client/node_modules/jsdom/node_modules/.bin/acorn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/jsdom/node_modules/.bin/escodegen" afterPath="$PROJECT_DIR$/client/node_modules/jsdom/node_modules/.bin/escodegen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/jsdom/node_modules/.bin/esgenerate" afterPath="$PROJECT_DIR$/client/node_modules/jsdom/node_modules/.bin/esgenerate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/jsdom/node_modules/http-signature/node_modules/.bin/sshpk-conv" afterPath="$PROJECT_DIR$/client/node_modules/jsdom/node_modules/http-signature/node_modules/.bin/sshpk-conv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/jsdom/node_modules/http-signature/node_modules/.bin/sshpk-sign" afterPath="$PROJECT_DIR$/client/node_modules/jsdom/node_modules/http-signature/node_modules/.bin/sshpk-sign" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/jsdom/node_modules/http-signature/node_modules/.bin/sshpk-verify" afterPath="$PROJECT_DIR$/client/node_modules/jsdom/node_modules/http-signature/node_modules/.bin/sshpk-verify" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/jsdom/node_modules/request/node_modules/.bin/uuid" afterPath="$PROJECT_DIR$/client/node_modules/jsdom/node_modules/request/node_modules/.bin/uuid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/loader-fs-cache/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/loader-fs-cache/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/loader-fs-cache/node_modules/find-cache-dir/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/loader-fs-cache/node_modules/find-cache-dir/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/loader-utils/node_modules/.bin/json5" afterPath="$PROJECT_DIR$/client/node_modules/loader-utils/node_modules/.bin/json5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/memory-fs/node_modules/.bin/errno" afterPath="$PROJECT_DIR$/client/node_modules/memory-fs/node_modules/.bin/errno" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/node-notifier/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/client/node_modules/node-notifier/node_modules/.bin/semver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/node-notifier/node_modules/.bin/which" afterPath="$PROJECT_DIR$/client/node_modules/node-notifier/node_modules/.bin/which" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/normalize-package-data/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/client/node_modules/normalize-package-data/node_modules/.bin/semver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/package-json/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/client/node_modules/package-json/node_modules/.bin/semver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/pbkdf2/node_modules/.bin/sha.js" afterPath="$PROJECT_DIR$/client/node_modules/pbkdf2/node_modules/.bin/sha.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/portfinder/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/portfinder/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/postcss-merge-rules/node_modules/.bin/browserslist" afterPath="$PROJECT_DIR$/client/node_modules/postcss-merge-rules/node_modules/.bin/browserslist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/postcss-svgo/node_modules/.bin/svgo" afterPath="$PROJECT_DIR$/client/node_modules/postcss-svgo/node_modules/.bin/svgo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/prop-types/node_modules/.bin/loose-envify" afterPath="$PROJECT_DIR$/client/node_modules/prop-types/node_modules/.bin/loose-envify" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/react-dev-utils/node_modules/.bin/detect" afterPath="$PROJECT_DIR$/client/node_modules/react-dev-utils/node_modules/.bin/detect" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/react-dev-utils/node_modules/.bin/detect-port" afterPath="$PROJECT_DIR$/client/node_modules/react-dev-utils/node_modules/.bin/detect-port" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/react-dom/node_modules/.bin/loose-envify" afterPath="$PROJECT_DIR$/client/node_modules/react-dom/node_modules/.bin/loose-envify" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/.bin/eslint" afterPath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/.bin/eslint" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/.bin/jest" afterPath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/.bin/jest" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/.bin/webpack" afterPath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/.bin/webpack" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/.bin/webpack-dev-server" afterPath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/.bin/webpack-dev-server" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/babel-core/node_modules/.bin/babylon" afterPath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/babel-core/node_modules/.bin/babylon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/babel-core/node_modules/.bin/json5" afterPath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/babel-core/node_modules/.bin/json5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/babel-loader/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/babel-loader/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/babel-loader/node_modules/.bin/webpack" afterPath="$PROJECT_DIR$/client/node_modules/react-scripts/node_modules/babel-loader/node_modules/.bin/webpack" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/react/node_modules/.bin/loose-envify" afterPath="$PROJECT_DIR$/client/node_modules/react/node_modules/.bin/loose-envify" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/redent/node_modules/.bin/strip-indent" afterPath="$PROJECT_DIR$/client/node_modules/redent/node_modules/.bin/strip-indent" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/regexpu-core/node_modules/.bin/regjsparser" afterPath="$PROJECT_DIR$/client/node_modules/regexpu-core/node_modules/.bin/regjsparser" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/registry-auth-token/node_modules/.bin/rc" afterPath="$PROJECT_DIR$/client/node_modules/registry-auth-token/node_modules/.bin/rc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/registry-url/node_modules/.bin/rc" afterPath="$PROJECT_DIR$/client/node_modules/registry-url/node_modules/.bin/rc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/regjsparser/node_modules/.bin/jsesc" afterPath="$PROJECT_DIR$/client/node_modules/regjsparser/node_modules/.bin/jsesc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/semver-diff/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/client/node_modules/semver-diff/node_modules/.bin/semver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/send/node_modules/.bin/mime" afterPath="$PROJECT_DIR$/client/node_modules/send/node_modules/.bin/mime" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/svgo/node_modules/.bin/csso" afterPath="$PROJECT_DIR$/client/node_modules/svgo/node_modules/.bin/csso" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/svgo/node_modules/.bin/js-yaml" afterPath="$PROJECT_DIR$/client/node_modules/svgo/node_modules/.bin/js-yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/svgo/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/svgo/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/svgo/node_modules/js-yaml/node_modules/.bin/esparse" afterPath="$PROJECT_DIR$/client/node_modules/svgo/node_modules/js-yaml/node_modules/.bin/esparse" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/svgo/node_modules/js-yaml/node_modules/.bin/esvalidate" afterPath="$PROJECT_DIR$/client/node_modules/svgo/node_modules/js-yaml/node_modules/.bin/esvalidate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/sw-precache-webpack-plugin/node_modules/.bin/sw-precache" afterPath="$PROJECT_DIR$/client/node_modules/sw-precache-webpack-plugin/node_modules/.bin/sw-precache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/sw-precache-webpack-plugin/node_modules/.bin/uglifyjs" afterPath="$PROJECT_DIR$/client/node_modules/sw-precache-webpack-plugin/node_modules/.bin/uglifyjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/sw-precache-webpack-plugin/node_modules/.bin/webpack" afterPath="$PROJECT_DIR$/client/node_modules/sw-precache-webpack-plugin/node_modules/.bin/webpack" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/sw-precache/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/sw-precache/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/uglifyjs-webpack-plugin/node_modules/.bin/uglifyjs" afterPath="$PROJECT_DIR$/client/node_modules/uglifyjs-webpack-plugin/node_modules/.bin/uglifyjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/uglifyjs-webpack-plugin/node_modules/.bin/webpack" afterPath="$PROJECT_DIR$/client/node_modules/uglifyjs-webpack-plugin/node_modules/.bin/webpack" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/url-loader/node_modules/.bin/mime" afterPath="$PROJECT_DIR$/client/node_modules/url-loader/node_modules/.bin/mime" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/webpack-dev-middleware/node_modules/.bin/mime" afterPath="$PROJECT_DIR$/client/node_modules/webpack-dev-middleware/node_modules/.bin/mime" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/webpack-dev-middleware/node_modules/.bin/webpack" afterPath="$PROJECT_DIR$/client/node_modules/webpack-dev-middleware/node_modules/.bin/webpack" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/webpack-dev-server/node_modules/.bin/ansi-html" afterPath="$PROJECT_DIR$/client/node_modules/webpack-dev-server/node_modules/.bin/ansi-html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/webpack-dev-server/node_modules/.bin/internal-ip" afterPath="$PROJECT_DIR$/client/node_modules/webpack-dev-server/node_modules/.bin/internal-ip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/webpack-dev-server/node_modules/.bin/webpack" afterPath="$PROJECT_DIR$/client/node_modules/webpack-dev-server/node_modules/.bin/webpack" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/webpack-dev-server/node_modules/del/node_modules/.bin/rimraf" afterPath="$PROJECT_DIR$/client/node_modules/webpack-dev-server/node_modules/del/node_modules/.bin/rimraf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/webpack-manifest-plugin/node_modules/.bin/webpack" afterPath="$PROJECT_DIR$/client/node_modules/webpack-manifest-plugin/node_modules/.bin/webpack" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/webpack-manifest-plugin/node_modules/fs-extra/node_modules/.bin/rimraf" afterPath="$PROJECT_DIR$/client/node_modules/webpack-manifest-plugin/node_modules/fs-extra/node_modules/.bin/rimraf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/webpack/node_modules/.bin/acorn" afterPath="$PROJECT_DIR$/client/node_modules/webpack/node_modules/.bin/acorn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/webpack/node_modules/.bin/json5" afterPath="$PROJECT_DIR$/client/node_modules/webpack/node_modules/.bin/json5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/webpack/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/webpack/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/worker-farm/node_modules/.bin/errno" afterPath="$PROJECT_DIR$/client/node_modules/worker-farm/node_modules/.bin/errno" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/node_modules/write/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/client/node_modules/write/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/package.json" afterPath="$PROJECT_DIR$/client/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/public/index.html" afterPath="$PROJECT_DIR$/client/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/App.js" afterPath="$PROJECT_DIR$/client/src/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/AddPlayers/index.js" afterPath="$PROJECT_DIR$/client/src/components/AddPlayers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/Btn/index.js" afterPath="$PROJECT_DIR$/client/src/components/Btn/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/LoginModal/LoginForm.js" afterPath="$PROJECT_DIR$/client/src/components/LoginModal/LoginForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/LoginModal/RegisterForm.js" afterPath="$PROJECT_DIR$/client/src/components/LoginModal/RegisterForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/NavBar/navBar.js" afterPath="$PROJECT_DIR$/client/src/components/NavBar/navBar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/PageHead/index.js" afterPath="$PROJECT_DIR$/client/src/components/PageHead/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/PlayerCard/PlayerCard.js" afterPath="$PROJECT_DIR$/client/src/components/PlayerCard/PlayerCard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/TeamCard/addTeam.js" afterPath="$PROJECT_DIR$/client/src/components/TeamCard/addTeam.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/TeamCard/addTeamModal.js" afterPath="$PROJECT_DIR$/client/src/components/TeamCard/addTeamModal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/TeamCard/index.js" afterPath="$PROJECT_DIR$/client/src/components/TeamCard/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/pages/AddGame/index.js" afterPath="$PROJECT_DIR$/client/src/pages/AddGame/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/pages/Players/Players.js" afterPath="$PROJECT_DIR$/client/src/pages/Players/Players.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/utils/API.js" afterPath="$PROJECT_DIR$/client/src/utils/API.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/authController.js" afterPath="$PROJECT_DIR$/controllers/authController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/emailController.js" afterPath="$PROJECT_DIR$/controllers/emailController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/logInController.js" afterPath="$PROJECT_DIR$/controllers/logInController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handlers/passport.js" afterPath="$PROJECT_DIR$/handlers/passport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api/logIn.js" afterPath="$PROJECT_DIR$/routes/api/logIn.js" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Teams.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/pages/Teams/Teams.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Players.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/pages/Players/Players.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+              <folding>
+                <marker date="1511840432000" expanded="true" signature="826:863" ph="{...}" />
+                <marker date="1511840432000" expanded="true" signature="890:1099" ph="{...}" />
+                <marker date="1511840432000" expanded="true" signature="1219:1345" ph="{...}" />
+                <marker date="1511840432000" expanded="true" signature="1462:1577" ph="{...}" />
+                <marker date="1511840432000" expanded="true" signature="1584:1712" ph="//..." />
+                <marker date="1511840432000" expanded="true" signature="1745:2111" ph="{...}" />
+                <marker date="1511840432000" expanded="true" signature="1829:2105" ph="{...}" />
+                <marker date="1511840432000" expanded="true" signature="2127:6875" ph="{...}" />
+                <marker date="1511840432000" expanded="true" signature="2146:6856" ph="&lt;div/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="2219:3669" ph="&lt;Row/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="2233:3650" ph="&lt;Col/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="2257:3635" ph="&lt;div/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="2309:3615" ph="&lt;PlayersList/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="2411:3552" ph="&lt;PlayersInfo/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="2474:3417" ph="&lt;a/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="2546:3380" ph="&lt;Card/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="2705:3336" ph="&lt;div/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="2780:2965" ph="&lt;h4/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="3010:3126" ph="&lt;p/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="3171:3289" ph="&lt;p/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="3806:6837" ph="&lt;div/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="3855:4721" ph="&lt;div/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="3901:4281" ph="&lt;div/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="3966:4164" ph="&lt;InputForm/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="4307:4693" ph="&lt;div/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="4372:4577" ph="&lt;InputForm/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="4743:6614" ph="&lt;div/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="4789:5314" ph="&lt;div/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="4854:5203" ph="&lt;InputForm/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="5340:5879" ph="&lt;div/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="5405:5766" ph="&lt;InputForm/&gt;" />
+                <marker date="1511840432000" expanded="true" signature="5907:5947" ph="/*...*/" />
+                <marker date="1511840432000" expanded="true" signature="5978:6022" ph="/*...*/" />
+                <marker date="1511840432000" expanded="true" signature="6057:6095" ph="/*...*/" />
+                <marker date="1511840432000" expanded="true" signature="6134:6156" ph="/*...*/" />
+                <marker date="1511840432000" expanded="true" signature="6195:6244" ph="/*...*/" />
+                <marker date="1511840432000" expanded="true" signature="6279:6289" ph="/*...*/" />
+                <marker date="1511840432000" expanded="true" signature="6324:6363" ph="/*...*/" />
+                <marker date="1511840432000" expanded="true" signature="6402:6462" ph="/*...*/" />
+                <marker date="1511840432000" expanded="true" signature="6497:6507" ph="/*...*/" />
+                <marker date="1511840432000" expanded="true" signature="6538:6548" ph="/*...*/" />
+                <marker date="1511840432000" expanded="true" signature="6575:6585" ph="/*...*/" />
+                <marker date="1511840432000" expanded="true" signature="6639:6812" ph="&lt;FormBtn/&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logInController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/logInController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/components/NavBar/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/components/Btn/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/components/AddPlayers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/components/DeleteBtn/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="18" column="63" lean-forward="false" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+              <folding>
+                <marker date="1511837584000" expanded="true" signature="695:719" ph="&lt;Switch/&gt;" />
+                <marker date="1511837584000" expanded="true" signature="695:734" ph="&lt;div/&gt;" />
+                <marker date="1511837584000" expanded="true" signature="695:748" ph="&lt;Router/&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/players.html" />
+        <option value="$PROJECT_DIR$/assets/styles/style.css" />
+        <option value="$PROJECT_DIR$/addplayer.html" />
+        <option value="$PROJECT_DIR$/client/src/components/PlayerCard/PlayerImg.js" />
+        <option value="$PROJECT_DIR$/scripts/seedDB.js" />
+        <option value="$PROJECT_DIR$/client/src/IndivPlayers.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/IndivPlayers/IndivPlayer.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/IndivPlayers/index.js" />
+        <option value="$PROJECT_DIR$/client/src/css/style.css" />
+        <option value="$PROJECT_DIR$/client/src/components/NavBar/Modal.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Modal/inde.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Modal/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Modal/Modal.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Main/Main.js" />
+        <option value="$PROJECT_DIR$/client/src/components/NavBar/navBar.js" />
+        <option value="$PROJECT_DIR$/client/public/index.html" />
+        <option value="$PROJECT_DIR$/client/src/components/ImageUploader/ImageUploader.js" />
+        <option value="$PROJECT_DIR$/client/src/utils/Cloudinary.js" />
+        <option value="$PROJECT_DIR$/client/src/components/PlayerCard/PlayersInfo.js" />
+        <option value="$PROJECT_DIR$/client/src/components/PlayerCard/PlayersList.js" />
+        <option value="$PROJECT_DIR$/client/src/components/DeleteBtn/DeleteBtn.js" />
+        <option value="$PROJECT_DIR$/client/src/components/AddPlayers/AddPlayerForm.js" />
+        <option value="$PROJECT_DIR$/client/src/components/EditForm/EditForm.js" />
+        <option value="$PROJECT_DIR$/client/src/components/AddPlayers/Input.js" />
+        <option value="$PROJECT_DIR$/client/src/components/EditForm/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/AddPlayers/index.js" />
+        <option value="$PROJECT_DIR$/client/src/utils/API.js" />
+        <option value="$PROJECT_DIR$/client/src/components/AddPlayers/InputForm.js" />
+        <option value="$PROJECT_DIR$/client/src/App.js" />
+        <option value="$PROJECT_DIR$/client/src/components/AddPlayers/FormBtn.js" />
+        <option value="$PROJECT_DIR$/models/player.js" />
+        <option value="$PROJECT_DIR$/client/src/components/IndividualPlayer/SubmitChangesBtn.js" />
+        <option value="$PROJECT_DIR$/client/src/components/IndividualPlayer/SubmitChangeBtn.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/IndivPlayers/IndivPlayers.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Players/Players.js" />
+        <option value="$PROJECT_DIR$/controllers/logInController.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/client/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="264" />
+    <option name="y" value="23" />
+    <option name="width" value="1176" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers ProjectPane="false" />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource Scope="true" ProjectPane="false" />
+      <autoscrollFromSource Scope="true" ProjectPane="true" />
+      <sortByType ProjectPane="false" />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gp-statstracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gp-statstracker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gp-statstracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gp-statstracker" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca4865c7-b001-4e4b-b71f-78c566c9481d" name="Default" comment="" />
+      <created>1509944244719</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1509944244719</updated>
+      <workItem from="1509944247295" duration="17085000" />
+      <workItem from="1511306687458" duration="4781000" />
+      <workItem from="1511839133003" duration="1322000" />
+      <workItem from="1511841320212" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="68489000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="264" y="23" width="1176" height="877" extended-state="0" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27621484" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13939394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="MaxCompute Job" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="MaxCompute Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="MaxCompute Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29383314" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3255814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="MaxCompute Job" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="MaxCompute Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="MaxCompute Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/client/npm-debug.log" />
+    <entry file="file://$USER_HOME$/Desktop/HTMLandCSS/players.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/PlayerCard/PlayerCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="10" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/PlayerCard/PlayersName.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/scripts/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/IndivPlayers/IndivPlayer.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Main/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/IndivPlayers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/IndivPlayers.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="43" column="30" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Modal/inde.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/components/Modal/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" lean-forward="true" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Modal/Modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/IndividualPlayer/individualPlayerCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/ImageUploader/ImageUploader.js" />
+    <entry file="file://$PROJECT_DIR$/routes/api/playerGames.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/PlayerCard/PlayerImg.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/components/NavBar/navBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/utils/Cloudinary.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/PlayerCard/PlayersList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/PlayerCard/PlayersInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Main/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/AddPlayers/AddPlayerForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Btn/editPlayerBtn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/AddPlayers/Input.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/components/EditForm/EditForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/DeleteBtn/DeleteBtn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/EditForm/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/seedDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api/players.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/AddPlayers/InputForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/playersController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/AddPlayers/FormBtn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="48" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/IndividualPlayer/SubmitChangesBtn.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/utils/API.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/IndividualPlayer/SubmitChangeBtn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/IndivPlayers/IndivPlayers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-905">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Teams/Teams.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/NavBar/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Btn/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/AddPlayers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/DeleteBtn/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="63" lean-forward="false" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+          <folding>
+            <marker date="1511837584000" expanded="true" signature="695:719" ph="&lt;Switch/&gt;" />
+            <marker date="1511837584000" expanded="true" signature="695:734" ph="&lt;div/&gt;" />
+            <marker date="1511837584000" expanded="true" signature="695:748" ph="&lt;Router/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Players/Players.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <marker date="1511840432000" expanded="true" signature="826:863" ph="{...}" />
+            <marker date="1511840432000" expanded="true" signature="890:1099" ph="{...}" />
+            <marker date="1511840432000" expanded="true" signature="1219:1345" ph="{...}" />
+            <marker date="1511840432000" expanded="true" signature="1462:1577" ph="{...}" />
+            <marker date="1511840432000" expanded="true" signature="1584:1712" ph="//..." />
+            <marker date="1511840432000" expanded="true" signature="1745:2111" ph="{...}" />
+            <marker date="1511840432000" expanded="true" signature="1829:2105" ph="{...}" />
+            <marker date="1511840432000" expanded="true" signature="2127:6875" ph="{...}" />
+            <marker date="1511840432000" expanded="true" signature="2146:6856" ph="&lt;div/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="2219:3669" ph="&lt;Row/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="2233:3650" ph="&lt;Col/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="2257:3635" ph="&lt;div/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="2309:3615" ph="&lt;PlayersList/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="2411:3552" ph="&lt;PlayersInfo/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="2474:3417" ph="&lt;a/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="2546:3380" ph="&lt;Card/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="2705:3336" ph="&lt;div/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="2780:2965" ph="&lt;h4/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="3010:3126" ph="&lt;p/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="3171:3289" ph="&lt;p/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="3806:6837" ph="&lt;div/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="3855:4721" ph="&lt;div/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="3901:4281" ph="&lt;div/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="3966:4164" ph="&lt;InputForm/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="4307:4693" ph="&lt;div/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="4372:4577" ph="&lt;InputForm/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="4743:6614" ph="&lt;div/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="4789:5314" ph="&lt;div/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="4854:5203" ph="&lt;InputForm/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="5340:5879" ph="&lt;div/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="5405:5766" ph="&lt;InputForm/&gt;" />
+            <marker date="1511840432000" expanded="true" signature="5907:5947" ph="/*...*/" />
+            <marker date="1511840432000" expanded="true" signature="5978:6022" ph="/*...*/" />
+            <marker date="1511840432000" expanded="true" signature="6057:6095" ph="/*...*/" />
+            <marker date="1511840432000" expanded="true" signature="6134:6156" ph="/*...*/" />
+            <marker date="1511840432000" expanded="true" signature="6195:6244" ph="/*...*/" />
+            <marker date="1511840432000" expanded="true" signature="6279:6289" ph="/*...*/" />
+            <marker date="1511840432000" expanded="true" signature="6324:6363" ph="/*...*/" />
+            <marker date="1511840432000" expanded="true" signature="6402:6462" ph="/*...*/" />
+            <marker date="1511840432000" expanded="true" signature="6497:6507" ph="/*...*/" />
+            <marker date="1511840432000" expanded="true" signature="6538:6548" ph="/*...*/" />
+            <marker date="1511840432000" expanded="true" signature="6575:6585" ph="/*...*/" />
+            <marker date="1511840432000" expanded="true" signature="6639:6812" ph="&lt;FormBtn/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/logInController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

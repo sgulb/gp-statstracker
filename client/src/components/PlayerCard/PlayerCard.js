@@ -11,11 +11,7 @@ const PlayerCard = props => (
                 <div className="card-content">
                     <h5 className="player-name">{props.name}</h5>
                     <p>{props.position}</p>
-<<<<<<< HEAD
                     <p>{props.jersey}</p>
-=======
-                    <p>55</p>
->>>>>>> myaPages
                 </div>
             </div>
         </a>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from "../../utils/API";
 import "../../css/style.css";
 import {Card, CardTitle, Col, Row, Input} from 'react-materialize';
-import request from 'superagent';
+// import request from 'superagent';
 
 import NavBar from "../../components/NavBar/navBar";
 import {PlayersInfo} from "../../components/PlayerCard/PlayersInfo";
