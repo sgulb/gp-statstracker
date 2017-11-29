@@ -75,7 +75,7 @@ class Detail extends Component {
                                         </div>
                                         <div className="center">
                                             <h5>
-                                                POINTS: {this.state.player.points}
+                                                POINTS: {this.state.player.PlayerGameStats}
                                             </h5>
                                         </div>
                                         <div className="center">
@@ -109,7 +109,7 @@ class Detail extends Component {
                 </div>
 
                     <div className="center">
-                        <Link to="/Players" className="oswald-caps">← Back to Players</Link>
+                        <Link to="/teams" className="oswald-caps">← Back to Teams</Link>
                     </div>
 
             </div>
