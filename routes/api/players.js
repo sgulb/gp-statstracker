@@ -9,17 +9,13 @@ router.route("/")
 // Matches with "/api/player/:id"
 router
   .route("/:id")
-  .get(authController.isLoggedIn,    // checks if the player is logged in
-       playerController.findById)    // returns selected player
-  .put(authController.isLoggedIn,    // checks if the player is logged in
-       playerController.update)      // updates selected player
-  .delete(authController.isLoggedIn, // checks if the player is logged in
-          playerController.remove);  // removes selected player
+  .get(authController.isLoggedIn, playerController.findById)
+  .put(authController.isLoggedIn, playerController.update)
+  .delete(authController.isLoggedIn, playerController.remove);
 
 //Find by id and Populate teams "/api/playerGames/schoolPop/:id"
 router
   .route("/playerPop/:id")
-  .get(authController.isLoggedIn,    // checks if the player is logged in
-       playerController.findByIdPop) // returns Player with Games populated
+  .get(authController.isLoggedIn, playerController.findByIdPop)
 
 module.exports = router;
