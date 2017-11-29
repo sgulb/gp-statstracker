@@ -66,7 +66,7 @@ class Teams extends Component {
 									
 										<TeamCard><Link to={`/teams/${team._id}`}>{team.teamName}</Link>
 											<Row>
-												<Button className="red accent-4" onClick={() => this.deleteTeam(team._id)}>Delete</Button>
+												<Button onClick={() => this.deleteTeam(team._id)}>Delete</Button>
 											</Row>
 										</TeamCard>
 									
