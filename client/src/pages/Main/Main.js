@@ -1,11 +1,21 @@
-import React from "react";
+
+import React, { Component } from "react";
+import API from "../../utils/API";
 import NavBar from "../../components/NavBar/navBar";
 import "../../css/style.css";
 import {Modal, Button, Row, Col, Input, Tab, Tabs} from "react-materialize";
 import {LoginForm, RegisterForm} from "../../components/LoginModal";
 
+class Main extends Component {
 
-const Main = () =>
+    state = {
+        users: [],
+        email: "",
+        name: ""
+    };
+
+    render() {
+        return (
     <div>
         <NavBar/>
         <div className="slider-adjustment">
@@ -60,4 +70,7 @@ const Main = () =>
         </div>
     </div>
 
+        );
+    }
+}
 export default Main;

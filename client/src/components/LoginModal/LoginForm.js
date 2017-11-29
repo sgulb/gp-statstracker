@@ -1,6 +1,10 @@
 import React from "react";
 import {Row, Col, Input} from "react-materialize";
 
+// value={this.user.email}
+// onChange={this.handleInputChange}
+
+
 
 export const LoginForm = props => (
 		<div>
@@ -12,8 +16,10 @@ export const LoginForm = props => (
                     data-success="Valid Email"
                     s={12}
                     validate
+                    name="name" className="validate"
+
                 />
-                
+
             </Row>
             <Row>
                 <Input
@@ -21,6 +27,7 @@ export const LoginForm = props => (
                     type="password"
                     s={12}
                     validate
+                    name="password" className="validate"
                 />
             </Row>
         </div>

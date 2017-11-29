@@ -60,7 +60,8 @@ class Players extends Component {
             API.addPlayer({
                 fName: this.state.fName,
                 lName: this.state.lName,
-                jersey: this.state.jersey
+                jersey: this.state.jersey,
+                position:this.state.position
             })
                 .then(res => this.loadPlayers())
                 .catch(err => console.log(err));

@@ -11,7 +11,8 @@ import {InputForm, FormBtn} from "../../components/AddPlayers";
 
 class Detail extends Component {
     state = {
-        player: {}
+        player: {},
+        playerGameStats: {}
     };
     // When this component mounts, grab the book with the _id of this.props.match.params.id
     // e.g. localhost:3000/books/599dcb67f0f16317844583fc
@@ -20,6 +21,7 @@ class Detail extends Component {
             .then(res => this.setState({ player: res.data }))
             .catch(err => console.log(err));
     }
+
 
     // Handles updating component state when the user types into the input field
     handleInputChange = event => {
@@ -68,11 +70,6 @@ class Detail extends Component {
                                 </h3>
                                 <Collapsible>
                                     <CollapsibleItem header='DETAILS' className="center red-text text-accent-4 oswald-caps">
-                                        <div className="center">
-                                            <h5>
-                                                POSITION: {this.state.player.position}
-                                            </h5>
-                                        </div>
                                         <div className="center">
                                             <h5>
                                                 POINTS: {this.state.player.PlayerGameStats}

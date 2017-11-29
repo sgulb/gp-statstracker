@@ -16,17 +16,20 @@ const PlayerSeed = [
     fName: "Player1",
     lName: "P1LastN",
     jersey:"22",
-    playerImage:"http://res.cloudinary.com/brooklee/image/upload/v1510618076/playerplaceholder_f9khi0.jpg"
+      position: "PointGaurd"
+    // playerImage:"http://res.cloudinary.com/brooklee/image/upload/v1510618076/playerplaceholder_f9khi0.jpg"
   },
     {
         fName: "Player2",
         lName: "P2LastN",
         jersey:"23",
-        playerImage:"http://res.cloudinary.com/brooklee/image/upload/v1510618076/playerplaceholder_f9khi0.jpg"
+        position: "PointGaurd"
+        // playerImage:"http://res.cloudinary.com/brooklee/image/upload/v1510618076/playerplaceholder_f9khi0.jpg"
     },
 
 
 ];
+
 
 db.Player
   .remove({})
