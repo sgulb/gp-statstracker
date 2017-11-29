@@ -4,14 +4,17 @@ const authController = require("../../controllers/authController");
 
 // Matches with "/api/school"
 router.route("/")
-  .get(schoolsController.findAll)
-  .post(schoolsController.create);
+  .get(authController.isLoggedIn, schoolsController.findAll)
+  .post(authController.isLoggedIn, schoolsController.create);
 
 // Matches with "/api/school/:id"
 router
   .route("/:id")
-  .get(schoolsController.findById)
-  .put(schoolsController.update)
-  .delete(schoolsController.remove);
+  .get(authController.isLoggedIn, 
+  	   schoolsController.findById)
+  .put(authController.isLoggedIn, 
+  	   schoolsController.update)
+  .delete(authController.isLoggedIn, 
+  	      schoolsController.remove);
 
 module.exports = router;

@@ -4,7 +4,7 @@ const authController = require("../../controllers/authController");
 
 // Matches with "/api/playerGames"
 router.route("/")
-  .post(playerGames.create);
+  .post(authController.isLoggedIn, playerGames.create);
 
 // Matches with "/api/playerGames/:id"
 router
