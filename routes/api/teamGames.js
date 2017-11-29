@@ -9,11 +9,8 @@ router.route("/")
 // Matches with "/api/teamGames/:id"
 router
   .route("/:id")
-  .get(authController.isLoggedIn,
-       teamGamesController.findById)
-  .put(authController.isLoggedIn,
-       teamGamesController.update)
-  .delete(authController.isLoggedIn,
-          teamGamesController.remove);
+  .get(authController.isLoggedIn, teamGamesController.findById)
+  .put(authController.isLoggedIn, teamGamesController.update)
+  .delete(authController.isLoggedIn, teamGamesController.remove);
 
 module.exports = router;
