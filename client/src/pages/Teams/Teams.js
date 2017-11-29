@@ -64,7 +64,7 @@ class Teams extends Component {
 							<div>
 								{this.state.teams.map(team => (
 									
-										<TeamCard><Link to={`/players/${team._id}`}>{team.teamName}</Link>
+										<TeamCard><Link to={`/teams/${team._id}`}>{team.teamName}</Link>
 											<Row>
 												<Button className="red accent-4" onClick={() => this.deleteTeam(team._id)}>Delete</Button>
 											</Row>
