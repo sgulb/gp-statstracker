@@ -11,7 +11,8 @@ const teamGameStatsSchema = new Schema({
   yourScore: { type: Number, required: "Please provide your Teams Score" },
   opposingScore: { type: Number, required: "Please provide the other Teams Score" },
   timestamp: { type: Date, default: Date.now },
-  playerGameStats: { type: Schema.Types.ObjectId, ref: "PlayerGameStats"}
+  playerGameStats: { type: Schema.Types.ObjectId, ref: "PlayerGameStats"},
+  user: { type: Schema.Types.ObjectId, ref: "User"}
 });
 
 const TeamGameStats = mongoose.model("TeamGameStats", teamGameStatsSchema);

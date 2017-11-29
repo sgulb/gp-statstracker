@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
       db       = require("../models");
 
 const playerGameStatsSchema = new Schema({
+  isGoal: { type: Boolean },
+  gameDate: { type: Date, default: Date.now },
   points: { type: Number },
   rebounds: { type: Number },
   assists: { type: Number },
@@ -16,7 +18,8 @@ const playerGameStatsSchema = new Schema({
   freeThrowsMade: { type: Number },
   freeThrowsAttempted: { type: Number },
   minutesPlayed: { type: Number },
-  teamGameStats: { type: Schema.Types.ObjectId, ref: "TeamGameStats"}
+  teamGameStats: { type: Schema.Types.ObjectId, ref: "TeamGameStats"},
+  user: { type: Schema.Types.ObjectId, ref: "User"}
 });
 
 const PlayerGameStats = mongoose.model("PlayerGameStats", playerGameStatsSchema);

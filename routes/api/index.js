@@ -7,12 +7,13 @@ const router = require("express").Router(),
       loginRoutes = require("./login.js");
 
 
-// Article Routes
-router.use("/player", playerRoutes);
-router.use("/playerGames", playerGameRoutes);
-router.use("/team", teamRoutes);
-router.use("/teamGames", teamGameRoutes);
-router.use("/school", schoolRoutes);
-router.use("/login", loginRoutes)
+// API Routes
+router.use("/player", playerRoutes); // Player Routes "/api/player"
+router.use("/playerGames", playerGameRoutes); // Player Game Stats Routes "/api/playerGames"
+router.use("/team", teamRoutes); // Team Routes "/api/team"
+router.use("/teamGames", teamGameRoutes); // Team Game Stats Routes "/api/teamGames"
+router.use("/school", schoolRoutes); // School Routes "/api/school"
+router.use("/login", loginRoutes); // Login Routes "/api/login"
 
+// Export the Router
 module.exports = router;

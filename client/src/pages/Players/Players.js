@@ -60,7 +60,8 @@ class Players extends Component {
             API.addPlayer({
                 fName: this.state.fName,
                 lName: this.state.lName,
-                jersey: this.state.jersey
+                jersey: this.state.jersey,
+                position:this.state.position
             })
                 .then(res => this.loadPlayers())
                 .catch(err => console.log(err));
@@ -173,48 +174,48 @@ class Players extends Component {
 
                     </div>
 
-                    <div className="row">
-                        <div className="input-field col s6">
-                            <InputForm name="points" id="points" type="text" className="validate"
-                                       value={this.state.points}
-                                       onChange={this.handleInputChange}/>
-                            <label className="active" for="fName">Points</label>
-                        </div>
+                    {/*<div className="row">*/}
+                        {/*<div className="input-field col s6">*/}
+                            {/*<InputForm name="points" id="points" type="text" className="validate"*/}
+                                       {/*value={this.state.points}*/}
+                                       {/*onChange={this.handleInputChange}/>*/}
+                            {/*<label className="active" for="fName">Points</label>*/}
+                        {/*</div>*/}
 
-                        <div className="input-field col s6">
-                            <InputForm name="assists" id="type" type="text" className="validate"
-                                       value={this.state.assists}
-                                       onChange={this.handleInputChange}/>
-                            <label className="active" for="type">Assists</label>
-                        </div>
+                        {/*<div className="input-field col s6">*/}
+                            {/*<InputForm name="assists" id="type" type="text" className="validate"*/}
+                                       {/*value={this.state.assists}*/}
+                                       {/*onChange={this.handleInputChange}/>*/}
+                            {/*<label className="active" for="type">Assists</label>*/}
+                        {/*</div>*/}
 
-                    </div>
+                    {/*</div>*/}
 
-                    <div className="row">
-                        <div className="input-field col s6">
-                            <InputForm name="rebounds" id="fName" type="text" className="validate"
-                                       value={this.state.rebounds}
-                                       onChange={this.handleInputChange}/>
-                            <label className="active" for="fName">Rebounds</label>
-                        </div>
+                    {/*<div className="row">*/}
+                        {/*<div className="input-field col s6">*/}
+                            {/*<InputForm name="rebounds" id="fName" type="text" className="validate"*/}
+                                       {/*value={this.state.rebounds}*/}
+                                       {/*onChange={this.handleInputChange}/>*/}
+                            {/*<label className="active" for="fName">Rebounds</label>*/}
+                        {/*</div>*/}
 
-                        <div className="input-field col s6">
-                            <InputForm name="steals" id="type" type="text" className="validate"
-                                       value={this.state.steals}
-                                       onChange={this.handleInputChange}/>
-                            <label className="active" for="type">Steals</label>
-                        </div>
+                        {/*<div className="input-field col s6">*/}
+                            {/*<InputForm name="steals" id="type" type="text" className="validate"*/}
+                                       {/*value={this.state.steals}*/}
+                                       {/*onChange={this.handleInputChange}/>*/}
+                            {/*<label className="active" for="type">Steals</label>*/}
+                        {/*</div>*/}
 
-                    </div>
+                    {/*</div>*/}
 
-                    <div className="row">
-                        <div className="input-field col s6">
-                            <InputForm name="turnovers" id="turnovers" type="text" className="validate"
-                                       value={this.state.turnovers}
-                                       onChange={this.handleInputChange}/>
-                            <label className="active" for="fName">Turnovers</label>
-                        </div>
-                    </div>
+                    {/*<div className="row">*/}
+                        {/*<div className="input-field col s6">*/}
+                            {/*<InputForm name="turnovers" id="turnovers" type="text" className="validate"*/}
+                                       {/*value={this.state.turnovers}*/}
+                                       {/*onChange={this.handleInputChange}/>*/}
+                            {/*<label className="active" for="fName">Turnovers</label>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
 
                     <FormBtn disabled={!(this.state.fName && this.state.lName)}
                              onClick={this.handleFormSubmit}

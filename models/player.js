@@ -5,16 +5,12 @@ const mongoose = require("mongoose");
 const playerSchema = new Schema({
   fName: { type: String, required: "Please provide the players First name", trim: true  },
   lName: { type: String, required: "Please provide the players Last name", trim: true  },
-    jersey: {type: String, required: "Please provide the players postion", trim: true},
-  // fullName: String,
-  // position: { type: String, required: "Please provide the players postion", trim: true  },
-  // points: { type: String, default: `Unknown`, trim: true },
-  //   assists: { type: String, default: `Unknown`, trim: true },
-  //   rebounds: { type: String, default: `Unknown`, trim: true },
-  //   steals: { type: String, default: `Unknown`, trim: true },
-  //   turnovers: { type: String, default: `Unknown`, trim: true },
-  // timestamp: { type: Date, default: Date.now },
-  playerGameStats: { type: Schema.Types.ObjectId, ref: "PlayerGameStats"}
+  jersey: {type: String, required: "Please provide the players postion", trim: true},
+  fullName: String,
+  position: { type: String, required: "Please provide the players postion", trim: true  },
+  timestamp: { type: Date, default: Date.now },
+  playerGameStats: { type: Schema.Types.ObjectId, ref: "PlayerGameStats"},
+  user: { type: Schema.Types.ObjectId, ref: "User"}
 });
 
 playerSchema.pre('save', function(next){
