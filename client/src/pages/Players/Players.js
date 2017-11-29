@@ -73,7 +73,7 @@ class Players extends Component {
                 <div className="basketball-BG">
                     <NavBar/>
 
-                    <Row>
+                    <Row className="center-align">
                     {this.state.players.length ? (
                                 <div className="card-content">
                                     <PlayersList>

@@ -44,6 +44,14 @@ h1, h2, h3, h4, h5 {
     text-transform: uppercase;
 }
 
+.oswald-caps-red {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #d50000 !important;
+}
+
+
+
 /*header*/
 .header-text {
     font-size: 600%;
@@ -133,6 +141,15 @@ h1, h2, h3, h4, h5 {
     box-shadow: 0 1px 0 0 red !important
 }
 /*End Form Style*/
+
+/*-----------------Login Modal Styles------------------*/
+.tabs .indicator {
+    background-color: #d50000 !important;
+}
+
+.tabs .tab a{
+    color: #d50000 !important;
+}
 
 /*Button Styles*/
 /*Button Styles*/

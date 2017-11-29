@@ -55,8 +55,8 @@ class Detail extends Component {
             <div>
                 <NavBar/>
                 <div className="row center">
-                    <Col s={3}/>
-                    <Col s={6}>
+                    <Col s={1} m={3}/>
+                    <Col s={10} m={6}>
                         <div
                             header={<CardTitle image={this.state.player.playerImage}></CardTitle>}>
                             <CardPanel>
@@ -105,7 +105,7 @@ class Detail extends Component {
                             </CardPanel>
                         </div>
                     </Col>
-                    <Col s={3}/>
+                    <Col s={1} m={3}/>
                 </div>
 
                     <div className="center">

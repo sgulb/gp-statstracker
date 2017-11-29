@@ -33,8 +33,8 @@ const Main = () =>
                 <Row>
                     <Col s={12}>
                       <Tabs>
-                        <Tab title="Login" tabWidth={6} active>
-                            <div className="modal-content">
+                        <Tab title="Login" tabWidth={6} active className="oswald-caps-red">
+                            <div className="modal-content red-text text-accent-4">
                                 <h4>Login</h4>
                                 <LoginForm />
                             </div>
@@ -43,13 +43,13 @@ const Main = () =>
                                 <a href="#!" className="modal-action modal-close waves-effect waves-red btn-flat">Nevermind</a>
                             </div>
                         </Tab>
-                        <Tab title="Register New User" tabWidth={6}>
-                            <div className="modal-content">
+                        <Tab title="Register New User" tabWidth={6} className="oswald-caps-red">
+                            <div className="modal-content red-text text-accent-4">
                                 <h4>Register New User</h4>
-                                <RegisterForm />
+                                <RegisterForm/>
                             </div>
                             <div className="modal-footer">
-                                <a href="#!" className="modal-action modal-close waves-effect waves-red btn-flat">Register</a>
+                                <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Register</a>
                                 <a href="#!" className="modal-action modal-close waves-effect waves-red btn-flat">Nevermind</a>
                             </div>
                         </Tab>
