@@ -20,7 +20,7 @@ class Teams extends Component {
 	};
 
 	loadTeams = () => {
-		API.getTeams()
+		API.getTeams(this.state.userId)
 			.then(res =>
 				this.setState({ teams: res.data, teamName: "" })
 			)

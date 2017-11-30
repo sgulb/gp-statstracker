@@ -8,8 +8,8 @@ export default {
     return axios.post("/api/team/", teamData)
   },
 
-  getTeams: function(){
-    return axios.get("/api/team/")
+  getTeams: function(userId){
+    return axios.get("/api/team/user/", userId)
   },
 
   getOneTeam: function(id){
