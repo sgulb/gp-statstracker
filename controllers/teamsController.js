@@ -34,6 +34,14 @@ module.exports = {
   //     .then(dbModel => res.json(dbModel))
   //     .catch(err => res.status(422).json(err));
   // },
+  findByUser: function(req, res) {
+    db.User
+      .findOne(req.params.id, 'team')
+      .then( dbModel => {
+          res.status(200).json(dbModel);
+      })
+      .catch(err => res.status(422).json(err));
+  },
   findById: function(req, res) {
     db.Team
       .findById(req.params.id)
@@ -77,9 +85,14 @@ module.exports = {
 
           res.status(200).json(result);
 
-          db.School.findOneAndUpdate(
+          // db.School.findOneAndUpdate(
+          //   { "_id": req.body._id }, { $push: { "team": result.id }}
+          // );
+
+          db.User.findOneAndUpdate(
             { "_id": req.body._id }, { $push: { "team": result.id }}
           );
+
         })
       .catch(err => res.status(422).json(err));
   },

@@ -23,7 +23,8 @@ const userSchema = new Schema({
 		type: String,
 		required: 'Please supply a Password',
 		trim: true
-	}
+	},
+	team: { type: Schema.Types.ObjectId, ref: "Team"}
 });
 
 // userSchema.plugin(passportLocalMongoose, { usernameField: 'email'});
