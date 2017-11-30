@@ -14,17 +14,20 @@ import DeleteBtn from "../../components/DeleteBtn/DeleteBtn"
 class register extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { name: '', email: '', password: '' };
+        this.state = { name: '', email: '', password: '', passwordConfirm: '' };
     }
 
     handleChange(event) {
         this.setState({ [event.target.name]: event.target.value });
     }
 
-    handleregister(event) {
-        event.preventDefault();
-        this.props.dispatch(register(this.state.name, this.state.email, this.state.password));
-    }
+    handleregister= event => {
+        const { name, value } = event.target;
+        this.setState({
+            [name]: value
+        });
+    };
+
 
 
 
@@ -70,8 +73,8 @@ class register extends React.Component {
                         </div>
 
                         <div className="input-field col s6">
-                            <InputForm name="password"
-                                       value={this.state.password}
+                            <InputForm name="passwordConfirm"
+                                       value={this.state.passwordConfirm}
                                        onChange={this.handleChange.bind(this)}
                                        id="type"
                                        className="validate"
