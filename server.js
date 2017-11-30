@@ -6,14 +6,14 @@ const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-//required for passport user authintification
-const passport = require('passport');
-const flash    = require('connect-flash'); //The flash is a special area of the session used for storing messages
+// //required for passport user authintification
+// const passport = require('passport');
+// const flash    = require('connect-flash'); //The flash is a special area of the session used for storing messages
 const morgan       = require('morgan'); //HTTP request logger middleware for node.js
-const cookieParser = require('cookie-parser');  
-const session      = require('express-session');
-const expressValidator = require("express-validator");
-require('./handlers/passport');
+// const cookieParser = require('cookie-parser');  
+// const session      = require('express-session');
+// const expressValidator = require("express-validator");
+// require('./handlers/passport');
 
 
 // Configure body parser for AJAX requests
