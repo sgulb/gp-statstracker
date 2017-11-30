@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const schoolsController = require("../../controllers/schoolsController");
-const authController = require("../../controllers/authController");
+// const authController = require("../../controllers/authController");
 
 // Matches with "/api/school"
 router.route("/")

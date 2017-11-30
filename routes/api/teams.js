@@ -1,31 +1,31 @@
 const router = require("express").Router();
 const teamsController = require("../../controllers/teamsController");
-const authController = require("../../controllers/authController");
+// const authController = require("../../controllers/authController");
 
 // Matches with "/api/team"
 router.route("/")
-  .post(authController.isLoggedIn, teamsController.create);
+  .post(teamsController.create);
 
 // Matches with "/api/team/:id"
 router
   .route("/:id")
-  .get(authController.isLoggedIn, teamsController.findById)
-  .put(authController.isLoggedIn, teamsController.update)
-  .delete(authController.isLoggedIn, teamsController.remove);
+  .get(teamsController.findById)
+  .put(teamsController.update)
+  .delete(teamsController.remove);
 
 // Matches with "/api/team/teamPopAll/:id" and populates with players
 router
   .route("/teamPopPlayer/:id")
-  .get(authController.isLoggedIn, teamsController.findByIdPop)
+  .get(teamsController.findByIdPop)
 
 // Matches with "/api/team/teamPopAll/:id" and populates with Team stats
 router
   .route("/teamPopTeamStats/:id")
-  .get(authController.isLoggedIn, teamsController.findByIdPopTeamStats)
+  .get(teamsController.findByIdPopTeamStats)
 
   // Matches with "/api/team/teamPopAll/:id" and populates with players and Team stats
 router
   .route("/teamPopAll/:id")
-  .get(authController.isLoggedIn, teamsController.findByIdPop)
+  .get(teamsController.findByIdPop)
 
 module.exports = router;

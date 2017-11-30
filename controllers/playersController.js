@@ -21,13 +21,7 @@ module.exports = {
     db.Player
       .findById(req.params.id)
       .then(dbModel => {
-        if(userRights(dbModel, req.body._id)){
-        res.json(dbModel);
-      } 
-      else{
-        res.status(401);
-      }
-
+        res.status(200).json(dbModel);
       })
       .catch(err => res.status(422).json(err));
   },
@@ -36,13 +30,7 @@ module.exports = {
       .findById(req.params.id)
       .populate("PlayerGameStats")
       .then(dbModel => {
-        if (userRights(dbModel, req.body._id)){
-          res.json(dbModel);
-        }
-        else{
-          res.status(401);
-        }
-
+          res.status(201).json(dbModel);
         })
       .catch(err => res.status(422).json(err));
   },
@@ -50,7 +38,7 @@ module.exports = {
     db.Player
       .create(req.body)
       .then( (dbModel) => {
-          res.json(dbModel);
+          res.status(200).json(dbModel);
           db.Team.findOneAndUpdate(
             { "_id": req.body._id }, { $push: { "player": result.id }}
           );
@@ -61,12 +49,7 @@ module.exports = {
     db.Player
       .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => {
-        if (userRights(dbModel, req.body._id)){
-        res.json(dbModel);
-        }
-        else{
-          res.status(401);
-        }
+        res.status(200).json(dbModel);
       })
       .catch(err => res.status(422).json(err));
   },
@@ -74,21 +57,16 @@ module.exports = {
     db.Player
       .findById({ _id: req.params.id })
       .then(dbModel => {
-        if(userRights(dbModel, req.body._id)){
         dbModel.remove();
-        }
-        else{
-          res.status(401);
-        }
       })
-      .then(dbModel => res.json(dbModel))
+      .then(dbModel => res.status(200).json(dbModel))
       .catch(err => res.status(422).json(err));
   }
 };
 
-const userRights = (player, user) => {
-  if (!player.user.equal(user._id)) {
-    return false;
-  }
-  return true;
-};
+// const userRights = (player, user) => {
+//   if (!player.user.equal(user._id)) {
+//     return false;
+//   }
+//   return true;
+// };

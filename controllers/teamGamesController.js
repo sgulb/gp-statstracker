@@ -13,12 +13,7 @@ module.exports = {
     db.TeamGameStats
       .findById(req.params.id)
       .then(dbModel => {
-        if(userRights(dbModel, req.body._id)){
-          res.json(dbModel);
-        }
-        else{
-          res.status(401);
-        }
+          res.status(200).json(dbModel);
       })
       .catch(err => res.status(422).json(err));
   },
@@ -26,7 +21,7 @@ module.exports = {
     db.TeamGameStats
       .create(req.body)
       .then( (result) => {
-          res.json(result);
+          res.status(201).json(result);
 
           db.Team.findOneAndUpdate(
             { "_id": req.body._id }, { $push: { "teamGameStats": result.id }}
@@ -42,12 +37,7 @@ module.exports = {
     db.TeamGameStats
       .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => {
-        if (userRights(dbModel, req.body._id)) {
-        res.json(dbModel);
-        }
-        else{
-          res.status(401);
-        }
+        res.status(200).json(dbModel);
       })
       .catch(err => res.status(422).json(err));
   },
@@ -55,21 +45,16 @@ module.exports = {
     db.TeamGameStats
       .findById({ _id: req.params.id })
       .then(dbModel => {
-        if (userRights(dbModel, req.body._id)){
         dbModel.remove();
-      }
-      else{
-        res.status(401);
-      }
       })
-      .then(dbModel => res.json(dbModel))
+      .then(dbModel => res.status(200).json(dbModel))
       .catch(err => res.status(422).json(err));
   }
 };
 
-const userRights = (TeamGameStats, user) => {
-  if (!TeamGameStats.user.equal(user._id)) {
-    return false;
-  }
-  return true;
-};
+// const userRights = (TeamGameStats, user) => {
+//   if (!TeamGameStats.user.equal(user._id)) {
+//     return false;
+//   }
+//   return true;
+// };

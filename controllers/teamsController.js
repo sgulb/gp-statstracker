@@ -38,12 +38,7 @@ module.exports = {
     db.Team
       .findById(req.params.id)
       .then(dbModel => {
-        if (userRights(dbModel, req.body._id)){
-        res.json(dbModel);
-        }
-        else{
-          res.status(401);
-        }
+        res.status(200).json(dbModel);
       })
       .catch(err => res.status(422).json(err));
   },
@@ -53,12 +48,7 @@ module.exports = {
       .populate('Team')
       .populate('Player')
       .then(dbModel => {
-        if(userRights(dbModel, req.body._id)){
-        res.json(dbModel);
-        }
-        else{
-          res.status(401);
-        }
+        res.status(200).json(dbModel);
       })
       .catch(err => res.status(422).json(err));
   },
@@ -67,12 +57,7 @@ module.exports = {
       .findById(req.params.id)
       .populate('Player')
       .then(dbModel => {
-        if(userRights(dbModel, req.body._id)){
-        res.json(dbModel);
-        }
-        else{
-          res.status(401);
-        }
+        res.status(200).json(dbModel);
       })
       .catch(err => res.status(422).json(err));
   },
@@ -81,12 +66,7 @@ module.exports = {
       .findById(req.params.id)
       .populate('Team')
       .then(dbModel => {
-        if(userRights(dbModel, req.body._id)){
-         res.json(dbModel);
-        }
-        else{
-          res.status(401);
-        }
+         res.status(200).json(dbModel);
       })
       .catch(err => res.status(422).json(err));
   },
@@ -95,7 +75,7 @@ module.exports = {
       .create(req.body)
       .then( (result) => {
 
-          res.json(result);
+          res.status(200).json(result);
 
           db.School.findOneAndUpdate(
             { "_id": req.body._id }, { $push: { "team": result.id }}
@@ -107,12 +87,7 @@ module.exports = {
     db.Team
       .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => {
-        if(userRights(dbModel, req.body._id)){
-        res.json(dbModel);
-        }
-        else{
-          res.status(401);
-        }
+        res.status(200).json(dbModel);
       })
       .catch(err => res.status(422).json(err));
   },
@@ -120,21 +95,16 @@ module.exports = {
     db.Team
       .findById({ _id: req.params.id })
       .then(dbModel => {
-        if(userRights(dbModel, req.body._id)){
           dbModel.remove()
-        }
-        else{
-          res.status(401);
-        }
-        })
-      .then(dbModel => res.json(dbModel))
+      })
+      .then(dbModel => res.status(200).json(dbModel))
       .catch(err => res.status(422).json(err));
   }
 };
 
-const userRights = (Team, user) => {
-  if (!Team.user.equal(user._id)) {
-    return false;
-  }
-  return true;
-};
+// const userRights = (Team, user) => {
+//   if (!Team.user.equal(user._id)) {
+//     return false;
+//   }
+//   return true;
+// };
