@@ -64,8 +64,15 @@ export default {
 
   addTeamGame: function(teamGameData){
     return axios.post("/api/teamGames/", teamGameData)
-  }
+  },
 
+    //routes for users
+    registerUser: function(userData){
+        return axios.post("/api/user/", userData)
+    }
 
 };
+
+
+
 
