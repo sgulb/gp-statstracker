@@ -30,6 +30,6 @@ router
 
 router
   .route("/user/:id")
-  .get(teamsController.User);
+  .get(teamsController.findByUser);
 
 module.exports = router;
