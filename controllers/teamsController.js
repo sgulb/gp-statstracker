@@ -81,25 +81,23 @@ module.exports = {
   },
   create: function(req, res) {
 
-    let teamName = req.body.teamName,
-        cId = req.body.id,
-        id = "";
+    let { id } = req.body;
+    delete req.body.id;
+
+    // let teamName = req.body.teamName,
+    //     cId = req.body.id,
+    //     id = "";
 
     db.Team
-      .create({
-        'teamName': teamName
-      })
+      .create(req.body)
       .then( (result) => {
           res.status(200).json(result);
-          id = result._id;
-          console.log(id);
           // db.School.findOneAndUpdate(
           //   { "_id": req.body._id }, { $push: { "team": result.id }}
           // );
 
           db.Users
-            .findByIdAndUpdate(cId, { $push: { "team": id }}) 
-            .then(rep2 => console.log(rep2))
+            .findByIdAndUpdate(id, { $push: { "team": result._id }}) 
             .catch(err => console.log(err));
 
         })
@@ -107,7 +105,7 @@ module.exports = {
   },
   update: function(req, res) {
     db.Team
-      .findOneAndUpdate({ _id: req.body.id }, req.body)
+      .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => {
         res.status(200).json(dbModel);
       })

@@ -35,19 +35,23 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
+
+    let { id } = req.body;
+    delete req.body.id;
+
     db.Player
       .create(req.body)
       .then( (dbModel) => {
           res.status(200).json(dbModel);
           db.Team.findOneAndUpdate(
-            { "_id": dbModel._id }, { $push: { "player": result.id }}
+            { "_id": id }, { $push: { "player": dbModel._id }}
           );
       })
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
     db.Player
-      .findOneAndUpdate({ _id: req.body.id }, req.body)
+      .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => {
         res.status(200).json(dbModel);
       })

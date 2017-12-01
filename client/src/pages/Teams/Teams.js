@@ -46,7 +46,9 @@ class Teams extends Component {
         teamName: this.state.teamName,
         id: window.sessionStorage.getItem("userId")
       })
-        .then(res => this.loadTeams())
+        .then(res => {
+        	console.log(res.data);
+        	this.loadTeams()})
         .catch(err => console.log(err));
     }
   };
