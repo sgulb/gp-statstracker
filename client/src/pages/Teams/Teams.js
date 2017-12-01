@@ -35,7 +35,7 @@ class Teams extends Component {
 	handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
-      [name]: value
+      [name]: valueˇ
     });
   };
 
@@ -44,6 +44,7 @@ class Teams extends Component {
     if (this.state.teamName) {
       API.addTeam({
         teamName: this.state.teamName,
+        id: window.sessionStorage.getItem("userId")
       })
         .then(res => this.loadTeams())
         .catch(err => console.log(err));

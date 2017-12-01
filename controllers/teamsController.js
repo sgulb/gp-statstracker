@@ -80,26 +80,34 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
+
+    let teamName = req.body.teamName,
+        cId = req.body.id,
+        id = "";
+
     db.Team
-      .create(req.body)
+      .create({
+        'teamName': teamName
+      })
       .then( (result) => {
-
           res.status(200).json(result);
-
+          id = result._id;
+          console.log(id);
           // db.School.findOneAndUpdate(
           //   { "_id": req.body._id }, { $push: { "team": result.id }}
           // );
 
-          db.User.findOneAndUpdate(
-            { "_id": req.body._id }, { $push: { "team": result.id }}
-          );
+          db.Users
+            .findByIdAndUpdate(cId, { $push: { "team": id }}) 
+            .then(rep2 => console.log(rep2))
+            .catch(err => console.log(err));
 
         })
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
     db.Team
-      .findOneAndUpdate({ _id: req.params.id }, req.body)
+      .findOneAndUpdate({ _id: req.body.id }, req.body)
       .then(dbModel => {
         res.status(200).json(dbModel);
       })

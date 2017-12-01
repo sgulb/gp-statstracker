@@ -53,6 +53,7 @@ class register extends Component {
             password: this.state.password
         })
             .then( (res) => {
+                console.log('res.data', res.data);
                 this.setState({
                     data: res.data
                 })

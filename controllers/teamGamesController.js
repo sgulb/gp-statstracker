@@ -24,18 +24,18 @@ module.exports = {
           res.status(201).json(result);
 
           db.Team.findOneAndUpdate(
-            { "_id": req.body._id }, { $push: { "teamGameStats": result.id }}
+            { "_id": result._id }, { $push: { "teamGameStats": result.id }}
           );
 
           db.PlayerGameStats.findOneAndUpdate(
-            { "_id": req.body._id }, { $push: { "teamGameStats": result.id }}
+            { "_id": result._id }, { $push: { "teamGameStats": result.id }}
           );
         })
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
     db.TeamGameStats
-      .findOneAndUpdate({ _id: req.params.id }, req.body)
+      .findOneAndUpdate({ _id: req.body.id }, req.body)
       .then(dbModel => {
         res.status(200).json(dbModel);
       })

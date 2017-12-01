@@ -40,14 +40,14 @@ module.exports = {
       .then( (dbModel) => {
           res.status(200).json(dbModel);
           db.Team.findOneAndUpdate(
-            { "_id": req.body._id }, { $push: { "player": result.id }}
+            { "_id": dbModel._id }, { $push: { "player": result.id }}
           );
       })
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
     db.Player
-      .findOneAndUpdate({ _id: req.params.id }, req.body)
+      .findOneAndUpdate({ _id: req.body.id }, req.body)
       .then(dbModel => {
         res.status(200).json(dbModel);
       })
