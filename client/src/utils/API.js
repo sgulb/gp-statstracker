@@ -69,11 +69,11 @@ export default {
     //routes for users
 
     registerUser: function(userData){
-        return axios.get("/api/login", userData)
+        return axios.post("/api/login/", userData)
     },
 
     login: function (object) {
-        return axios.get("/api/user", object)
+        return axios.get("/api/login", object)
     }
 
 };

@@ -29,9 +29,9 @@ class register extends Component {
     registerHandler = (event) => {
         event.preventDefault();
         API.registerUser({
-            email: this.email,
-            password: this.password,
-            name: this.name
+            email: this.state.email,
+            password: this.state.password,
+            name: this.state.name
         })
             .then((res) => {
                 alert("you are registered go login")
@@ -44,6 +44,7 @@ class register extends Component {
         this.setState({
             [name]: value
         });
+        console.log(name, value)
     };
 
     loginHandler = (event) => {

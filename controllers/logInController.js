@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 const promisify = require('es6-promisify');
-const User = mongoose.model("User");
+const db = require("../models");
 
 module.exports = {
   authUser: function(req, res) {
-    db.User
+    db.Users
       .findOne({email: req.body.email, password: req.body.password}, '_id')
       .then( dbModel => {
           res.status(200).json(dbModel);
@@ -12,7 +12,7 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   findById: function(req, res) {
-    db.User
+    db.Users
       .findById(req.params.id)
       .then(dbModel => {
           res.status(200).json(dbModel);
@@ -20,7 +20,7 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
-    db.User
+    db.Users
       .create(req.body)
       .then( dbModel => {
       	res.status(201).json(dbModel);
@@ -28,7 +28,7 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
-    db.User
+    db.Users
       .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => {
           res.json(dbModel);
@@ -36,7 +36,7 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   remove: function(req, res) {
-    db.User
+    db.Users
       .findById({ _id: req.params.id })
       .then(dbModel => {
           dbModel.remove();
