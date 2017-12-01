@@ -72,8 +72,8 @@ export default {
         return axios.post("/api/login/", userData)
     },
 
-    login: function (object) {
-        return axios.get("/api/login", object)
+    login: function (cred) {
+        return axios.post("/api/login/auth", cred)
     }
 
 };

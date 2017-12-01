@@ -5,8 +5,9 @@ const db = require("../models");
 module.exports = {
   authUser: function(req, res) {
     db.Users
-      .findOne({email: req.body.email, password: req.body.password}, '_id')
+      .find({email: req.body.email, password: req.body.password}, '_id')
       .then( dbModel => {
+        console.log(dbModel)
           res.status(200).json(dbModel);
       })
       .catch(err => res.status(422).json(err));

@@ -14,6 +14,7 @@ import DeleteBtn from "../../components/DeleteBtn/DeleteBtn"
 class register extends Component {
 
     state = {
+        data: [],
         email: "",
         password: "",
         name: ""
@@ -48,12 +49,15 @@ class register extends Component {
 
     loginHandler = (event) => {
         API.login({
-            email: this.email,
-            passoword: this.password
+            email: this.state.email,
+            password: this.state.password
         })
             .then( (res) => {
-                if (res._id) {
-                    window.sessionStorage.setItem("userId", res._id );
+                this.setState({
+                    data: res.data
+                })
+                if (this.state.data[0]) {
+                    this.state.data.map(id => window.sessionStorage.setItem("userId", id._id))
                     this.setState({email: "", password: ""});
                 }
                 else {
@@ -155,19 +159,6 @@ class register extends Component {
                             </Row>
                         </div>
 
-
-                        <div className="input-field">
-                            <Row>
-                                <InputForm
-                                    name="name"
-                                    label="name"
-                                    type="text"
-                                    value={this.state.name}
-                                    onChange={this.handleInputChange}
-                                />
-                                <label className="active" for="fName">Name</label>
-                            </Row>
-                        </div>
                         <FormBtn
                             disabled={!(this.state.email && this.state.password)}
                             onClick={this.loginHandler}>
