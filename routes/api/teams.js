@@ -29,7 +29,7 @@ router
   .get(teamsController.findByIdPop);
 
 router
-  .route("/user/:id")
+  .route("/user/")
   .get(teamsController.findByUser);
 
 module.exports = router;

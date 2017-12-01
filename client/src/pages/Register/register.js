@@ -11,22 +11,56 @@ import DeleteBtn from "../../components/DeleteBtn/DeleteBtn"
 
 
 
-class register extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { name: '', email: '', password: '', passwordConfirm: '' };
+class register extends Component {
+
+    state = {
+        email: "",
+        password: "",
+        name: ""
+
     }
 
-    handleChange(event) {
-        this.setState({ [event.target.name]: event.target.value });
+    componentDidMount(){
+        this.loginHandler()
+    };
+
+
+
+    registerHandler = (event) => {
+        event.preventDefault();
+        API.registerUser({
+            email: this.email,
+            password: this.password,
+            name: this.name
+        })
+            .then((res) => {
+                alert("you are registered go login")
+            })
     }
 
-    handleregister= event => {
+    // Handles updating component state when the user types into the input field
+    handleInputChange = (event) => {
         const { name, value } = event.target;
         this.setState({
             [name]: value
         });
     };
+
+    loginHandler = (event) => {
+        API.login({
+            email: this.email,
+            passoword: this.password
+        })
+            .then( (res) => {
+                if (res._id) {
+                    window.sessionStorage.setItem("userId", res._id );
+                    this.setState({email: "", password: ""});
+                }
+                else {
+                    return "message to please log in using correct user name and password"
+                }
+            })
+    }
 
 
 
@@ -37,57 +71,59 @@ class register extends React.Component {
                 <NavBar/>
 
                 <div className="container oswald-caps">
+                    <Col s={6}>
+                        <h3 className="oswald-caps-red">Register</h3>
+                        <div className="input-field">
+                            <Row>
+                                <InputForm
+                                    name="email"
+                                    value={this.state.email}
+                                    onChange={this.handleInputChange}
+                                    label="email"
+                                    type="email"
+                                    data-error="Please enter a valid email address"
+                                    data-success="Valid Email"
 
-                    <div className="row">
-                        <div className="input-field col s6">
-                            <InputForm name="name"
-                                       type="text"
-                                       className="validate"
-                                       value={this.state.name}
-                                       onChange={this.handleChange.bind(this)}/>
-                            <label className="active" for="name">Name</label>
+                                />
+                                <label className="active" for="fName">Email</label>
+                            </Row>
                         </div>
 
-                        <div className="input-field col s6">
-                            <InputForm name="email"
-                                       type="email"
-                                       className="validate"
-                                       value={this.state.email}
-                                       onChange={this.handleChange.bind(this)}/>
-                            <label className="active" for="email">Email</label>
+                        <div className="input-field">
+                            <Row>
+                                <InputForm
+                                    name="password"
+                                    label="password"
+                                    type="password"
+                                    value={this.state.password}
+                                    onChange={this.handleInputChange}
+                                />
+                                <label className="active" for="fName">Password</label>
+                            </Row>
                         </div>
 
-                    </div>
 
-                    <div className="row">
-                        <div className="input-field col s6">
-                            <InputForm name="password"
-                                       value={this.state.password}
-                                       onChange={this.handleChange.bind(this)}
-                                       id="password"
-                                       type="text"
-                                       className="validate"
-
-                            />
-                            <label className="active" for="type">Password</label>
+                        <div className="input-field">
+                            <Row>
+                                <InputForm
+                                    name="name"
+                                    label="name"
+                                    type="text"
+                                    value={this.state.name}
+                                    onChange={this.handleInputChange}
+                                />
+                                <label className="active" for="fName">Name</label>
+                            </Row>
                         </div>
 
-                        <div className="input-field col s6">
-                            <InputForm name="passwordConfirm"
-                                       value={this.state.passwordConfirm}
-                                       onChange={this.handleChange.bind(this)}
-                                       id="type"
-                                       className="validate"
-                            />
-                            <label className="active" for="type">Confirm Password</label>
-                        </div>
-
-                    </div>
+                    </Col>
 
 
-                    <FormBtn disabled={!(this.state.name && this.state.email)}
-                             onClick={this.handleregister.bind(this)}
-                    >Submit</FormBtn>
+                    <FormBtn
+                        disabled={!(this.state.email && this.state.password)}
+                        onClick={this.registerHandler}>
+                        Register
+                    </FormBtn>
 
 
                 </div>

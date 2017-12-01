@@ -16,7 +16,8 @@ export const LoginForm = props => (
                     data-success="Valid Email"
                     s={12}
                     validate
-                    name="name" className="validate"
+                    name="email"
+                    className="validate"
 
                 />
 
