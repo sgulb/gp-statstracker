@@ -44,6 +44,7 @@ class register extends Component {
         this.setState({
             [name]: value
         });
+        console.log(name, value)
     };
 
     loginHandler = (event) => {
@@ -57,7 +58,7 @@ class register extends Component {
                     this.setState({email: "", password: ""});
                 }
                 else {
-                    alert("your email or password is wrong or you are not registered please try again.")
+                    return "message to please log in using correct user name and password"
                 }
             })
     }
@@ -115,68 +116,18 @@ class register extends Component {
                                 <label className="active" for="fName">Name</label>
                             </Row>
                         </div>
-                        <FormBtn
-                            disabled={!(this.state.email && this.state.password)}
-                            onClick={this.registerHandler}>
-                            Register
-                        </FormBtn>
+
                     </Col>
+
+
+                    <FormBtn
+                        disabled={!(this.state.email && this.state.password)}
+                        onClick={this.registerHandler}>
+                        Register
+                    </FormBtn>
+
+
                 </div>
-<hr/>
-                <div className="container oswald-caps">
-                    <Col s={6}>
-                        <h3 className="oswald-caps-red">Login</h3>
-                        <div className="input-field">
-                            <Row>
-                                <InputForm
-                                    name="email"
-                                    value={this.state.email}
-                                    onChange={this.handleInputChange}
-                                    label="email"
-                                    type="email"
-                                    data-error="Please enter a valid email address"
-                                    data-success="Valid Email"
-
-                                />
-                                <label className="active" for="fName">Email</label>
-                            </Row>
-                        </div>
-
-                        <div className="input-field">
-                            <Row>
-                                <InputForm
-                                    name="password"
-                                    label="password"
-                                    type="password"
-                                    value={this.state.password}
-                                    onChange={this.handleInputChange}
-                                />
-                                <label className="active" for="fName">Password</label>
-                            </Row>
-                        </div>
-
-
-                        <div className="input-field">
-                            <Row>
-                                <InputForm
-                                    name="name"
-                                    label="name"
-                                    type="text"
-                                    value={this.state.name}
-                                    onChange={this.handleInputChange}
-                                />
-                                <label className="active" for="fName">Name</label>
-                            </Row>
-                        </div>
-                        <FormBtn
-                            disabled={!(this.state.email && this.state.password)}
-                            onClick={this.loginHandler}>
-                            LogIn
-                        </FormBtn>
-                    </Col>
-                </div>
-
-
             </div>
 
         );
