@@ -1,5 +1,6 @@
 
 node_modules
-node_modules
 .ignore
+package-lock.json
+package.json
 
