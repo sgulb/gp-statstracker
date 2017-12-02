@@ -7,7 +7,7 @@
 	margin-left: 8%
 }
 
-.card{
+#card{
 	width:50%;
 	margin-left: 25%;
 	height:300px;
@@ -20,4 +20,12 @@ h5{
 }
 h2{
 	color: #c4291c;
+}
+
+.btn{
+	background-color: #c4291c
+}
+.btn:hover{
+	color:#c4291c;
+	background-color: black
 }
