@@ -20,11 +20,10 @@ class Teams extends Component {
 	};
 
 	loadTeams = () => {
-		console.log(window.sessionStorage.getItem("userId"))
 		API.getTeams(window.sessionStorage.getItem("userId"))
 			.then(res => {
                     console.log(res)
-                    this.setState({teams: res.data, teamName: ""});
+                    this.setState({teams: res.data.team, teamName: ""});
                 }
             )
 

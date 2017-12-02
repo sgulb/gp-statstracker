@@ -18,8 +18,8 @@ const playerGameStatsSchema = new Schema({
   freeThrowsMade: { type: Number },
   freeThrowsAttempted: { type: Number },
   minutesPlayed: { type: Number },
-  teamGameStats: { type: Schema.Types.ObjectId, ref: "TeamGameStats"},
-  user: { type: Schema.Types.ObjectId, ref: "User"}
+  teamGameStats: [{ type: Schema.Types.ObjectId, ref: "TeamGameStats"}],
+  user: [{ type: Schema.Types.ObjectId, ref: "User"}]
 });
 
 const PlayerGameStats = mongoose.model("PlayerGameStats", playerGameStatsSchema);

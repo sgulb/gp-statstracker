@@ -3,8 +3,8 @@ const teamsController = require("../../controllers/teamsController");
 // const authController = require("../../controllers/authController");
 
 // Matches with "/api/team"
-router.route("/")
-    .put(teamsController.findByUser)
+router.route("/?:id")
+  .put(teamsController.findByUser)
   .post(teamsController.create);
 
 // Matches with "/api/team/:id"
