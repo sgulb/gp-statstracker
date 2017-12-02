@@ -74,6 +74,10 @@ export default {
 
     login: function (cred) {
         return axios.post("/api/login/auth", cred)
+    },
+
+    findPassword: function(email) {
+        return axios.post("/api/login/forgot", email)
     }
 
 };

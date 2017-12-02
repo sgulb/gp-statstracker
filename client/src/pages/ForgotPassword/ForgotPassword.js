@@ -26,8 +26,13 @@ class ForgotPassword extends Component{
 
 
     handleEmailSubmit = event => {
-    	event.preventDefault();
-
+        event.preventDefault();
+        API.findPassword({
+            email: this.state.email
+        })
+        .then( (res) => {
+                alert("Your password has been sent to the provided email.")
+            })
     }
 
     render(){
@@ -37,8 +42,14 @@ class ForgotPassword extends Component{
                 <h2>Forgot your password?</h2>
                 <Card id="card" header={<h5>Enter the email linked to your account so we can send you your password.</h5>}>
 	                <div className="container oswald-caps">
-	                	<Input  type="email" s={8} validate label="email"/>
-	                	<Button><Icon left>email</Icon>Go!</Button>
+	                	<Input 
+                            s={8} 
+                            validate 
+                            label="Enter the email attached to your account"
+                            name="email"
+                            onChange={this.handleInputChange}
+                        />
+	                	<FormBtn onClick={this.handleEmailSubmit}>Go!</FormBtn>
 	                </div>
                 </Card>
 
