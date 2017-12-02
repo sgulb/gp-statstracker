@@ -21,13 +21,13 @@ class Teams extends Component {
 	};
 
 	loadTeams = () => {
+		console.log(window.sessionStorage.getItem("userId"))
 		API.getTeams(window.sessionStorage.getItem("userId"))
 			.then(res => {
-                    this.setState({teams: res.data.team, teamName: ""});
+                    console.log(res)
+                    this.setState({teams: res.data, teamName: ""});
                 }
-
             )
-            .catch(err => console.log(err));
 
 	};
 

@@ -10,9 +10,9 @@ const teamGameStatsSchema = new Schema({
   opposingCoach: { type: String, trim: true  },
   yourScore: { type: Number, required: "Please provide your Teams Score" },
   opposingScore: { type: Number, required: "Please provide the other Teams Score" },
-  timestamp: [{ type: Date, default: Date.now }],
-  playerGameStats: [{ type: Schema.Types.ObjectId, ref: "PlayerGameStats"}],
-  user: [{ type: Schema.Types.ObjectId, ref: "User"}]
+  timestamp: { type: Date, default: Date.now },
+  playerGameStats: { type: Schema.Types.ObjectId, ref: "PlayerGameStats"},
+  user: { type: Schema.Types.ObjectId, ref: "User"}
 });
 
 const TeamGameStats = mongoose.model("TeamGameStats", teamGameStatsSchema);
