@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import {AddTeam, AddTeamModal, TeamCard} from "../../components/TeamCard"
+import {AddTeam, TeamCard} from "../../components/TeamCard"
 import NavBar from "../../components/NavBar";
-import {Row, Col, Card, Input, Button} from 'react-materialize';
+import {Row, Card, Input, Button} from 'react-materialize';
 import PageHeader from "../../components/PageHead";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";

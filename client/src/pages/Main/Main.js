@@ -3,8 +3,8 @@ import React, { Component } from "react";
 import API from "../../utils/API";
 import NavBar from "../../components/NavBar/navBar";
 import "../../css/style.css";
-import {Modal, Button, Row, Col, Input, Tab, Tabs} from "react-materialize";
-import {LoginForm, RegisterForm} from "../../components/LoginModal";
+import {Row, Col, Tab, Tabs} from "react-materialize";
+import {LoginForm} from "../../components/LoginModal";
 import {InputForm, FormBtn} from "../../components/AddPlayers";
 
 class Main extends Component {
