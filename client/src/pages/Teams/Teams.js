@@ -28,7 +28,7 @@ class Teams extends Component {
 	};
 
 	deleteTeam = id => {
-		API.deleteTeam(this.id)
+		API.deleteTeam(id)
 			.then(res => this.loadTeams())
 			.catch(err => console.log(err));
 	};
