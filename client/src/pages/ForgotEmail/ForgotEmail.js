@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import "../../css/style.css";
-import {Card, CardTitle, Col, Row, Input, CardPanel} from 'react-materialize';
+import {Col, Row,} from 'react-materialize';'
 
 import NavBar from "../../components/NavBar/navBar";
-import {PlayersInfo} from "../../components/PlayerCard/PlayersInfo";
 import {InputForm, FormBtn} from "../../components/AddPlayers";
-import {PlayersList} from "../../components/PlayerCard/PlayersList";
-import DeleteBtn from "../../components/DeleteBtn/DeleteBtn"
+
 
 
 
@@ -22,7 +20,7 @@ class register extends Component {
     }
 
     componentDidMount(){
-        this.loginstart()
+        this.loginHandler()
     };
 
 
@@ -68,14 +66,6 @@ class register extends Component {
             })
     }
 
-    loginstart = (event) => {
-        API.login({
-            email: this.state.email,
-            password: this.state.password
-        })
-
-    }
-
 
 
 
@@ -103,40 +93,14 @@ class register extends Component {
                             </Row>
                         </div>
 
-                        <div className="input-field">
-                            <Row>
-                                <InputForm
-                                    name="password"
-                                    label="password"
-                                    type="password"
-                                    value={this.state.password}
-                                    onChange={this.handleInputChange}
-                                />
-                                <label className="active" for="fName">Password</label>
-                            </Row>
-                        </div>
-
-
-                        <div className="input-field">
-                            <Row>
-                                <InputForm
-                                    name="name"
-                                    label="name"
-                                    type="text"
-                                    value={this.state.name}
-                                    onChange={this.handleInputChange}
-                                />
-                                <label className="active" for="fName">Name</label>
-                            </Row>
-                        </div>
                         <FormBtn
-                            disabled={!(this.state.email && this.state.password)}
+                            disabled={!(this.state.email)}
                             onClick={this.registerHandler}>
                             Register
                         </FormBtn>
                     </Col>
                 </div>
-<hr/>
+                <hr/>
                 <div className="container oswald-caps">
                     <Col s={6}>
                         <h3 className="oswald-caps-red">Login</h3>
