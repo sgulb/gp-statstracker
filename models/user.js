@@ -6,6 +6,8 @@ const mongoose = require('mongoose');
       // passportLocalMongoose = require('passport-local-mongoose');
 
 const userSchema = new Schema({
+
+	// Users email, required for welcome email and forgoten password
 	email: {
 		type: String,
 		unique: true,
@@ -14,16 +16,22 @@ const userSchema = new Schema({
 		validate: [validator.isEmail, 'Invalid Email Address'],
 		required: 'Please provide an email address'
 	},
+	
+	// Users name, required for personlization of communications
 	name: {
 		type: String,
 		required: 'Please supply a name',
 		trim: true
 	},
+
+	// Password, Used to secure route (up grade to passport hash in the future)
 	password: {
 		type: String,
 		required: 'Please supply a Password',
 		trim: true
 	},
+
+	// Teams owned by this user
 	team: [{ type: Schema.Types.ObjectId, ref: "Team"}]
 });
 

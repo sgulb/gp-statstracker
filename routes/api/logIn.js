@@ -5,15 +5,15 @@ const logInController = require("../../controllers/logInController");
 
 //route "/api/login"
 router.route('/')
-	.post(logInController.create);
+	.post(logInController.create); // add User
 
 //route "/api/register"
 router.route("/:id")
-    .get(logInController.findById)
-    .put(logInController.update);
+    .get(logInController.findById) // find user
+    .put(logInController.update); // update user
 
 //route "/api/login"
 router.route('/auth')
-    .post(logInController.authUser);
+    .post(logInController.authUser); // authenticate user
 
 module.exports = router;

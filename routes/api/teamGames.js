@@ -3,14 +3,13 @@ const teamGamesController = require("../../controllers/teamGamesController");
 // const authController = require("../../controllers/authController");
 
 // Matches with "/api/teamGames"
-router.route("/")
-  .post(teamGamesController.create);
+router.route("/") 
+  .post(teamGamesController.create); // create new Team Game
 
 // Matches with "/api/teamGames/:id"
-router
-  .route("/:id")
-  .get(teamGamesController.findById)
-  .put(teamGamesController.update)
-  .delete(teamGamesController.remove);
+router.route("/:id")
+  .get(teamGamesController.findById) // Return Team Game Details
+  .put(teamGamesController.update) // Update Team Game
+  .delete(teamGamesController.remove); // Remove Team Game
 
 module.exports = router;

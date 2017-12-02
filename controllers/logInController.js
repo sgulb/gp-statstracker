@@ -3,6 +3,8 @@ const promisify = require('es6-promisify');
 const db = require("../models");
 
 module.exports = {
+
+  // Check for email and password in DB. If found return user._ID
   authUser: function(req, res) {
     db.Users
       .find({email: req.body.email, password: req.body.password}, '_id')
@@ -12,6 +14,8 @@ module.exports = {
       })
       .catch(err => res.status(422).json(err));
   },
+
+  // find user by ID
   findById: function(req, res) {
     db.Users
       .findById(req.params.id)
@@ -20,6 +24,8 @@ module.exports = {
       })
       .catch(err => res.status(422).json(err));
   },
+
+  // Crate New User
   create: function(req, res) {
     db.Users
       .create(req.body)
@@ -28,6 +34,8 @@ module.exports = {
       })
       .catch(err => res.status(422).json(err));
   },
+
+  // Update existing User
   update: function(req, res) {
 
     console.log(req);
@@ -39,6 +47,8 @@ module.exports = {
       })
       .catch(err => res.status(422).json(err));
   },
+
+  // Remove User
   remove: function(req, res) {
     db.Users
       .findById({ _id: req.params.id })
