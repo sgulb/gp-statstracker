@@ -16,6 +16,7 @@ export default {
     return axios.get("/api/team/" + id)
   },
   deleteTeam: function(id){
+    console.log("delete", id);
     return axios.delete("/api/team/" + id);
   },
 
