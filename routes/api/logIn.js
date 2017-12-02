@@ -16,4 +16,7 @@ router.route("/:id")
 router.route('/auth')
     .post(logInController.authUser);
 
+router.route('/forgot')
+			.post(logInController.findByEmail);
+
 module.exports = router;

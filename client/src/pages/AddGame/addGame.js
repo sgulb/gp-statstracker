@@ -20,11 +20,22 @@ class NewGame extends Component {
 
 	getPlayers = (event) => {
 		event.preventDefault();
-		API.getTeams(window.sessionStorage.getItem("userId"))
-			 .then(res =>
+		API.getPlayers(this.props.match.params.id)
+			 .then(res => {
 					this.setState({ data: res.data, fullName: "" })
-			 );
+			 
+			 });
 	};
+
+	loadPlayers = () => {
+        API.getPlayers(this.props.match.params.id)
+            .then(res => {
+                console.log(res.data);
+                this.setState({players: res.data.player, lName: "", fName: "", jersey: ""})
+            })
+            .catch(err => console.log(err));
+    };
+
 
 	handleInputChange = (event) => {
 	  const { name, value } = event.target;
@@ -94,20 +105,12 @@ class NewGame extends Component {
 											</div>
 								      <div className="row">
 											  <div className="input-field col s4 push-s4">
-													<Input multiple s={12} type='select' label="Select all Participating Players" defaultValue='' onChange={this.handleSelectChange}>
-															{/* <option value="" disabled selected>Select all particpating players</option>*/}
-															{/* <option value='2'>Option 2</option>*/}
-														{this.state.data.length ? (
-															<PlayersList>
-																{this.state.data.teams.player.map(player => (
-																	<PlayerData>
-																		<option value={this.player._id}>{this.player.fullName}</option>
-																	</PlayerData>
-																))}
-															</PlayersList>
-															) : (
-																[<option value="1">No Players</option>]
-															)}
+													<Input multiple s={12} type='select' onChange={this.handleSelectChange}>
+															<option value="" disabled selected>Select all particpating players</option>
+															<option value='2'>Mya Nguyen</option>
+															<option value='2'>Grace Sunderland</option>
+															<option value='2'>Calysta Hardy</option>
+															<option value='2'>Madison Alder</option>
 													</Input>	  	
 											  </div>
 								      </div>
