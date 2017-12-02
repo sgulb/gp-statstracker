@@ -8,15 +8,15 @@ import NavBar from "../../components/NavBar/navBar";
 import {PlayersInfo} from "../../components/PlayerCard/PlayersInfo";
 import {InputForm, FormBtn} from "../../components/AddPlayers";
 import {PlayersList} from "../../components/PlayerCard/PlayersList";
-import DeleteBtn from "../../components/DeleteBtn/DeleteBtn"
+import DeleteBtn from "../../components/DeleteBtn/DeleteBtn";
 
 class ForgotPassword extends Component{
 
-		state = {
-			email:""
-		}
+   state = {
+        email:""
+    }
 
-		handleInputChange = (event) => {
+   handleInputChange = (event) => {
         const { name, value } = event.target;
         this.setState({
             [name]: value
@@ -24,24 +24,36 @@ class ForgotPassword extends Component{
     };
 
 
-    handleEmailSubmit = event => {
-    	event.preventDefault();
-
+  handleEmailSubmit = event => {
+        event.preventDefault();
+        API.findPassword({
+            email: this.state.email
+        })
+        .then( (res) => {
+                this.setState({email:""});
+                alert("you are registered go login");
+            })
     }
 
-    render(){
-    	return(
+  render(){
+        return(
             <div>
                 <NavBar/>
 
-                <div className="container oswald-caps">
-                	<Input s={8} validate label="Enter the email attached to your account"/>
-                	<Button>Go!</Button>
+              <div className="container oswald-caps">
+                    <Input
+                        s={8}
+                        validate
+                        label="Enter the email attached to your account"
+                        name="email"
+                        onChange={this.handleInputChange}
+                    />
+                    <FormBtn onClick={this.handleEmailSubmit}>Go!</FormBtn>
                 </div>
 
 
-            </div>
-    	)
+          </div>
+        )
     }
 }
 

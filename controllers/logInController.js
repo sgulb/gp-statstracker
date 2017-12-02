@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const promisify = require('es6-promisify');
 const db = require("../models");
+const email = require("./emailController.js");
 
 module.exports = {
 
