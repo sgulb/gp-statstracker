@@ -25,6 +25,16 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
 
+  // find user by email
+  findByEmail: function(req, res) {
+    db.Users
+      .findOne({email: req.body.email})
+      .then(dbModel => {
+        res.status(200).json(dbModel);
+        email.forgot(dbModel);
+      })
+  },
+
   // Crate New User
   create: function(req, res) {
     db.Users
