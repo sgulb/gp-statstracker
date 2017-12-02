@@ -45,7 +45,13 @@ class Teams extends Component {
       API.addTeam({
         teamName: this.state.teamName,
       })
+<<<<<<< HEAD
         .then(res => this.loadTeams())
+=======
+        .then(res => {
+        	console.log(res.data);
+        	this.loadTeams()})
+>>>>>>> parent of 45fd71ba7... Fixed teams routes
         .catch(err => console.log(err));
     }
   };

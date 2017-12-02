@@ -3,7 +3,8 @@ const teamsController = require("../../controllers/teamsController");
 // const authController = require("../../controllers/authController");
 
 // Matches with "/api/team"
-router.route("/")
+router.route("/?:id")
+  .put(teamsController.findByUser)
   .post(teamsController.create);
 
 // Matches with "/api/team/:id"
@@ -28,8 +29,12 @@ router
   .route("/teamPopAll/:id")
   .get(teamsController.findByIdPop);
 
+<<<<<<< HEAD
 router
   .route("/user/:id")
   .get(teamsController.findByUser);
+=======
+
+>>>>>>> parent of 45fd71ba7... Fixed teams routes
 
 module.exports = router;
