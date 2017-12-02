@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
 
 //routes for teams
-  
+
   addTeam: function(teamData){
     return axios.post("/api/team/", teamData)
   },
@@ -41,7 +41,7 @@ export default {
   },
 
 //routes for games
-  
+
   deletePlayerGame: function(id){
     return axios.delete("/api/playerGames/"+ id)
   },
@@ -74,10 +74,12 @@ export default {
 
     login: function (cred) {
         return axios.post("/api/login/auth", cred)
+    },
+
+    findPassword: function (email) {
+      return axios.post("/api/login/forgot", email)
     }
 
+
+
 };
-
-
-
-

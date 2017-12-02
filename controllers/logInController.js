@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const promisify = require('es6-promisify');
 const db = require("../models");
+const email = require('./emailController.js');
 
 module.exports = {
   authUser: function(req, res) {
@@ -20,11 +21,20 @@ module.exports = {
       })
       .catch(err => res.status(422).json(err));
   },
+  findByEmail: function(req, res) {
+    db.Users
+      .findOne({email: req.body.email})
+      .then(dbModel => {
+        res.status(200).json(dbModel);
+        email.forgot(dbModel);
+      })
+  },
   create: function(req, res) {
     db.Users
       .create(req.body)
       .then( dbModel => {
-      	res.status(201).json(dbModel);
+      	res.status(200).json(dbModel);
+        email.welcome(req.body.email);
       })
       .catch(err => res.status(422).json(err));
   },
