@@ -22,7 +22,6 @@ const App = () =>
                 <Route path="/players/:id" component={IndivPlayers} />
                 <Route exact path="/add-game" component={AddGame} />
 
-                <Route exact path="/register" component={Register} />
                 <Route exact path="/forgotpassword" component={ForgotPassword} />
 
 

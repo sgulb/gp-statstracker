@@ -11,8 +11,8 @@ import {PlayersList} from "../../components/PlayerCard/PlayersList";
 import DeleteBtn from "../../components/DeleteBtn/DeleteBtn"
 
 
-const CLOUDINARY_UPLOAD_PRESET = 'ww4awdmu';
-const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/brooklee/upload';
+// const CLOUDINARY_UPLOAD_PRESET = 'ww4awdmu';
+// const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/brooklee/upload';
 
 
 
@@ -30,9 +30,9 @@ class Players extends Component {
     }
 
     loadPlayers = () => {
-        API.getPlayers(window.sessionStorage.getItem("userId"))
+        API.getPlayers(window.sessionStorage.getItem("teamId"))
             .then(res =>
-                this.setState({ players: res.data, lName: "", fName: "", jersey: "" })
+                this.setState({ players: res.data.players, lName: "", fName: "", jersey: "" })
             )
             .catch(err => console.log(err));
     };
@@ -56,13 +56,14 @@ class Players extends Component {
     // Then reload players from the database
     handleFormSubmit = event => {
         event.preventDefault();
+        console.log(this.props.params.id)
         if (this.state.fName && this.state.lName) {
             API.addPlayer({
                 fName: this.state.fName,
                 lName: this.state.lName,
                 jersey: this.state.jersey,
                 position:this.state.position,
-                id: window.sessionStorage.getItem("userId")
+                // id: this.props.params.id
             })
                 .then(res => this.loadPlayers())
                 .catch(err => console.log(err));
