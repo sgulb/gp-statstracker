@@ -22,15 +22,13 @@ class Teams extends Component {
 	loadTeams = () => {
 		API.getTeams(window.sessionStorage.getItem("userId"))
 			.then(res => {
-                    console.log(res.data);
-                    this.setState({teams: res.data.team, teamName: ""});
-                }
-            )
-
+				console.log(res.data.team);
+				this.setState({ teams: res.data.team, teamName: "" })
+			})
 	};
 
 	deleteTeam = id => {
-		API.deleteTeam(id)
+		API.deleteTeam(this.id)
 			.then(res => this.loadTeams())
 			.catch(err => console.log(err));
 	};
@@ -50,7 +48,6 @@ class Teams extends Component {
         id: window.sessionStorage.getItem("userId")
       })
         .then(res => {
-        	console.log(res.data);
         	this.loadTeams()})
         .catch(err => console.log(err));
     }

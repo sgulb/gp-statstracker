@@ -9,7 +9,7 @@ export default {
   },
 
   getTeams: function(userId){
-    return axios.put("/api/team/" + userId)
+    return axios.put("/api/team/user/" + userId)
   },
 
   getOneTeam: function(id){
@@ -66,13 +66,17 @@ export default {
     return axios.post("/api/teamGames/", teamGameData)
   },
 
-    //routes for users
+   //routes for users
 
-    registerUser: function(userData){
+   registerUser: function(userData){
         return axios.post("/api/login/", userData)
     },
 
-    login: function (cred) {
+   updateUser: function(userUpdate){
+        return axios.put("/api/login/", userUpdate)
+    },
+
+   login: function (cred) {
         return axios.post("/api/login/auth", cred)
     }
 
