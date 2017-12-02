@@ -30,7 +30,7 @@ class Players extends Component {
     }
 
     loadPlayers = () => {
-        API.getPlayers()
+        API.getPlayers(window.sessionStorage.getItem("userId"))
             .then(res =>
                 this.setState({ players: res.data, lName: "", fName: "", jersey: "" })
             )
@@ -61,7 +61,8 @@ class Players extends Component {
                 fName: this.state.fName,
                 lName: this.state.lName,
                 jersey: this.state.jersey,
-                position:this.state.position
+                position:this.state.position,
+                id: window.sessionStorage.getItem("userId")
             })
                 .then(res => this.loadPlayers())
                 .catch(err => console.log(err));

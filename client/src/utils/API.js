@@ -24,8 +24,8 @@ export default {
     return axios.post("/api/player/", playerData)
   },
 
-  getPlayers: function(){
-    return axios.get("/api/player/")
+  getPlayers: function(userId){
+    return axios.get("/api/player/" + userId)
   },
 
   getOnePlayer: function(id){
