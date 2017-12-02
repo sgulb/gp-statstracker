@@ -22,18 +22,21 @@ class Players extends Component {
         players: [],
         lName: "",
         fName: "",
-        jersey: ""
+        jersey: "",
+        position: ""
     };
 
     componentDidMount() {
         this.loadPlayers();
+
     }
 
     loadPlayers = () => {
-        API.getPlayers(window.sessionStorage.getItem("teamId"))
-            .then(res =>
-                this.setState({ players: res.data.players, lName: "", fName: "", jersey: "" })
-            )
+        API.getPlayers(this.props.match.params.id)
+            .then(res => {
+                console.log(res.data);
+                this.setState({players: res.data.player, lName: "", fName: "", jersey: ""})
+            })
             .catch(err => console.log(err));
     };
 
@@ -56,19 +59,27 @@ class Players extends Component {
     // Then reload players from the database
     handleFormSubmit = event => {
         event.preventDefault();
-        console.log(this.props.params.id)
         if (this.state.fName && this.state.lName) {
             API.addPlayer({
                 fName: this.state.fName,
                 lName: this.state.lName,
                 jersey: this.state.jersey,
-                position:this.state.position,
-                // id: this.props.params.id
+                position: this.state.position,
+                id: this.props.match.params.id
             })
-                .then(res => this.loadPlayers())
+                .then(res => {
+                    this.loadPlayers();
+                    this.setState({
+                        fName: "",
+                        lName: "",
+                        jersey: "",
+                        position: ""
+                    })
+                })
                 .catch(err => console.log(err));
         }
     };
+
 
     render() {
         return (
@@ -130,10 +141,10 @@ class Players extends Component {
                         </div>
 
                         <div className="input-field col s6">
-                            <InputForm name="lName" id="type" type="text" className="validate"
+                            <InputForm name="lName" id="lName" type="text" className="validate"
                                        value={this.state.lName}
                                        onChange={this.handleInputChange}/>
-                            <label className="active" for="type"> Last Name </label>
+                            <label className="active" for="lName"> Last Name </label>
                         </div>
 
                     </div>
@@ -147,18 +158,17 @@ class Players extends Component {
                                        type="text"
                                        className="validate"
                             />
-                            <label className="active" for="type">Jersey</label>
+                            <label className="active" for="jersey">Jersey</label>
                         </div>
 
                         <div className="input-field col s6">
-                            <InputForm name="Position"
+                            <InputForm name="position"
                                        value={this.state.position}
                                        onChange={this.handleInputChange}
-                                       id="type"
+                                       id="position"
                                        className="validate"
-                                       placeholder=" "
                             />
-                            <label className="active" for="type">Position</label>
+                            <label className="active" for="position">Position</label>
                         </div>
 
 

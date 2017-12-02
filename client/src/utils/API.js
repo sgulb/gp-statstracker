@@ -21,11 +21,12 @@ export default {
 
 //routes for players
   addPlayer: function(playerData){
+    console.log(playerData)
     return axios.post("/api/player/", playerData)
   },
 
   getPlayers: function(userId){
-    return axios.get("/api/player/" + userId)
+    return axios.get("/api/team/teamPopAll/" + userId)
   },
 
   getOnePlayer: function(id){

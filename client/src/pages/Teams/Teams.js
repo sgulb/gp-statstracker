@@ -7,8 +7,6 @@ import API from "../../utils/API";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-
 
 
 class Teams extends Component {
@@ -61,7 +59,6 @@ class Teams extends Component {
 				<div>
 					<NavBar />
 					<PageHeader />
-
 					
 
 					<Row>	
@@ -70,7 +67,8 @@ class Teams extends Component {
 							<div>
 								{this.state.teams.map(team => (
 									
-										<TeamCard><Link to={`/teams/${team._id}`}>{team.teamName}</Link>
+										<TeamCard>
+											<Link to={`/teams/${team._id}`}>{team.teamName}</Link>
 											<Row>
 												<Button className="red accent-4" onClick={() => this.deleteTeam(team._id)}>Delete</Button>
 											</Row>

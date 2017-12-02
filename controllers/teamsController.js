@@ -54,8 +54,8 @@ module.exports = {
   findByIdPop: function(req, res) {
     db.Team
       .findById(req.params.id)
-      .populate('Team')
-      .populate('Player')
+      .populate('team')
+      .populate('player')
       .then(dbModel => {
         res.status(200).json(dbModel);
       })
@@ -95,7 +95,6 @@ module.exports = {
           // db.School.findOneAndUpdate(
           //   { "_id": req.body._id }, { $push: { "team": result.id }}
           // );
-          console.log("ID= ", result._id);
 
           db.Users
             .findByIdAndUpdate(id, { $push: { "team": result._id }}) 
