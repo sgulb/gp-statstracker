@@ -9,8 +9,8 @@ const playerSchema = new Schema({
   fullName: String,
   position: { type: String, required: "Please provide the players postion", trim: true  },
   timestamp: { type: Date, default: Date.now },
-  playerGameStats: { type: Schema.Types.ObjectId, ref: "PlayerGameStats"},
-  user: { type: Schema.Types.ObjectId, ref: "User"}
+  playerGameStats: [{ type: Schema.Types.ObjectId, ref: "PlayerGameStats"}],
+  user: [{ type: Schema.Types.ObjectId, ref: "User"}]
 });
 
 playerSchema.pre('save', function(next){
