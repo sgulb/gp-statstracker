@@ -35,10 +35,10 @@ module.exports = {
   //     .catch(err => res.status(422).json(err));
   // },
   findByUser: function(req, res) {
-      console.log(req)
+      console.log("Crap");
     db.Users
-      .findOne(req.params.id, 'team')
-      .populate("teams")
+      .findById(req.params.id)
+      .populate("team")
       .then( dbModel => {
           res.status(200).json(dbModel);
       })

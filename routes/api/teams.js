@@ -4,6 +4,7 @@ const teamsController = require("../../controllers/teamsController");
 
 // Matches with "/api/team"
 router.route("/")
+    .put(teamsController.findByUser)
   .post(teamsController.create);
 
 // Matches with "/api/team/:id"
@@ -28,8 +29,6 @@ router
   .route("/teamPopAll/:id")
   .get(teamsController.findByIdPop);
 
-router
-  .route("/user/")
-  .get(teamsController.findByUser);
+
 
 module.exports = router;

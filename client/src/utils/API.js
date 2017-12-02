@@ -9,7 +9,7 @@ export default {
   },
 
   getTeams: function(userId){
-    return axios.get("/api/team/user/", userId)
+    return axios.put("/api/team/" + userId)
   },
 
   getOneTeam: function(id){
