@@ -9,11 +9,7 @@ export default {
   },
 
   getTeams: function(userId){
-<<<<<<< HEAD
     return axios.get("/api/team/user/", userId)
-=======
-    return axios.put("/api/team/" + userId)
->>>>>>> parent of 45fd71ba7... Fixed teams routes
   },
 
   getOneTeam: function(id){
