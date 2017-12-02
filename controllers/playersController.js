@@ -17,6 +17,8 @@ module.exports = {
   //     .then(dbModel => res.json(dbModel))
   //     .catch(err => res.status(422).json(err));
   // },
+
+  // find Player by ID
   findById: function(req, res) {
     db.Player
       .findById(req.params.id)
@@ -25,15 +27,19 @@ module.exports = {
       })
       .catch(err => res.status(422).json(err));
   },
+
+  // find Player by ID and Populate with PlayerGameStats
   findByIdPop: function(req, res) {
     db.Player
       .findById(req.params.id)
-      .populate("PlayerGameStats")
+      .populate("payerGameStats")
       .then(dbModel => {
           res.status(201).json(dbModel);
         })
       .catch(err => res.status(422).json(err));
   },
+
+  // create new Player and add id to Team
   create: function(req, res) {
 
     let { id } = req.body;
@@ -42,17 +48,21 @@ module.exports = {
     db.Player
       .create(req.body)
       .then( (dbModel) => {
+
+          // send response to the server
           res.status(200).json(dbModel);
 
-          db.Team.findByIdAndUpdate(
-            id, { $push: { "player": dbModel._id }}
-          )
-              .then(res => console.log(res));
+          // add id to Team
+          db.Team.findOneAndUpdate(
+            { "_id": id }, { $push: { "player": dbModel._id }}
+          );
+
       })
       .catch(err => res.status(422).json(err));
   },
+
+  // update player 
   update: function(req, res) {
-      console.log(req.body)
     db.Player
       .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => {
@@ -60,6 +70,8 @@ module.exports = {
       })
       .catch(err => res.status(422).json(err));
   },
+
+  // remove player
   remove: function(req, res) {
     db.Player
       .findById({ _id: req.params.id })
