@@ -63,7 +63,8 @@ class Players extends Component {
                 jersey: this.state.jersey,
                 position:this.state.position
             })
-                .then(res => this.loadPlayers())
+                .then(res =>
+                    this.loadPlayers())
                 .catch(err => console.log(err));
         }
     };

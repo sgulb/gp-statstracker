@@ -17,7 +17,6 @@ class Teams extends Component {
 
 	componentDidMount(){
 		this.loadTeams();
-		console.log(this.state.teams)
 	};
 
 	loadTeams = () => {
