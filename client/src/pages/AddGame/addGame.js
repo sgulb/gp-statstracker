@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-// import Btn from "../../components/Btn";
+import Btn from "../../components/Btn";
 import NavBar from "../../components/NavBar";
-// import NewGameForm from "../../components/NewGame";
+import NewGameForm from "../../components/NewGame";
 import PageHeader from "../../components/PageHead";
 import {Row, Col, Input, Button} from "react-materialize";
 import API from "../../utils/API";
@@ -34,7 +34,7 @@ class NewGame extends Component {
 	};
 
 	handleSelectChange = event => {
-	  const { value } = event.target;
+	  const { name, value } = event.target;
 	  API.getPlayers(event.value)
 	     .then(
 					this.setState({

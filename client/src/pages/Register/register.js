@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import "../../css/style.css";
-import {Col, Row} from 'react-materialize';
+import {Card, CardTitle, Col, Row, Input, CardPanel} from 'react-materialize';
 
 import NavBar from "../../components/NavBar/navBar";
-// import {PlayersInfo} from "../../components/PlayerCard/PlayersInfo";
+import {PlayersInfo} from "../../components/PlayerCard/PlayersInfo";
 import {InputForm, FormBtn} from "../../components/AddPlayers";
-// import {PlayersList} from "../../components/PlayerCard/PlayersList";
+import {PlayersList} from "../../components/PlayerCard/PlayersList";
 import DeleteBtn from "../../components/DeleteBtn/DeleteBtn"
 
 

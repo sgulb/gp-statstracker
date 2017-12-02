@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import "../../css/style.css";
-import {Card, CardTitle, Col, Row} from 'react-materialize';
+import {Card, CardTitle, Col, Row, Input, CardPanel} from 'react-materialize';
 // import request from 'superagent';
 
 import NavBar from "../../components/NavBar/navBar";
@@ -11,8 +11,8 @@ import {PlayersList} from "../../components/PlayerCard/PlayersList";
 import DeleteBtn from "../../components/DeleteBtn/DeleteBtn"
 
 
-// const CLOUDINARY_UPLOAD_PRESET = 'ww4awdmu';
-// const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/brooklee/upload';
+const CLOUDINARY_UPLOAD_PRESET = 'ww4awdmu';
+const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/brooklee/upload';
 
 
 

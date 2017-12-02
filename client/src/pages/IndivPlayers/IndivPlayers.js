@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import {CardTitle, Col, Collapsible, CollapsibleItem, CardPanel} from 'react-materialize';
+import {Card, CardTitle, Col, Collapsible, CollapsibleItem, CardPanel} from 'react-materialize';
 import "../../css/style.css";
 
 import API from "../../utils/API";
 
 import NavBar from "../../components/NavBar/navBar";
-// import EditPlayerBtn from "../../components/Btn/editPlayerBtn";
+import EditPlayerBtn from "../../components/Btn/editPlayerBtn";
 import {InputForm, FormBtn} from "../../components/AddPlayers";
 
 class Detail extends Component {
