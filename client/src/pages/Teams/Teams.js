@@ -17,6 +17,7 @@ class Teams extends Component {
 
 	componentDidMount(){
 		this.loadTeams();
+		console.log(this.state.teams)
 	};
 
 	loadTeams = () => {
@@ -51,7 +52,6 @@ class Teams extends Component {
         id: window.sessionStorage.getItem("userId")
       })
         .then(res => {
-        	console.log(res.data);
         	this.loadTeams()})
         .catch(err => console.log(err));
     }
