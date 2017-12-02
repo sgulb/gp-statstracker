@@ -9,6 +9,8 @@ module.exports = {
   //     .then(dbModel => res.json(dbModel))
   //     .catch(err => res.status(422).json(err));
   // },
+
+  // find teamGame by ID
   findById: function(req, res) {
     db.TeamGameStats
       .findById(req.params.id)
@@ -17,6 +19,8 @@ module.exports = {
       })
       .catch(err => res.status(422).json(err));
   },
+
+  // create Team Game and add referance to team and player GameStats
   create: function(req, res) {
 
     let { id } = req.body;
@@ -25,18 +29,24 @@ module.exports = {
     db.TeamGameStats
       .create(req.body)
       .then( (result) => {
+
+          // send Response to the front end
           res.status(201).json(result);
 
+          // add new id to Team
           db.Team.findOneAndUpdate(
             { "_id": id }, { $push: { "teamGameStats": result._id }}
           );
 
+          // add new id to PlayerGameStats
           db.PlayerGameStats.findOneAndUpdate(
             { "_id": id }, { $push: { "teamGameStats": result._id }}
           );
         })
       .catch(err => res.status(422).json(err));
   },
+
+  // update teamGame Stats
   update: function(req, res) {
     db.TeamGameStats
       .findOneAndUpdate({ _id: req.params.id }, req.body)
@@ -45,6 +55,8 @@ module.exports = {
       })
       .catch(err => res.status(422).json(err));
   },
+
+  // remove teamGameStats
   remove: function(req, res) {
     db.TeamGameStats
       .findById({ _id: req.params.id })

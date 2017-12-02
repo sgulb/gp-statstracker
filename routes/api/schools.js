@@ -4,14 +4,12 @@ const schoolsController = require("../../controllers/schoolsController");
 
 // Matches with "/api/school"
 router.route("/")
-  .get(schoolsController.findAll)
-  .post(schoolsController.create);
+  .post(schoolsController.create); // crate new School
 
 // Matches with "/api/school/:id"
-router
-  .route("/:id")
-  .get(schoolsController.findById)
-  .put(schoolsController.update)
-  .delete(schoolsController.remove);
+router.route("/:id")
+  .get(schoolsController.findById) // return School Details (select by ID)
+  .put(schoolsController.update) // update school details (select by ID)
+  .delete(schoolsController.remove); // remove School (select by ID)
 
 module.exports = router;

@@ -12,11 +12,11 @@ import DeleteBtn from "../../components/DeleteBtn/DeleteBtn";
 
 class ForgotPassword extends Component{
 
-    state = {
+   state = {
         email:""
     }
 
-    handleInputChange = (event) => {
+   handleInputChange = (event) => {
         const { name, value } = event.target;
         this.setState({
             [name]: value
@@ -24,22 +24,23 @@ class ForgotPassword extends Component{
     };
 
 
-   handleEmailSubmit = event => {
+  handleEmailSubmit = event => {
         event.preventDefault();
         API.findPassword({
             email: this.state.email
         })
         .then( (res) => {
-                alert("you are registered go login")
+                this.setState({email:""});
+                alert("you are registered go login");
             })
     }
 
-   render(){
+  render(){
         return(
             <div>
                 <NavBar/>
 
-               <div className="container oswald-caps">
+              <div className="container oswald-caps">
                     <Input
                         s={8}
                         validate
@@ -51,7 +52,7 @@ class ForgotPassword extends Component{
                 </div>
 
 
-           </div>
+          </div>
         )
     }
 }

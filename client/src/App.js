@@ -19,9 +19,9 @@ const App = () =>
                 <Route exact path="/register" component={Register} />
 
                 <Route path="/teams/:id" component={Players} />
-                <Route path="/players/:id" component={IndivPlayers} />
+                <Route path={"/players/:id"} component={IndivPlayers} />
                 <Route exact path="/add-game" component={AddGame} />
-                
+
                 <Route exact path="/forgotpassword" component={ForgotPassword} />
 
 

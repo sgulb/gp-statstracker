@@ -11,8 +11,8 @@ import {PlayersList} from "../../components/PlayerCard/PlayersList";
 import DeleteBtn from "../../components/DeleteBtn/DeleteBtn"
 
 
-const CLOUDINARY_UPLOAD_PRESET = 'ww4awdmu';
-const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/brooklee/upload';
+// const CLOUDINARY_UPLOAD_PRESET = 'ww4awdmu';
+// const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/brooklee/upload';
 
 
 
@@ -22,18 +22,21 @@ class Players extends Component {
         players: [],
         lName: "",
         fName: "",
-        jersey: ""
+        jersey: "",
+        position: ""
     };
 
     componentDidMount() {
         this.loadPlayers();
+
     }
 
     loadPlayers = () => {
-        API.getPlayers()
-            .then(res =>
-                this.setState({ players: res.data, lName: "", fName: "", jersey: "" })
-            )
+        API.getPlayers(this.props.match.params.id)
+            .then(res => {
+                console.log(res.data);
+                this.setState({players: res.data.player, lName: "", fName: "", jersey: ""})
+            })
             .catch(err => console.log(err));
     };
 
@@ -61,12 +64,22 @@ class Players extends Component {
                 fName: this.state.fName,
                 lName: this.state.lName,
                 jersey: this.state.jersey,
-                position:this.state.position
+                position: this.state.position,
+                id: this.props.match.params.id
             })
-                .then(res => this.loadPlayers())
+                .then(res => {
+                    this.loadPlayers();
+                    this.setState({
+                        fName: "",
+                        lName: "",
+                        jersey: "",
+                        position: ""
+                    })
+                })
                 .catch(err => console.log(err));
         }
     };
+
 
     render() {
         return (
@@ -128,10 +141,10 @@ class Players extends Component {
                         </div>
 
                         <div className="input-field col s6">
-                            <InputForm name="lName" id="type" type="text" className="validate"
+                            <InputForm name="lName" id="lName" type="text" className="validate"
                                        value={this.state.lName}
                                        onChange={this.handleInputChange}/>
-                            <label className="active" for="type"> Last Name </label>
+                            <label className="active" for="lName"> Last Name </label>
                         </div>
 
                     </div>
@@ -145,18 +158,17 @@ class Players extends Component {
                                        type="text"
                                        className="validate"
                             />
-                            <label className="active" for="type">Jersey</label>
+                            <label className="active" for="jersey">Jersey</label>
                         </div>
 
                         <div className="input-field col s6">
-                            <InputForm name="Position"
+                            <InputForm name="position"
                                        value={this.state.position}
                                        onChange={this.handleInputChange}
-                                       id="type"
+                                       id="position"
                                        className="validate"
-                                       placeholder=" "
                             />
-                            <label className="active" for="type">Position</label>
+                            <label className="active" for="position">Position</label>
                         </div>
 
 

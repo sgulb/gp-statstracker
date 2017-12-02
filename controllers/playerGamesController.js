@@ -16,6 +16,8 @@ module.exports = {
   //     })
   //     .catch(err => res.status(422).json(err));
   // },
+
+  // Find PlayerGame by ID
   findById: function(req, res) {
     db.PlayerGameStats
       .findById(req.params.id)
@@ -24,6 +26,8 @@ module.exports = {
       })
       .catch(err => res.status(422).json(err));
   },
+
+  // Create new PlayerGame and add ID to Player and PlayerGameStats
   create: function(req, res) {
     let { id } = req.body;
     delete req.body.id;
@@ -31,18 +35,24 @@ module.exports = {
     db.PlayerGameStats
       .create(req.body)
       .then( (result) => {
+
+          // send response to the server
           res.status(201).json(result);
           
+          // Add ID to Player
           db.Player.findOneAndUpdate(
             { "_id": id }, { $push: { "playerGameStats": result._id }}
           );
 
-          db.PlayerGameStats.findOneAndUpdate(
+          // Add ID to TeamGameStats
+          db.TeamGameStats.findOneAndUpdate(
             { "_id": id }, { $push: { "playerGameStats": result._id }}
           );
         })
       .catch(err => res.status(422).json(err));
   },
+
+  // Update PlayerGame
   update: function(req, res) {
     db.PlayerGameStats
       .findOneAndUpdate({ _id: req.params.id }, req.body)
@@ -51,6 +61,8 @@ module.exports = {
       })
       .catch(err => res.status(422).json(err));
   },
+
+  // remove PlayerGame
   remove: function(req, res) {
     db.PlayerGameStats
       .findById({ _id: req.params.id })

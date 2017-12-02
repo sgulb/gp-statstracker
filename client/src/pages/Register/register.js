@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import "../../css/style.css";
-import {Card, CardTitle, Col, Row, Input, CardPanel} from 'react-materialize';
+import {Col, Row,} from 'react-materialize';
 import { Link } from "react-router-dom";
 
 import NavBar from "../../components/NavBar/navBar";
-import {PlayersInfo} from "../../components/PlayerCard/PlayersInfo";
 import {InputForm, FormBtn} from "../../components/AddPlayers";
-import {PlayersList} from "../../components/PlayerCard/PlayersList";
-import DeleteBtn from "../../components/DeleteBtn/DeleteBtn"
+
 
 
 
@@ -23,7 +21,7 @@ class register extends Component {
     }
 
     componentDidMount(){
-        this.loginHandler()
+        this.loginStart()
     };
 
 
@@ -48,6 +46,13 @@ class register extends Component {
         });
     };
 
+    loginStart = (event) => {
+        API.login({
+            email: this.state.email,
+            password: this.state.password
+        })
+    }
+
     loginHandler = (event) => {
         API.login({
             email: this.state.email,
@@ -61,12 +66,15 @@ class register extends Component {
                 if (this.state.data[0]) {
                     this.state.data.map(id => window.sessionStorage.setItem("userId", id._id))
                     this.setState({email: "", password: ""});
+                    this.props.history.push('/teams');
                 }
                 else {
                     alert("your email or password is wrong or you are not registered please try again.")
                 }
             })
     }
+
+
 
 
 
