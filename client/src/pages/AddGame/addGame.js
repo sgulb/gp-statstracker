@@ -24,6 +24,7 @@ class NewGame extends Component {
 			 .then(res =>
 					this.setState({ data: res.data, fullName: "" })
 			 );
+		console.log(this.state.data);
 	};
 
 	handleInputChange = (event) => {

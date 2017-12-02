@@ -1,8 +1,23 @@
 .input-field{
-	width:65%;
-	margin-left: 15%;
+	width:85%;
+	margin-left: 8%;
 }
 
 .btn{
-	margin-left: 15%
+	margin-left: 8%
+}
+
+.card{
+	width:50%;
+	margin-left: 25%;
+	height:300px;
+}
+h5{
+	font-size: 16pt;
+	padding: 15px;
+	text-align: center;
+	text-transform: unset;
+}
+h2{
+	color: #c4291c;
 }
