@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import {AddTeam, AddTeamModal, TeamCard} from "../../components/TeamCard"
+import {AddTeam, TeamCard} from "../../components/TeamCard"
 import NavBar from "../../components/NavBar";
-import {Row, Col, Card, Input, Button} from 'react-materialize';
+import {Row, Input, Button} from 'react-materialize';
 import PageHeader from "../../components/PageHead";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
@@ -67,7 +67,8 @@ class Teams extends Component {
 							<div>
 								{this.state.teams.map(team => (
 									
-										<TeamCard><Link to={`/teams/${team._id}`}>{team.teamName}</Link>
+										<TeamCard>
+											<Link to={`/teams/${team._id}`}>{team.teamName}</Link>
 											<Row>
 												<Button className="red accent-4" onClick={() => this.deleteTeam(team._id)}>Delete</Button>
 											</Row>

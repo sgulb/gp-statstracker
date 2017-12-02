@@ -43,13 +43,16 @@ module.exports = {
       .create(req.body)
       .then( (dbModel) => {
           res.status(200).json(dbModel);
-          db.Team.findOneAndUpdate(
-            { "_id": id }, { $push: { "player": dbModel._id }}
-          );
+
+          db.Team.findByIdAndUpdate(
+            id, { $push: { "player": dbModel._id }}
+          )
+              .then(res => console.log(res));
       })
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
+      console.log(req.body)
     db.Player
       .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => {
