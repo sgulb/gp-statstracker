@@ -39,6 +39,7 @@ module.exports = {
       .findById(req.params.id)
       .populate("team")
       .then( dbModel => {
+          console.log(dbModel)
           res.status(200).json(dbModel);
       })
       .catch(err => res.status(422).json(err));
