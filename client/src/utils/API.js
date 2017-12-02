@@ -72,6 +72,10 @@ export default {
         return axios.post("/api/login/", userData)
     },
 
+    updateUser: function(userUpdate){
+        return axios.put("/api/login/", userUpdate)
+    },
+
     login: function (cred) {
         return axios.post("/api/login/auth", cred)
     }
