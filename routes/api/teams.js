@@ -28,9 +28,8 @@ router
   .route("/teamPopAll/:id")
   .get(teamsController.findByIdPop);
 
-router.route("/user/:id")
-  .put(teamsController.findByUser)
-
-
+router
+  .route("/user/:id")
+  .get(teamsController.findByUser);
 
 module.exports = router;

@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import {AddTeam, TeamCard} from "../../components/TeamCard"
+import {AddTeam, AddTeamModal, TeamCard} from "../../components/TeamCard"
 import NavBar from "../../components/NavBar";
-import {Row, Card, Input, Button} from 'react-materialize';
+import {Row, Col, Card, Input, Button} from 'react-materialize';
 import PageHeader from "../../components/PageHead";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
@@ -21,16 +21,13 @@ class Teams extends Component {
 
 	loadTeams = () => {
 		API.getTeams(window.sessionStorage.getItem("userId"))
-			.then(res => {
-                    console.log(res.data);
-                    this.setState({teams: res.data.team, teamName: ""});
-                }
-            )
-
+			.then(res =>
+				this.setState({ teams: res.data, teamName: "" })
+			)
 	};
 
 	deleteTeam = id => {
-		API.deleteTeam(id)
+		API.deleteTeam(this.id)
 			.then(res => this.loadTeams())
 			.catch(err => console.log(err));
 	};
@@ -47,10 +44,8 @@ class Teams extends Component {
     if (this.state.teamName) {
       API.addTeam({
         teamName: this.state.teamName,
-        id: window.sessionStorage.getItem("userId")
       })
-        .then(res => {
-        	this.loadTeams()})
+        .then(res => this.loadTeams())
         .catch(err => console.log(err));
     }
   };
