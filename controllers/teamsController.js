@@ -96,9 +96,10 @@ module.exports = {
           // db.School.findOneAndUpdate(
           //   { "_id": req.body._id }, { $push: { "team": result.id }}
           // );
-
+          console.log(result._id);
           db.Users
-            .findByIdAndUpdate(id, { $push: { "team": result._id }}) 
+            .findByIdAndUpdate(id, { $push: { "team": result._id }})
+            .then(res => console.log(res)) 
             .catch(err => console.log(err));
 
         })
