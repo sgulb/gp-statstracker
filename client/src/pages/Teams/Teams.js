@@ -21,9 +21,10 @@ class Teams extends Component {
 
 	loadTeams = () => {
 		API.getTeams(window.sessionStorage.getItem("userId"))
-			.then(res =>
-				this.setState({ teams: res.data, teamName: "" })
-			)
+			.then(res => {
+				console.log(res.data.team);
+				this.setState({ teams: res.data.team, teamName: "" })
+			})
 	};
 
 	deleteTeam = id => {
@@ -44,14 +45,10 @@ class Teams extends Component {
     if (this.state.teamName) {
       API.addTeam({
         teamName: this.state.teamName,
+        id: window.sessionStorage.getItem("userId")
       })
-<<<<<<< HEAD
-        .then(res => this.loadTeams())
-=======
         .then(res => {
-        	console.log(res.data);
         	this.loadTeams()})
->>>>>>> parent of 45fd71ba7... Fixed teams routes
         .catch(err => console.log(err));
     }
   };

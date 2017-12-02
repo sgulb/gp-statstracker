@@ -39,7 +39,6 @@ module.exports = {
       .findById(req.params.id)
       .populate("team")
       .then( dbModel => {
-          console.log(dbModel)
           res.status(200).json(dbModel);
       })
       .catch(err => res.status(422).json(err));
@@ -96,11 +95,12 @@ module.exports = {
           // db.School.findOneAndUpdate(
           //   { "_id": req.body._id }, { $push: { "team": result.id }}
           // );
+          console.log("ID= ", result._id);
 
           db.Users
             .findByIdAndUpdate(id, { $push: { "team": result._id }}) 
+            .then(res => console.log(res))
             .catch(err => console.log(err));
-
         })
       .catch(err => res.status(422).json(err));
   },
