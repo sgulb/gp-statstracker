@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import API from "../../utils/API";
 import "../../css/style.css";
 import {Card, CardTitle, Col, Row, Input, CardPanel} from 'react-materialize';
+import { Link } from "react-router-dom";
 
 import NavBar from "../../components/NavBar/navBar";
 import {PlayersInfo} from "../../components/PlayerCard/PlayersInfo";
@@ -174,7 +175,12 @@ class register extends Component {
                             onClick={this.loginHandler}>
                             LogIn
                         </FormBtn>
+
                     </Col>
+
+                    <Link to="./forgotpassword">
+                        Forgot Password?
+                    </Link>
                 </div>
 
 

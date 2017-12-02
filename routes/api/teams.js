@@ -4,7 +4,7 @@ const teamsController = require("../../controllers/teamsController");
 
 // Matches with "/api/team"
 router.route("/?:id")
-    .get(teamsController.findByUser)
+  .put(teamsController.findByUser)
   .post(teamsController.create);
 
 // Matches with "/api/team/:id"
