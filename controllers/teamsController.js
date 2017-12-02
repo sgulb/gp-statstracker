@@ -35,7 +35,8 @@ module.exports = {
   //     .catch(err => res.status(422).json(err));
   // },
   findByUser: function(req, res) {
-    db.User
+      console.log(req)
+    db.Users
       .findOne(req.params.id, 'team')
       .populate("teams")
       .then( dbModel => {

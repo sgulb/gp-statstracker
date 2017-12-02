@@ -20,10 +20,14 @@ class Teams extends Component {
 	};
 
 	loadTeams = () => {
-		API.getTeams(this.state.userId)
-			.then(res =>
-				this.setState({ teams: res.data, teamName: "" })
-			)
+		console.log(window.sessionStorage.getItem("userId"))
+		API.getTeams(window.sessionStorage.getItem("userId"))
+			.then(res => {
+                    console.log(res)
+                    this.setState({teams: res.data, teamName: ""});
+                }
+            )
+
 	};
 
 	deleteTeam = id => {
